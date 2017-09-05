@@ -23,7 +23,7 @@ function switchlang(d,l) {
   def = document.getElementsByClassName("def");
   btn_nb = document.getElementsByClassName("lang-nb");
   btn_nn = document.getElementsByClassName("lang-nn");
-  if (l == "nb") {
+  if (l == "no") {
     for (var i = 0; i < btn_nb.length + 1; i++) {
       nn[i].style.display = "none";
       nb[i].style.display = "block";
@@ -41,7 +41,7 @@ function switchlang(d,l) {
       btn_nb[i].innerHTML = "nb";
       btn_nn[i].innerHTML = d;
       btn_nn[i].setAttribute("onclick", "switchlang('" + d + "','" + d + "')");
-      btn_nb[i].setAttribute("onclick", "switchlang('" + d + "','nb')");
+      btn_nb[i].setAttribute("onclick", "switchlang('" + d + "','no')");
     }
   } else if (l == d) {
     for (var i = 0; i < btn_nn.length + 1; i++) {
@@ -50,7 +50,7 @@ function switchlang(d,l) {
       def[i].style.display = "block";
       btn_nb[i].innerHTML = "nb";
       btn_nn[i].innerHTML = "nn";
-      btn_nb[i].setAttribute("onclick", "switchlang('" + d + "','nb')");
+      btn_nb[i].setAttribute("onclick", "switchlang('" + d + "','no')");
       btn_nn[i].setAttribute("onclick", "switchlang('" + d + "','nn')");
     }
   }
