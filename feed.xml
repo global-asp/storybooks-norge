@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storybooks Norge</title>
+    <description>Storybooks Norge is designed specifically for teachers and makes 40 stories from the African Storybook available in Norwegian (Bokmål) and Nynorsk, as well as all the major regional and immigrant languages of Norge (with text and audio in Arabic, Danish, English, French, German, Hindi, Norwegian, Somali, Swedish, Urdu, and Vietnamese).
+</description>
+    <link>https://global-asp.github.io/storybooks-norge//</link>
+    <atom:link href="https://global-asp.github.io/storybooks-norge//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 05 Sep 2017 03:11:47 -0700</pubDate>
+    <lastBuildDate>Tue, 05 Sep 2017 03:11:47 -0700</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+  </channel>
+</rss>
