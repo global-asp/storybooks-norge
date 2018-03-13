@@ -10,10 +10,13 @@ document.addEventListener('play', function(e) {
 
 function playpause(n) {
   p = document.getElementById('audio' + n);
+  picon = document.getElementById("playbutton" + n).firstChild;
   if (p.paused) {
     p.play();
+    picon.src = "/storybooks-norge/css/pause.svg";
   } else {
     p.pause();
+    picon.src = "/storybooks-norge/css/volume-up.svg";
   }
 }
 
@@ -62,6 +65,11 @@ function switchlang(d,l) {
   }
 }
 
+function resetbutton(i) {
+  picon = document.getElementById("playbutton" + i).firstChild;
+  picon.src = "/storybooks-norge/css/volume-up.svg";
+}
+
 function pauseaudio() {
   var sounds = document.getElementsByTagName('audio');
   for (i=0; i<sounds.length; i++) {sounds[i].pause()};
@@ -71,8 +79,10 @@ function autoplay() {
   pauseaudio();
   var canonical = document.getElementsByTagName("link")[2].href;
   var id = canonical.replace(/.*\/(\d{4})\/.*/, "$1");
-  var audio = document.getElementById("audio");
-  var index=2;
+  var audio = document.getElementById("audio01");
+  var pbutton = document.getElementById("playbutton01").firstChild;
+  pbutton.src = "/storybooks-norge/css/pause.svg";
+  var index = 2;
   function playNext() {
     len = document.getElementsByClassName("img-responsive").length;
     if(index <= len) {
@@ -83,26 +93,32 @@ function autoplay() {
       n = z + index.toString();
       p = z + (index - 1).toString();
       if (p == "9") {
-        p = "09";
+	p = "09";
       }
       audio = document.getElementById("audio" + n);
       au_prev = document.getElementById("audio" + p);
       if (p == "01") {
-        au_prev = document.getElementById("audio");
+	au_prev = document.getElementById("audio");
       }
 
       p3 = document.getElementById("text" + p).getElementsByClassName("def")[0].firstChild;
       p3.style = "background-color:#FFFFFF; font-weight:normal; border-radius:0px; padding:0px";
+      pbutton.src = "/storybooks-norge/css/volume-up.svg";
       window.location = "#text" + n;
       h3 = document.getElementById("text" + n).getElementsByClassName("def")[0].firstChild;
       h3.style = "background-color:#FFDC00; font-weight:bold; border-radius:5px; padding:5px";
+      pbutton = document.getElementById("playbutton" + n).firstChild;
+      pbutton.src = "/storybooks-norge/css/pause.svg";
       audio.load(); audio.play();
       audio.addEventListener('ended', playNext);
       index += 1;
     } else {
+      pbutton.src = "/storybooks-norge/css/volume-up.svg";
       audio.removeEventListener('ended', playNext, false);
     }
   }
+
   audio.addEventListener('ended', playNext);
+
   audio.play();
 }

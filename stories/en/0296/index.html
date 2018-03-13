@@ -70,8 +70,8 @@
 <span class="nn">Bananseljaren Tom</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Gå til neste side"><img src="/storybooks-norge/css/arrow-down.svg" alt="Gå til neste side" width="16px"></a>
-				<button class=" btn btn-lg" onclick="playpause('')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
-				<audio id="audio" src="http://globalstorybooks.net/bfn/mp3/en/0296/mp3/01.mp3"></audio>
+				<button id="playbutton01" class="btn btn-lg" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
+				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/bfn/mp3/en/0296/mp3/01.mp3"></audio>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Skrevet av"><img class="cover-icon" src="/storybooks-norge/css/pencil.svg" alt="Skrevet av" width="38px"></span> Humphreys Odunga</h3>
@@ -80,7 +80,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon" src="/storybooks-norge/css/language.svg" alt="Språk" width="38px"></span> <a href="/storybooks-norge/stories/en">engelsk</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon" src="/storybooks-norge/css/level.svg" alt="Nivå" width="38px"></span> <a href="/storybooks-norge/stories/en/level2">Nivå 2</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon" src="/storybooks-norge/css/speaker.svg" alt="Spill av fortellingen" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/bfn/mp3/en/0296/en-0296_tom.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen"><img id="autoplay_icon" class="cover-icon" src="/storybooks-norge/css/play.svg" alt="Automatisk spilling av fortellingen" width="38px" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen"><img id="autoplay_icon" class="cover-icon" src="/storybooks-norge/css/play.svg" alt="Automatisk spilling av fortellingen" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -101,8 +101,8 @@
 	<div class="btn-group">
 		<a href="#text01" class="btn btn-lg" title="Gå til forrige side"><img src="/storybooks-norge/css/arrow-up.svg" alt="Gå til forrige side" width="16px"></a>
 		<a href="#text03" class="btn btn-lg" title="Gå til neste side"><img src="/storybooks-norge/css/arrow-down.svg" alt="Gå til neste side" width="16px"></a>
-		<audio id="audio02" src="http://storybookscanada.ca/audio/en/0296/mp3/02.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
+		<audio id="audio02" onended="resetbutton('02')" src="http://storybookscanada.ca/audio/en/0296/mp3/02.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','nb')" class="btn btn-lg lang-nb" title="Bytt mellom engelsk og bokmål">nb</button>
@@ -129,8 +129,8 @@
 	<div class="btn-group">
 		<a href="#text02" class="btn btn-lg" title="Gå til forrige side"><img src="/storybooks-norge/css/arrow-up.svg" alt="Gå til forrige side" width="16px"></a>
 		<a href="#text04" class="btn btn-lg" title="Gå til neste side"><img src="/storybooks-norge/css/arrow-down.svg" alt="Gå til neste side" width="16px"></a>
-		<audio id="audio03" src="http://storybookscanada.ca/audio/en/0296/mp3/03.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
+		<audio id="audio03" onended="resetbutton('03')" src="http://storybookscanada.ca/audio/en/0296/mp3/03.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','nb')" class="btn btn-lg lang-nb" title="Bytt mellom engelsk og bokmål">nb</button>
@@ -157,8 +157,8 @@
 	<div class="btn-group">
 		<a href="#text03" class="btn btn-lg" title="Gå til forrige side"><img src="/storybooks-norge/css/arrow-up.svg" alt="Gå til forrige side" width="16px"></a>
 		<a href="#text05" class="btn btn-lg" title="Gå til neste side"><img src="/storybooks-norge/css/arrow-down.svg" alt="Gå til neste side" width="16px"></a>
-		<audio id="audio04" src="http://storybookscanada.ca/audio/en/0296/mp3/04.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
+		<audio id="audio04" onended="resetbutton('04')" src="http://storybookscanada.ca/audio/en/0296/mp3/04.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','nb')" class="btn btn-lg lang-nb" title="Bytt mellom engelsk og bokmål">nb</button>
@@ -189,8 +189,8 @@ They prefer to buy fruit from women.
 	<div class="btn-group">
 		<a href="#text04" class="btn btn-lg" title="Gå til forrige side"><img src="/storybooks-norge/css/arrow-up.svg" alt="Gå til forrige side" width="16px"></a>
 		<a href="#text06" class="btn btn-lg" title="Gå til neste side"><img src="/storybooks-norge/css/arrow-down.svg" alt="Gå til neste side" width="16px"></a>
-		<audio id="audio05" src="http://storybookscanada.ca/audio/en/0296/mp3/05.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
+		<audio id="audio05" onended="resetbutton('05')" src="http://storybookscanada.ca/audio/en/0296/mp3/05.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','nb')" class="btn btn-lg lang-nb" title="Bytt mellom engelsk og bokmål">nb</button>
@@ -217,8 +217,8 @@ They prefer to buy fruit from women.
 	<div class="btn-group">
 		<a href="#text05" class="btn btn-lg" title="Gå til forrige side"><img src="/storybooks-norge/css/arrow-up.svg" alt="Gå til forrige side" width="16px"></a>
 		<a href="#text07" class="btn btn-lg" title="Gå til neste side"><img src="/storybooks-norge/css/arrow-down.svg" alt="Gå til neste side" width="16px"></a>
-		<audio id="audio06" src="http://storybookscanada.ca/audio/en/0296/mp3/06.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
+		<audio id="audio06" onended="resetbutton('06')" src="http://storybookscanada.ca/audio/en/0296/mp3/06.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','nb')" class="btn btn-lg lang-nb" title="Bytt mellom engelsk og bokmål">nb</button>
@@ -249,8 +249,8 @@ Buy my sweet ripe bananas!"
 	<div class="btn-group">
 		<a href="#text06" class="btn btn-lg" title="Gå til forrige side"><img src="/storybooks-norge/css/arrow-up.svg" alt="Gå til forrige side" width="16px"></a>
 		<a href="#text08" class="btn btn-lg" title="Gå til neste side"><img src="/storybooks-norge/css/arrow-down.svg" alt="Gå til neste side" width="16px"></a>
-		<audio id="audio07" src="http://storybookscanada.ca/audio/en/0296/mp3/07.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
+		<audio id="audio07" onended="resetbutton('07')" src="http://storybookscanada.ca/audio/en/0296/mp3/07.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','nb')" class="btn btn-lg lang-nb" title="Bytt mellom engelsk og bokmål">nb</button>
@@ -279,8 +279,8 @@ She looks at the bananas carefully.
 	<div class="btn-group">
 		<a href="#text07" class="btn btn-lg" title="Gå til forrige side"><img src="/storybooks-norge/css/arrow-up.svg" alt="Gå til forrige side" width="16px"></a>
 		<a href="#text09" class="btn btn-lg" title="Gå til neste side"><img src="/storybooks-norge/css/arrow-down.svg" alt="Gå til neste side" width="16px"></a>
-		<audio id="audio08" src="http://storybookscanada.ca/audio/en/0296/mp3/08.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
+		<audio id="audio08" onended="resetbutton('08')" src="http://storybookscanada.ca/audio/en/0296/mp3/08.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','nb')" class="btn btn-lg lang-nb" title="Bytt mellom engelsk og bokmål">nb</button>
@@ -307,8 +307,8 @@ She looks at the bananas carefully.
 	<div class="btn-group">
 		<a href="#text08" class="btn btn-lg" title="Gå til forrige side"><img src="/storybooks-norge/css/arrow-up.svg" alt="Gå til forrige side" width="16px"></a>
 		<a href="#text10" class="btn btn-lg" title="Gå til neste side"><img src="/storybooks-norge/css/arrow-down.svg" alt="Gå til neste side" width="16px"></a>
-		<audio id="audio09" src="http://storybookscanada.ca/audio/en/0296/mp3/09.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
+		<audio id="audio09" onended="resetbutton('09')" src="http://storybookscanada.ca/audio/en/0296/mp3/09.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','nb')" class="btn btn-lg lang-nb" title="Bytt mellom engelsk og bokmål">nb</button>
@@ -337,8 +337,8 @@ They buy Tom's bananas and eat them.
 	<div class="btn-group">
 		<a href="#text09" class="btn btn-lg" title="Gå til forrige side"><img src="/storybooks-norge/css/arrow-up.svg" alt="Gå til forrige side" width="16px"></a>
 		<a href="#text11" class="btn btn-lg" title="Gå til neste side"><img src="/storybooks-norge/css/arrow-down.svg" alt="Gå til neste side" width="16px"></a>
-		<audio id="audio10" src="http://storybookscanada.ca/audio/en/0296/mp3/10.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('10')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
+		<audio id="audio10" onended="resetbutton('10')" src="http://storybookscanada.ca/audio/en/0296/mp3/10.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','nb')" class="btn btn-lg lang-nb" title="Bytt mellom engelsk og bokmål">nb</button>
@@ -367,8 +367,8 @@ Tom counts the money he earned.
 	<div class="btn-group">
 		<a href="#text10" class="btn btn-lg" title="Gå til forrige side"><img src="/storybooks-norge/css/arrow-up.svg" alt="Gå til forrige side" width="16px"></a>
 		<a href="#text12" class="btn btn-lg" title="Gå til neste side"><img src="/storybooks-norge/css/arrow-down.svg" alt="Gå til neste side" width="16px"></a>
-		<audio id="audio11" src="http://storybookscanada.ca/audio/en/0296/mp3/11.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
+		<audio id="audio11" onended="resetbutton('11')" src="http://storybookscanada.ca/audio/en/0296/mp3/11.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','nb')" class="btn btn-lg lang-nb" title="Bytt mellom engelsk og bokmål">nb</button>
@@ -397,8 +397,8 @@ He puts the things in his tray.
 	<div class="btn-group">
 		<a href="#text11" class="btn btn-lg" title="Gå til forrige side"><img src="/storybooks-norge/css/arrow-up.svg" alt="Gå til forrige side" width="16px"></a>
 		<a href="#text13" class="btn btn-lg" title="Gå til neste side"><img src="/storybooks-norge/css/arrow-down.svg" alt="Gå til neste side" width="16px"></a>
-		<audio id="audio12" src="http://storybookscanada.ca/audio/en/0296/mp3/12.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
+		<audio id="audio12" onended="resetbutton('12')" src="http://storybookscanada.ca/audio/en/0296/mp3/12.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','nb')" class="btn btn-lg lang-nb" title="Bytt mellom engelsk og bokmål">nb</button>
@@ -425,8 +425,8 @@ He puts the things in his tray.
 	<div class="btn-group">
 		<a href="#text12" class="btn btn-lg" title="Gå til forrige side"><img src="/storybooks-norge/css/arrow-up.svg" alt="Gå til forrige side" width="16px"></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><img src="/storybooks-norge/css/arrow-down.svg" alt="Bidragsytere" width="16px"></a>
-		<audio id="audio13" src="http://storybookscanada.ca/audio/en/0296/mp3/13.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
+		<audio id="audio13" onended="resetbutton('13')" src="http://storybookscanada.ca/audio/en/0296/mp3/13.mp3"></audio>
+		<button id="playbutton13" class=" btn btn-lg" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><img src="/storybooks-norge/css/volume-up.svg" alt="Spill lydopptak / sett på pause" width="16px"></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','nb')" class="btn btn-lg lang-nb" title="Bytt mellom English og bokmål">nb</button>
