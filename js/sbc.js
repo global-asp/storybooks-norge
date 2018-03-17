@@ -10,13 +10,13 @@ document.addEventListener('play', function(e) {
 
 function playpause(n) {
   p = document.getElementById('audio' + n);
-  picon = document.getElementById("playbutton" + n).firstChild;
+  pbutton = document.getElementById("playbutton" + n);
   if (p.paused) {
     p.play();
-    picon.src = "/storybooks-norge/css/pause.svg";
+    pbutton.innerHTML = '<i class="icon-pause"></i>';
   } else {
     p.pause();
-    picon.src = "/storybooks-norge/css/volume-up.svg";
+    pbutton.innerHTML = '<i class="icon-volume-up"></i>';
   }
 }
 
@@ -66,8 +66,8 @@ function switchlang(d,l) {
 }
 
 function resetbutton(i) {
-  picon = document.getElementById("playbutton" + i).firstChild;
-  picon.src = "/storybooks-norge/css/volume-up.svg";
+  pbutton = document.getElementById("playbutton" + i);
+  pbutton.innerHTML = '<i class="icon-volume-up"></i>';
 }
 
 function pauseaudio() {
@@ -80,8 +80,8 @@ function autoplay() {
   var canonical = document.getElementsByTagName("link")[2].href;
   var id = canonical.replace(/.*\/(\d{4})\/.*/, "$1");
   var audio = document.getElementById("audio01");
-  var pbutton = document.getElementById("playbutton01").firstChild;
-  pbutton.src = "/storybooks-norge/css/pause.svg";
+  var pbutton = document.getElementById("playbutton01");
+  pbutton.innerHTML = '<i class="icon-pause"></i>';
   var index = 2;
   function playNext() {
     len = document.getElementsByClassName("img-responsive").length;
@@ -103,17 +103,17 @@ function autoplay() {
 
       p3 = document.getElementById("text" + p).getElementsByClassName("def")[0].firstChild;
       p3.style = "background-color:#FFFFFF; font-weight:normal; border-radius:0px; padding:0px";
-      pbutton.src = "/storybooks-norge/css/volume-up.svg";
+      pbutton.innerHTML = '<i class="icon-volume-up"></i>';
       window.location = "#text" + n;
       h3 = document.getElementById("text" + n).getElementsByClassName("def")[0].firstChild;
       h3.style = "background-color:#FFDC00; font-weight:bold; border-radius:5px; padding:5px";
-      pbutton = document.getElementById("playbutton" + n).firstChild;
-      pbutton.src = "/storybooks-norge/css/pause.svg";
+      pbutton = document.getElementById("playbutton" + n);
+      pbutton.innerHTML = '<i class="icon-pause"></i>';
       audio.load(); audio.play();
       audio.addEventListener('ended', playNext);
       index += 1;
     } else {
-      pbutton.src = "/storybooks-norge/css/volume-up.svg";
+      pbutton.innerHTML = '<i class="icon-volume-up"></i>';
       audio.removeEventListener('ended', playNext, false);
     }
   }
