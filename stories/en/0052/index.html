@@ -35,9 +35,15 @@
 		</a>
 		<div class="btn-group btn-group-block">
 			<a href="/storybooks-norge/" class="btn btn-primary">Hjem</a>
-			<a href="/storybooks-norge/about.html" class="btn btn-primary">Om oss</a>
-			<a href="/storybooks-norge/how-to.html" class="btn btn-primary">Hvordan bruke denne nettsiden</a>
-			<a href="/storybooks-norge/contact.html" class="btn btn-primary">Kontakt oss</a>
+			<div class="dropdown">
+				<a href="#" class="btn btn-primary dropdown-toggle" tabindex="0">Om oss</a>
+				<ul class="menu">
+					<li class="menu-item"><a href="/storybooks-norge/about">Om oss</a></li>
+					<li class="menu-item"><a href="/storybooks-norge/about/languages">Språk</a></li>
+				</ul>
+			</div>
+			<a href="/storybooks-norge/how-to" class="btn btn-primary">Hvordan bruke denne nettsiden</a>
+			<a href="/storybooks-norge/contact" class="btn btn-primary">Kontakt oss</a>
 		</div>
 	</section>
 </header>
@@ -80,8 +86,8 @@
 				<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
 				<button id="playbutton01" class="btn btn-lg" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/bfn/mp3/en/0052/mp3/01.mp3"></audio>
-				<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-				<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+				<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+				<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Skrevet av"><img class="cover-icon" src="/storybooks-norge/css/pencil.svg" alt="Skrevet av" width="38px"></span> Rukia Nantale</h3>
@@ -126,8 +132,8 @@ homework.
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 
@@ -162,8 +168,8 @@ smiling.
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 
@@ -199,8 +205,8 @@ mother," he said.
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 
@@ -238,8 +244,8 @@ unhappy.
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 
@@ -274,8 +280,8 @@ either.
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 
@@ -310,8 +316,8 @@ blanket.
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 
@@ -343,8 +349,8 @@ and tore in two.
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 
@@ -376,8 +382,8 @@ her father had taken.
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 
@@ -414,8 +420,8 @@ You left me."
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 
@@ -451,8 +457,8 @@ the song.
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 
@@ -488,8 +494,8 @@ comfort her.
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 
@@ -524,8 +530,8 @@ look after her.
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 
@@ -564,8 +570,8 @@ Simbegwire.
 		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 
@@ -605,8 +611,8 @@ wanted to.
 		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 
@@ -642,8 +648,8 @@ arms around Anita.
 		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 
@@ -681,8 +687,8 @@ her father and her stepmother.
 		<button id="playbutton17" class=" btn btn-lg" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,false','false,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">false</button>
-		<button onclick="switchlang('en,nn','false,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
+		<button onclick="switchlang('en,nb','nb,nn,en')" class="btn btn-lg lang-primary" title="Bytt mellom English og bokmål">nb</button>
+		<button onclick="switchlang('en,nn','nb,nn,en')" class="btn btn-lg lang-secondary" title="Bytt mellom English og nynorsk">nn</button>
 	</div>
 </div>
 

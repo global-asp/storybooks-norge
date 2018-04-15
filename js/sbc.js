@@ -52,7 +52,7 @@ function switchlang(o,c) {
       l2[i].style.display = "block";
       def[i].style.display = "none";
       if (page_lang != primary && page_lang != secondary) {
-        btn_lang1[i].innerHTML = "nb";
+        btn_lang1[i].innerHTML = primary;
         btn_lang1[i].setAttribute("onclick", "switchlang('" + page_lang + "," + primary + "','" + c + "')");
         btn_lang2[i].innerHTML = page_lang;
         btn_lang2[i].setAttribute("onclick", "switchlang('" + secondary + "," + page_lang + "','" + c + "')");
@@ -64,7 +64,7 @@ function switchlang(o,c) {
       l2[i].style.display = "none";
       def[i].style.display = "block";
       if (page_lang != primary && page_lang != secondary) {
-        btn_lang1[i].innerHTML = "nb";
+        btn_lang1[i].innerHTML = primary;
         btn_lang1[i].setAttribute("onclick", "switchlang('" + page_lang + "," + primary + "','" + c + "')");
         btn_lang2[i].innerHTML = secondary;
         btn_lang2[i].setAttribute("onclick", "switchlang('" + page_lang + "," + secondary + "','" + c + "')");
