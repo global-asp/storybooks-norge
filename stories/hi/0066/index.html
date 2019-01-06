@@ -51,7 +51,7 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/hi/hi-0066_nozibele.pdf" target="_blank">Last ned PDF</a></div> 
+        <div class="float-right"><button class="btn btn-lg" onclick="pdfdl()">Nedlastingsvalg</button></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -102,6 +102,48 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen (beta)"><img id="autoplay_icon" class="cover-icon" src="/css/play.svg" alt="Automatisk spilling av fortellingen" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
+<div class="modal" id="modal-pdf">
+  <a href="#close" class="modal-overlay" aria-label="Lukk" onclick="pdfdl()"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" class="btn btn-clear float-right" aria-label="Lukk" onclick="pdfdl()"></a>
+      <div class="modal-title h5">Nedlastingsvalg</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        <h4>Vanlige PDF-er (hel side)</h4>
+        <ul>
+          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/hi/hi-0066_nozibele.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0066_nozibele-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/hi/hi-0066_nozibele-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>Tospråklige PDF-er</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/hi-nb/0066_nozibele-bilingual_hi-nb.pdf" target="_blank">Tospråklig PDF (hindi-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/hi-nn/0066_nozibele-bilingual_hi-nn.pdf" target="_blank">Tospråklig PDF (hindi-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF uten bilder (hindi-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF uten bilder (hindi-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>PDF-hefter (for å skrive ut)</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/hi/hi-0066_nozibele-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/hi-nb/0066_nozibele-bilingual_hi-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (hindi-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/hi-nn/0066_nozibele-bilingual_hi-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (hindi-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF-hefte uten bilder (hindi-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF-hefte uten bilder (hindi-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="btn btn-primary" onclick="pdfdl()">Lukk</a>
+    </div>
+  </div>
+</div>
+
 <hr>
 
 <div id="text02" class="columns">
@@ -163,7 +205,7 @@
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	अचानक, उन्हें लगा कि बहुत देर हो चुका है। वे जल्दी में गाँव की तरफ लौटी।
+	अचानक, उन्हें लगा कि बहुत देर हो चुकी है। वे जल्दी में गाँव की तरफ लौटी।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -359,7 +401,7 @@
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	हर रोज़ वह कुत्ते के लिये खाना बनाती, झाड़ू लगती और धोती। फिर एक दिन कुत्ते ने कहा, “नोज़िबेले, आज मैं अपने कुछ दोस्तों के घर जा रहा हूँ।” मेरे आने से पहले घर को झाड़ू लगा देना, खाना बना देना और मेरे समानो को धो देना।
+	हर रोज़ वह कुत्ते के लिये खाना बनाती, झाड़ू लगती और धोती। फिर एक दिन कुत्ते ने कहा, “नोज़िबेले, आज मैं अपने कुछ दोस्तों के घर जा रहा हूँ।” मेरे आने से पहले घर को झाड़ू लगा देना, खाना बना देना और मेरे समान को धो देना।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -415,7 +457,7 @@
 <div id="text13" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	जब कुत्ता लौट, उसने नोज़िबेले को ढूढ़ा। “नोज़िबेले कहा हो तुम?” वह चिलाया। “मैं यहाँ हूँ, बिस्तर के निचे,” पहले बाल ने कहा। “मैं यहाँ हूँ, दरवाजे के पीछे,” दूसरे बाल ने बोला। “मैं यहाँ हूँ, बाड़े में,” तीसरे बाल ने कहा। 
+	जब कुत्ता लौट, उसने नोज़िबेले को ढूढ़ा। “नोज़िबेले कहा हो तुम?” वह चिल्लाया। “मैं यहाँ हूँ, बिस्तर के नीचे,” पहले बाल ने कहा। “मैं यहाँ हूँ, दरवाजे के पीछे,” दूसरे बाल ने बोला। “मैं यहाँ हूँ, बाड़े में,” तीसरे बाल ने कहा।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>

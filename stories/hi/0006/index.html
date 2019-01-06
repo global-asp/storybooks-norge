@@ -51,7 +51,7 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/hi/hi-0006_anansi.pdf" target="_blank">Last ned PDF</a></div> 
+        <div class="float-right"><button class="btn btn-lg" onclick="pdfdl()">Nedlastingsvalg</button></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -102,12 +102,54 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen (beta)"><img id="autoplay_icon" class="cover-icon" src="/css/play.svg" alt="Automatisk spilling av fortellingen" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
+<div class="modal" id="modal-pdf">
+  <a href="#close" class="modal-overlay" aria-label="Lukk" onclick="pdfdl()"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" class="btn btn-clear float-right" aria-label="Lukk" onclick="pdfdl()"></a>
+      <div class="modal-title h5">Nedlastingsvalg</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        <h4>Vanlige PDF-er (hel side)</h4>
+        <ul>
+          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/hi/hi-0006_anansi.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0006_anansi-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/hi/hi-0006_anansi-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>Tospråklige PDF-er</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/hi-nb/0006_anansi-bilingual_hi-nb.pdf" target="_blank">Tospråklig PDF (hindi-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/hi-nn/0006_anansi-bilingual_hi-nn.pdf" target="_blank">Tospråklig PDF (hindi-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF uten bilder (hindi-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF uten bilder (hindi-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>PDF-hefter (for å skrive ut)</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/hi/hi-0006_anansi-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/hi-nb/0006_anansi-bilingual_hi-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (hindi-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/hi-nn/0006_anansi-bilingual_hi-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (hindi-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF-hefte uten bilder (hindi-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF-hefte uten bilder (hindi-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="btn btn-primary" onclick="pdfdl()">Lukk</a>
+    </div>
+  </div>
+</div>
+
 <hr>
 
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	बहुत पहले लोग कुछ नही जानते थे। उन्हे नही मालूम था कि फसल कैसे उगाते है, कपड़ा कैसे बुनते है, या लोहे के औजार कैसे बनाते है। भगवान न्यामे के पास आकाश में दुनिया का सारा ज्ञान था। उन्होने उसे एक मिट्टी के बरतन में सुरश्रित रखा था।
+	बहुत पहले लोग कुछ नही जानते थे। उन्हे नही मालूम था कि फसल कैसे उगाते है, कपड़ा कैसे बुनते है, या लोहे के औजार कैसे बनाते है। भगवान न्यामे के पास आकाश में दुनिया का सारा ज्ञान था। उन्होने उसे एक मिट्टी के बरतन में सुरक्षित रखा था।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -163,7 +205,7 @@
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	लालची अनान्सी ने सोचा, “मैं बरतन को एक लम्बे पेड़ के ऊपर सुराश्रित रख दूंगा। उसने एक लम्बा धागा बुना, उसे बरतन के चारो ओर लपेट दिया और अपने पेट से बाँध दिया। उसने पेड़ पर चढ़ना शुरू किया। लेकिन पेड़ पर चढ़ना मुशकिल था क्योकी बरतन उसके घुटनो पर पूरे समय लगता रहा।
+	लालची अनान्सी ने सोचा, “मैं बरतन को एक लम्बे पेड़ के ऊपर सुरक्षित रख दूंगा। उसने एक लम्बा धागा बुना, उसे बरतन के चारो ओर लपेट दिया और अपने पेट से बाँध दिया। उसने पेड़ पर चढ़ना शुरू किया। लेकिन पेड़ पर चढ़ना मुश्किल था क्योकि बरतन उसके घुटनो पर पूरे समय लगता रहा।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -191,7 +233,7 @@
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	सारे समय अनान्सी का छोटा बेटा पेड़ के तले से देखता रहा। उसने कहा, “अगर आप बरतन को अपनी पीठ से बाँध लोगे तो चढ़ना आसान नही होगा?” अनान्सी ने ज्ञान से बरे बरतन को अपनी पीठ से बाँध कर देखा तो वो वास्तव में बहुत आसान था।
+	सारे समय अनान्सी का छोटा बेटा पेड़ के तले से देखता रहा। उसने कहा, “अगर आप बरतन को अपनी पीठ से बाँध लोगे तो चढ़ना आसान नही होगा?” अनान्सी ने ज्ञान से भरे बरतन को अपनी पीठ से बाँध कर देखा तो वो वास्तव में बहुत आसान था।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -219,7 +261,7 @@
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	बहुत जल्दी वो पेड़ के ऊपर पहूँच गया। लेकिन फिर उसने रुककर सोचा, “मेरे पास सारा ज्ञान तो मेरे पास है, और मेरा बेटा मुझसे ज़्यादा हौशियार है।” अनान्सी इतना गुस्सा हुआ कि उसने मिट्टी का बरतन पेड़ से नीचे फेंक दिया।
+	बहुत जल्दी वो पेड़ के ऊपर पहुँच गया। लेकिन फिर उसने रुककर सोचा, “मेरे पास सारा ज्ञान तो मेरे पास है, और मेरा बेटा मुझसे ज़्यादा हौशियार है।” अनान्सी इतना गुस्सा हुआ कि उसने मिट्टी का बरतन पेड़ से नीचे फेंक दिया।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -247,7 +289,7 @@
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	वो ज़मीन पर टुटकर बिखर गया। ज्ञान सबमे बाँटने के लिये आजाद हो गया। और इस तरह से लोगों ने सीखा: फसल उगाना, कपड़रा बुनना, लोहे के औजार बनाना, और बाकी सारी चिजे जो लोग करना जानते है।
+	वो ज़मीन पर टुटकर बिखर गया। ज्ञान सबमे बाँटने के लिये आजाद हो गया। और इस तरह से लोगों ने सीखा: फसल उगाना, कपड़ा बुनना, लोहे के औजार बनाना, और बाकी सारी चीजे जो लोग करना जानते है।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>

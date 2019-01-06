@@ -51,7 +51,7 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/am/am-0004_geit.pdf" target="_blank">Last ned PDF</a></div> 
+        <div class="float-right"><button class="btn btn-lg" onclick="pdfdl()">Nedlastingsvalg</button></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -102,6 +102,48 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen (beta)"><img id="autoplay_icon" class="cover-icon" src="/css/play.svg" alt="Automatisk spilling av fortellingen" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
+<div class="modal" id="modal-pdf">
+  <a href="#close" class="modal-overlay" aria-label="Lukk" onclick="pdfdl()"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" class="btn btn-clear float-right" aria-label="Lukk" onclick="pdfdl()"></a>
+      <div class="modal-title h5">Nedlastingsvalg</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        <h4>Vanlige PDF-er (hel side)</h4>
+        <ul>
+          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/am/am-0004_geit.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0004_goat-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/am/am-0004_goat-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>Tospråklige PDF-er</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/am-nb/0004_goat-bilingual_am-nb.pdf" target="_blank">Tospråklig PDF (amharisk-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/am-nn/0004_goat-bilingual_am-nn.pdf" target="_blank">Tospråklig PDF (amharisk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF uten bilder (amharisk-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF uten bilder (amharisk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>PDF-hefter (for å skrive ut)</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/am/am-0004_goat-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/am-nb/0004_goat-bilingual_am-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (amharisk-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/am-nn/0004_goat-bilingual_am-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (amharisk-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF-hefte uten bilder (amharisk-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF-hefte uten bilder (amharisk-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="btn btn-primary" onclick="pdfdl()">Lukk</a>
+    </div>
+  </div>
+</div>
+
 <hr>
 
 <div id="text02" class="columns">

@@ -51,7 +51,7 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/nb/nb-0111_flodhester.pdf" target="_blank">Last ned PDF</a></div> 
+        <div class="float-right"><button class="btn btn-lg" onclick="pdfdl()">Nedlastingsvalg</button></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -103,6 +103,48 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen (beta)"><img id="autoplay_icon" class="cover-icon" src="/css/play.svg" alt="Automatisk spilling av fortellingen" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
+<div class="modal" id="modal-pdf">
+  <a href="#close" class="modal-overlay" aria-label="Lukk" onclick="pdfdl()"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" class="btn btn-clear float-right" aria-label="Lukk" onclick="pdfdl()"></a>
+      <div class="modal-title h5">Nedlastingsvalg</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        <h4>Vanlige PDF-er (hel side)</h4>
+        <ul>
+          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/nb/nb-0111_flodhester.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0111_hippos-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/nb/nb-0111_hippos-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>Tospråklige PDF-er</h4>
+        <ul>
+          
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/nb-nn/0111_hippos-bilingual_nb-nn.pdf" target="_blank">Tospråklig PDF (bokmål-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF uten bilder (bokmål-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>PDF-hefter (for å skrive ut)</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/nb/nb-0111_hippos-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/nb-nn/0111_hippos-bilingual_nb-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (bokmål-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF-hefte uten bilder (bokmål-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="btn btn-primary" onclick="pdfdl()">Lukk</a>
+    </div>
+  </div>
+</div>
+
 <hr>
 
 <div id="text02" class="columns">
@@ -344,8 +386,8 @@
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
 		<h5>Les flere fortellinger på <a href="/stories/nb/level2">nivå 2</a>:</h5>
-			<label class="chip"><a href="/stories/nb/0337/">Voksbarna</a></label>
 			<label class="chip"><a href="/stories/nb/0095/">Zama er flink!</a></label>
+			<label class="chip"><a href="/stories/nb/0337/">Voksbarna</a></label>
 			<label class="chip"><a href="/stories/nb/0089/">Khalai snakker med plantene</a></label>
 			<label class="chip"><a href="/stories/nb/0027/">Avgjørelse</a></label>
 			<label class="chip"><a href="/stories/nb/0296/">Bananselgeren Tom</a></label>

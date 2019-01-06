@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" href="/favicon.ico?v=4">
 	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
-	<title>हनीगाइड का बदला - Barnebøker for Norge</title>
+	<title>शहदखोज का बदला - Barnebøker for Norge</title>
 	<meta name="description" content="Barnebøker for Norge er utviklet for lærere og foreldre og gjør 40 fortellinger fra African Storybook tilgjengelige på bokmål og nynorsk, samt de største innvandrings- og flyktningspråkene i Norge. Noen språk har lydinnspillinger. Denne nettressursen tilbyr gratis barnebøker online (gratis bildebøker online), gratis lydbøker for barn og PDF-filer.
 ">
 	<link rel="stylesheet" href="/css/spectre.min.css">
@@ -51,7 +51,7 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/hi/hi-0072_honningguiden.pdf" target="_blank">Last ned PDF</a></div> 
+        <div class="float-right"><button class="btn btn-lg" onclick="pdfdl()">Nedlastingsvalg</button></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -82,7 +82,7 @@
 <div class="columns" id="text01">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h1><span class="def">हनीगाइड का बदला</span>
+		<h1><span class="def">शहदखोज का बदला</span>
 			<span class="l1">Honningguidens hevn</span>
 			<span class="l2">Honningguidens hemn</span>
 			<div class="btn-group">
@@ -102,12 +102,54 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen (beta)"><img id="autoplay_icon" class="cover-icon" src="/css/play.svg" alt="Automatisk spilling av fortellingen" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
+<div class="modal" id="modal-pdf">
+  <a href="#close" class="modal-overlay" aria-label="Lukk" onclick="pdfdl()"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" class="btn btn-clear float-right" aria-label="Lukk" onclick="pdfdl()"></a>
+      <div class="modal-title h5">Nedlastingsvalg</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        <h4>Vanlige PDF-er (hel side)</h4>
+        <ul>
+          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/hi/hi-0072_honningguiden.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0072_honeyguide-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/hi/hi-0072_honeyguide-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>Tospråklige PDF-er</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/hi-nb/0072_honeyguide-bilingual_hi-nb.pdf" target="_blank">Tospråklig PDF (hindi-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/hi-nn/0072_honeyguide-bilingual_hi-nn.pdf" target="_blank">Tospråklig PDF (hindi-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF uten bilder (hindi-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF uten bilder (hindi-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>PDF-hefter (for å skrive ut)</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/hi/hi-0072_honeyguide-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/hi-nb/0072_honeyguide-bilingual_hi-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (hindi-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/hi-nn/0072_honeyguide-bilingual_hi-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (hindi-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF-hefte uten bilder (hindi-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="/downloads#pdf" target="_blank">Tospråklig PDF-hefte uten bilder (hindi-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="btn btn-primary" onclick="pdfdl()">Lukk</a>
+    </div>
+  </div>
+</div>
+
 <hr>
 
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	यह कहानी है गेड, एक हनीगाइड और एक लालची युवक गिंगइल की। एक दिन जब गिंगइल शिकार के लिए बाहर गया था तो उसने गेड की आवाज़ सुनी। गिंगइल के मन मे शहद के बारे में सोच कर पानी आ गया। वह रुक गया, उसने ध्यान से सुना और ढूंढने लगा, जबतक कि उसे वह चिड़िया अपने सर के ऊपर डालियों में बैठी नहीं दिख गया। “चीटिक, चीटिक, चीटिक,” एक से दूसरे पेड़, और अगले पेड़ पे जाते हुए चिड़िया जोर से बोला। “चीटिक, चीटिक, चीटिक,” वह रुक रुक कर बोला, यह सुनिश्चित करते हुए कि गिंगइल उसके पीछे आ रहा है।
+	यह कहानी है नगेदे, एक शहदखोज और एक लालची युवक गिंगइल की। एक दिन जब गिंगइल शिकार के लिए बाहर गया था तो उसने नगेदे की आवाज़ सुनी। गिंगइल के मन मे शहद के बारे में सोच कर पानी आ गया। वह रुक गया, उसने ध्यान से सुना और ढूंढने लगा, जबतक कि उसे वह पक्षी अपने सर के ऊपर डालियों में बैठा नहीं दिख गया। “चीटिक, चीटिक, चीटिक,” एक से दूसरे पेड़, और अगले पेड़ पर जाते हुए पक्षी जोर से बोला। “चीटिक, चीटिक, चीटिक,” वह रुक रुक कर बोला, यह सुनिश्चित करते हुए कि गिंगइल उसके पीछे आ रहा है।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -135,7 +177,7 @@
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	आधे घंटे बाद वे एक बड़े से अंजीर के पेड़ के पास पहुँचे। गेड डालियों में पागलों सा फुदकने लगा। फिर वह एक डाली पे बैठ गया और सर हिलाया, मानो वह कह रहा हो कि, “यहाँ है ये! आओ अब! इतना समय क्यों लगा रहे हो?” गिंगइल को पेड़ पर कोई भी मधुमक्खी नहीं दिखी, लेकिन उसने गेड पे भरोसा किया।
+	आधे घंटे बाद वे एक बड़े से अंजीर के पेड़ के पास पहुँचे। नगेदे डालियों में पागलों सा फुदकने लगा। फिर वह एक डाली पर बैठ गया और सर हिलाया, मानो वह कह रहा हो कि, “यहाँ है ये! आओ अब! इतना समय क्यों लगा रहे हो?” गिंगइल को पेड़ पर कोई भी मधुमक्खी नहीं दिखी, लेकिन उसने नगेदे पर भरोसा किया।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -163,7 +205,7 @@
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	इसलिए गिंगइल ने अपना शिकार का सामान पेड़ के नीचे रख दिया, और कुछ सूखी टहनियां इक्कट्ठा की और एक छोटी सी आग जलाई। जब आग अच्छे से जलने लगी, तो उसने आग में एक लंबी सूखी लकड़ी आग के बीच में डाल दी। यह लकड़ी जलते हुए बहुत सारा धुंआ करने के लिए जानी जाती है। उसने चढ़ना शुरू किया, जलती हुई लकड़ी का ठंडा सिरा अपने मुंह मे डाले हुए।
+	इसलिए गिंगइल ने अपना शिकार का सामान पेड़ के नीचे रख दिया, और कुछ सूखी टहनियां इक्कट्ठा की और एक छोटी सी आग जलाई। जब आग अच्छे से जलने लगी, तो उसने आग में एक लंबी सूखी लकड़ी आग के बीच में डाल दी। यह लकड़ी जलते हुए बहुत सारा धुंआ करने के लिए जानी जाती है। उसने चढ़ना शुरू किया, जलती हुई लकड़ी का ठंडा सिरा अपने मुँह मे डाले हुए।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -219,7 +261,7 @@
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	जब मधुमक्खियां बाहर चली गईं, गिंगइल ने अपना हाथ छत्ते में डाला। उसने हाथ भर भर कर छत्ता निकाला, जिसमे से अच्छा शहद बह रहा था, और अविकसित मधुमक्खी के अंडे भी थे। उसने छत्ते को ध्यान से अपने कंधे पे टंगी थैली में डाला, और नीचे उतरना शुरू किया।
+	जब मधुमक्खियां बाहर चली गईं, गिंगइल ने अपना हाथ छत्ते में डाला। उसने हाथ भर भर कर छत्ता निकाला, जिसमे से अच्छा शहद बह रहा था, और अविकसित मधुमक्खी के अंडे भी थे। उसने छत्ते को ध्यान से अपने कंधे पर टंगी थैली में डाला, और नीचे उतरना शुरू किया।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -247,7 +289,7 @@
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	गिंगइल जो भी कर रहा था, गेड बहुत उत्सुकता से वह सब कुछ देख रहा था। वह उसका इंतज़ार कर रहा था कि वह शहद के छत्ते का एक मोटा भाग उसके लिए छोड़ देगा, हनीगाइड को धन्यवाद के रूप में। गेड डाल- डाल पे झूल रहा था, जमीन के पास, और पास। आख़िरकार गिंगइल पेड़ के नीचे पहुँच गया। गेड लड़के के पास एक पत्थर पे बैठ गया और अपने ईनाम का इंतजार करने लगा।
+	गिंगइल जो भी कर रहा था, नगेदे बहुत उत्सुकता से वह सब कुछ देख रहा था। वह उसका इंतज़ार कर रहा था कि वह शहद के छत्ते का एक मोटा भाग उसके लिए छोड़ देगा, शहदखोज को धन्यवाद के रूप में। नगेदे डाल- डाल पर झूल रहा था, जमीन के पास, और पास। आख़िरकार गिंगइल पेड़ के नीचे पहुँच गया। नगेदे लड़के के पास एक पत्थर पर बैठ गया और अपने ईनाम का इंतजार करने लगा।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -275,7 +317,7 @@
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	लेकिन, गिंगइल ने आग बुझाई, अपना शिकार का सामान उठाया और घर की तरफ चलने लगा, चिड़िया को नज़रअंदाज़ कर के। गेड गुस्से से चिल्लाया, “विक-टर, विक-टर!” गिंगइल रुका, उसने चिड़िया को घूरा और जोर से हँसा। “तुम्हें थोड़ा शहद चाहिए, चाहिए, मेरे दोस्त? हा! लेकिन सारा काम मैंने किया, और सारे डंक भी खाए। मुझे इस शहद अच्छे शहद को तुम्हारे साथ क्यों बाँटना चाहिए?” फिर वो चला गया। गेड बहुत गुस्से में था! यह कोई तरीका नहीं था उससे व्यवहार करने का! लेकिन वो अपना बदला लेगा।
+	लेकिन, गिंगइल ने आग बुझाई, अपना शिकार का सामान उठाया और घर की तरफ चलने लगा, पक्षी को नज़रअंदाज़ कर के। नगेदे गुस्से से चिल्लाया, “जय, जय!” गिंगइल रुका, उसने पक्षी को घूरा और जोर से हँसा। “तुम्हें थोड़ा शहद चाहिए, चाहिए, मेरे दोस्त? हा! लेकिन सारा काम मैंने किया, और सारे डंक भी खाए। मुझे इस शहद अच्छे शहद को तुम्हारे साथ क्यों बाँटना चाहिए?” फिर वो चला गया। नगेदे बहुत गुस्से में था! यह कोई तरीका नहीं था उससे व्यवहार करने का! लेकिन वो अपना बदला लेगा।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -303,7 +345,7 @@
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	एक दिन कई हफ़्तों बाद गिंगइल ने फिर गेड की शहद वाली आवाज़ सुनी। उसे स्वादिष्ट शहद याद आया और उसने फिर से चिड़िया का पीछा किया। गिंगइल को जंगल के छोर पर जाकर, गेड एक बड़े से बबूल के पेड़ पर आराम करने के लिए रुका। “आह,” गिंगइल ने सोचा। “छत्ता जरूर इसी पेड़ में है।” उसने जल्दी से छोटी सी आग जलाई और चढ़ना शुरू किया, उसके मुँह में जलती हुई लकड़ी थी। गेड बैठा और सब देखा।
+	एक दिन कई हफ़्तों बाद गिंगइल ने फिर नगेदे की शहद वाली आवाज़ सुनी। उसे स्वादिष्ट शहद याद आया और उसने फिर से पक्षी का पीछा किया। गिंगइल को जंगल के छोर पर जाकर, नगेदे एक बड़े से बबूल के पेड़ पर आराम करने के लिए रुका। “आह,” गिंगइल ने सोचा। “छत्ता जरूर इसी पेड़ में है।” उसने जल्दी से छोटी सी आग जलाई और चढ़ना शुरू किया, उसके मुँह में जलती हुई लकड़ी थी। नगेदे बैठा और सब देखा।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -331,7 +373,7 @@
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	गिंगइल चढ़ा, ये सोचते हुए कि उसे सामान्यतया सुनाई देने वाली भनभनाहट क्यों नहीं सुनाई दी। “शायद छत्ता पेड़ में गहराई पे है,” उसने मन में सोचा। वो दूसरी डाली की तरफ बढ़ा। लेकिन छत्ते की जगह, उसने उसने खुद को एक तेंदुए के चेहरे को घूरता पाया! तेंदुआ अपनी नींद बुरी तरह टूटने से बहुत गुस्से में थी। उसने अपनी आँखें छोटी की, अपना मुँह खोला अपने बहुत बड़े और पैने दांत दिखाने के लिए।
+	गिंगइल चढ़ा, ये सोचते हुए कि उसे सामान्यत: सुनाई देने वाली भनभनाहट क्यों नहीं सुनाई दी। “शायद छत्ता पेड़ में गहराई पर है,” उसने मन में सोचा। वो दूसरी डाली की तरफ बढ़ा। लेकिन छत्ते की जगह, उसने उसने खुद को एक तेंदुए के चेहरे को घूरता पाया! तेंदुआ अपनी नींद बुरी तरह टूटने से बहुत गुस्से में थी। उसने अपनी आँखें छोटी की, अपना मुँह खोला अपने बहुत बड़े और पैने दांत दिखाने के लिए।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -359,7 +401,7 @@
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	इससे पहले कि तेंदुआ गिंगइल पे छलांग लगाता, वो हड़बड़ा कर पेड़ से नीचे आने लगा। जल्दबाज़ी में उस से एक डाल छूट गयी, वो बहुत जोर से जमीन पे गिरा, और उसका टखना मुड़ गया। वो लंगड़ाते हुए जितनी तेज भाग सकता था, भागा। उसकी खुशकिस्मत से, उसे पकड़ पाने के लिए, तेंदुआ अभी भी काफी नींद में थी। गेड, शहद का रास्ता दिखाने वाली चिड़िया ने अपना बदला ले लिया था। और गिंगइल ने अपनी सीख ले ली।
+	इससे पहले कि तेंदुआ गिंगइल पर छलांग लगाता, वो हड़बड़ा कर पेड़ से नीचे आने लगा। जल्दबाज़ी में उस से एक डाल छूट गयी, वो बहुत जोर से जमीन पर गिरा, और उसका टखना मुड़ गया। वो लंगड़ाते हुए जितनी तेज भाग सकता था, भागा। उसकी खुशकिस्मत से, उसे पकड़ पाने के लिए, तेंदुआ अभी भी काफी नींद में थी। नगेदे, शहद का रास्ता दिखाने वाले पक्षी ने अपना बदला ले लिया था। और गिंगइल ने अपनी सीख ले ली।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -387,7 +429,7 @@
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	और इसलिए, जब गिंगइल के बच्चों ने गेड की कहानी सुनी, उनके मन में इस छोटी चिड़िया के लिए सम्मान था। जब भी वो शहद लेते थे, इस बात का ध्यान रखते थे कि वो छत्ते का सबसे बड़ा हिस्सा हनीगाइड के लिए रखें!
+	और इसलिए, जब गिंगइल के बच्चों ने नगेदे की कहानी सुनी, उनके मन में इस छोटे पक्षी के लिए सम्मान था। जब भी वो शहद लेते थे, इस बात का ध्यान रखते थे कि वो छत्ते का सबसे बड़ा हिस्सा शहदखोज के लिए रखें!
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
