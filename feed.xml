@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Barnebøker for Norge</title>
-    <description>Barnebøker for Norge er utviklet for lærere og foreldre og gjør 40 fortellinger fra African Storybook tilgjengelige på bokmål og nynorsk, samt de største innvandrings- og flyktningspråkene i Norge. Noen språk har lydinnspillinger. Denne nettressursen tilbyr gratis barnebøker online (gratis bildebøker online), gratis lydbøker for barn og PDF-filer.
+    <description>Barnebøker for Norge er utviklet for barn, lærere og foreldre og gjør 40 fortellinger fra African Storybook tilgjengelige på bokmål og nynorsk, samt de største innvandrings- og flyktningspråkene i Norge. Noen språk har lydinnspillinger. Denne nettressursen tilbyr gratis barnebøker online (gratis bildebøker online), gratis lydbøker for barn og PDF-filer.
 </description>
     <link>https://barneboker.no//</link>
     <atom:link href="https://barneboker.no//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Sep 2019 16:52:10 -0700</pubDate>
-    <lastBuildDate>Sun, 29 Sep 2019 16:52:10 -0700</lastBuildDate>
+    <pubDate>Sat, 05 Oct 2019 11:21:10 -0700</pubDate>
+    <lastBuildDate>Sat, 05 Oct 2019 11:21:10 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
   </channel>
