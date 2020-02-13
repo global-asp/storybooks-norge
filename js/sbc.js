@@ -90,6 +90,7 @@ function autoplay() {
   var audio = document.getElementById("audio01");
   var pbutton = document.getElementById("playbutton01");
   pbutton.innerHTML = '<i class="icon-pause"></i>';
+  window.location = "#text01";
   var index = 2;
   function playNext() {
     len = document.getElementsByClassName("img-responsive").length;
@@ -117,7 +118,8 @@ function autoplay() {
       h3.style = "background-color:#FFDC00; font-weight:bold; border-radius:5px; padding:5px";
       pbutton = document.getElementById("playbutton" + n);
       pbutton.innerHTML = '<i class="icon-pause"></i>';
-      audio.load(); audio.play();
+      var slider = document.getElementById('audio_slider');
+      audio.load(); audio.playbackRate = slider.value; audio.play();
       audio.addEventListener('ended', playNext);
       index += 1;
     } else {
@@ -134,4 +136,29 @@ function autoplay() {
 function pdfdl() {
   m = window['modal-pdf'];
   m.className == "modal" ? m.className += " active" : m.className = "modal";
+}
+
+function adjustslider() {
+  tooltip = window.slider_tooltip;
+  slider = document.getElementById('audio_slider');
+
+  var audios = document.getElementsByTagName('audio');
+  for (var i = 0, len = audios.length; i < len; i++) {
+    audios[i].playbackRate = slider.value;
+  }
+
+  tooltip.setAttribute('data-tooltip', 'Lesehastighet: ' + slider.value + 'x');
+}
+
+function normalspeed() {
+  tooltip = window.slider_tooltip;
+  slider = document.getElementById('audio_slider');
+
+  var audios = document.getElementsByTagName('audio');
+  for (var i = 0, len = audios.length; i < len; i++) {
+    audios[i].playbackRate = 1;
+  }
+
+  slider.value = 1;
+  tooltip.setAttribute('data-tooltip', 'Lesehastighet: 1x');
 }
