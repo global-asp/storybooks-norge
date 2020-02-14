@@ -147,7 +147,7 @@ function adjustslider() {
     audios[i].playbackRate = slider.value;
   }
 
-  tooltip.setAttribute('data-tooltip', 'Lesehastighet: ' + slider.value + 'x');
+  tooltip.setAttribute('data-tooltip', 'Lesehastighet: ' + slider.value + '×');
 }
 
 function normalspeed() {
@@ -160,5 +160,5 @@ function normalspeed() {
   }
 
   slider.value = 1;
-  tooltip.setAttribute('data-tooltip', 'Lesehastighet: 1x');
+  tooltip.setAttribute('data-tooltip', 'Lesehastighet: 1×');
 }
