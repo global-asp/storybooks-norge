@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://barneboker.no//stories/sv/0072/">
 	<link rel="alternate" type="application/rss+xml" title="Barnebøker for Norge" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -89,7 +87,7 @@
         <a class="btn btn-lg" href="/stories/sv">Tilbake til fortellingene</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Honungsguidens hämnd</span>
 			<span class="l1">Honningguidens hevn</span>
@@ -97,7 +95,7 @@
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button id="playbutton01" class="btn btn-lg disabled" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 			<button onclick="switchlang('sv,nb','nb,nn,sv')" class="btn btn-lg lang-primary" title="Bytt mellom svensk og bokmål">nb</button>
 			<button onclick="switchlang('sv,nn','nb,nn,sv')" class="btn btn-lg lang-secondary" title="Bytt mellom svensk og nynorsk">nn</button>
 		</div>
@@ -106,7 +104,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Oversatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Oversatt av"></span> Lena Normén-Younger</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/sv">svensk</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/sv/level4">Nivå 4</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+
 	</div>
 </div>
 <div class="modal" id="modal-pdf">
@@ -120,28 +119,28 @@
       <div class="content">
         <h4>Vanlige PDF-er (hel side)</h4>
         <ul>
-          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/sv/sv-0072_honningguiden.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0072_honningguiden-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/sv/sv-0072_honningguiden-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+          <li><strong><a href="https://bfn.berattelser.se/pdf/sv/sv-0072_honeyguide.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless/0072_honeyguide-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless/sv/sv-0072_honeyguide-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
         </ul>
 
         <h4>Tospråklige PDF-er</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/sv-nb/0072_honningguiden-bilingual_sv-nb.pdf" target="_blank">Tospråklig PDF (svensk-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/sv-nn/0072_honningguiden-bilingual_sv-nn.pdf" target="_blank">Tospråklig PDF (svensk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_sv-nb.zip" target="_blank">Tospråklig PDF uten bilder (svensk-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_sv-nn.zip" target="_blank">Tospråklig PDF uten bilder (svensk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/sv-nb/0072_honeyguide-bilingual_sv-nb.pdf" target="_blank">Tospråklig PDF (svensk-bokmål, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/sv-nn/0072_honeyguide-bilingual_sv-nn.pdf" target="_blank">Tospråklig PDF (svensk-nynorsk, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/sv-nb/0072_honeyguide-imageless-bilingual_sv-nb.pdf" target="_blank">Tospråklig PDF uten bilder (svensk-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/sv-nn/0072_honeyguide-imageless-bilingual_sv-nn.pdf" target="_blank">Tospråklig PDF uten bilder (svensk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
 
         <h4>PDF-hefter (for å skrive ut)</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/sv/sv-0072_honningguiden-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/sv-nb/0072_honningguiden-bilingual_sv-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (svensk-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/sv-nn/0072_honningguiden-bilingual_sv-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (svensk-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/wordless-booklet.zip" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-booklet_sv.zip" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_sv-nb.zip" target="_blank">Tospråklig PDF-hefte uten bilder (svensk-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_sv-nn.zip" target="_blank">Tospråklig PDF-hefte uten bilder (svensk-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/booklet/sv/sv-0072_honeyguide-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/sv-nb/0072_honeyguide-bilingual_sv-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (svensk-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/sv-nn/0072_honeyguide-bilingual_sv-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (svensk-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless-booklet/0072_honeyguide-wordless-booklet.pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-booklet/sv/sv-0072_honeyguide-imageless-booklet.pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/sv-nb/0072_honeyguide-imageless-bilingual_sv-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (svensk-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/sv-nn/0072_honeyguide-imageless-bilingual_sv-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (svensk-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
       </div>
     </div>
@@ -153,10 +152,10 @@
 
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	Det här är historien om Ngede, honungsguiden, och en girig ung man som hette Gingile. En dag medan Gingile var ute och jagade hörde han Ngedes rop. Det började vattnas i Gingiles mun när han tänkte på honung. Han stannade och lyssnade noga och sökte tills han såg fågeln högt bland grenarna ovanför honom. ”Schitik-schitik-schitik”, kvittrade den lilla fågeln medan han flög till nästa träd, och sedan nästa igen. ”Schitik-schitik-schitik”, ropade han, medan han stannade upp då och då, för att vara säker på att Gingile följde efter honom.
+	Det här är historien om Ngede, honungsguiden, och en girig ung man som hette Gingile. En dag medan Gingile var ute och jagade hörde han Ngedes läte. Det började vattnas i Gingiles mun när han tänkte på honung. Han stannade och lyssnade noga och sökte tills han såg fågeln högt bland grenarna ovanför honom. ”Schitik-schitik-schitik”, kvittrade den lilla fågeln medan han flög till nästa träd och sedan nästa igen. ”Schitik-schitik-schitik”, ropade han, medan han stannade upp då och då, för att vara säker på att Gingile följde efter honom.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -181,9 +180,9 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	Efter en halvtimme kom de fram till ett stort vildväxande fikonträd. Ngede hoppade exalterat runt bland grenarna. Han satte sig sedan på en gren och lade huvudet på sned som för att säga: ”Här är det! Varför tar det så lång tid för dig att komma hit?” Gingile kunde inte se några bin under trädet men han litade på Ngede.
+	Efter en halvtimme kom de fram till ett stort vilt fikonträd. Ngede hoppade exalterat runt bland grenarna. Han satte sig sedan på en gren och lade huvudet på sned som för att säga: ”Här är det! Varför tar det så lång tid för dig att komma hit?” Gingile kunde inte se några bin under trädet men han litade på Ngede.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -208,7 +207,7 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	Så Gingile lade ner sitt jaktspjut under trädet, samlade ihop några torra kvistar och gjorde en liten brasa. När elden brann väl stack han en lång pinne i mitten av brasan. Den här typen av ved var speciellt känd för att skapa mycket rök medan den brann. Han började klättra samtidigt som han höll den kalla änden av pinnen mellan sina tänder.
 	</h3></div>
@@ -235,9 +234,9 @@
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	Snart kunde han höra högljudda surrandet av arbetande bin. De flög in och ut ur en ihålighet i trädstammen. När Gingile kom fram till binas bo stack han in den rykande änden av pinnen i hålet. Bina kom flygande ut, arga och elaka. De flög iväg eftersom de inte gillar rök, men inte förrän de hade givit Gingile några smärtsamma stick!
+	Snart kunde han höra det högljudda surrandet av arbetande bin. De flög in och ut ur en hålighet i trädstammen. När Gingile kom fram till binas bo stack han in den rykande änden av pinnen i hålet. Bina kom snabbt flygande ut, arga och elaka. De flög iväg eftersom de inte gillar rök, men inte förrän de hade givit Gingile några smärtsamma stick!
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -262,9 +261,9 @@
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	När bina var borta sträckte Gingile in sina händer i boet. Han tog ut fulla nävar av tung honungskaka, som droppade av rik honung och som var full av feta, vita larver. Han lade ner honungskakan sin säck som han bar över axeln och började att klättra ner för trädet.
+	När bina var borta tryckte Gingile in sina händer i boet. Han tog ut fulla nävar av tung honungskaka, som droppade av rik honung och som var full av feta, vita larver. Han lade ner honungskakan i sin säck som han bar över axeln och började att klättra ner för trädet.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -289,7 +288,7 @@
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	Ngede tittade på allt som Gingile gjorde. Han förväntade sig att Gingile skulle ge honom en stor bit med honungskaka som tack till honungsguiden. Ngede flög från gren till gren, närmare och närmare marken. Till slut kom Gingile ner på marken. Ngede satte sig på en sten nära pojken och väntade på sin belöning.
 	</h3></div>
@@ -316,9 +315,9 @@
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	Men Gingile släckte elden och började gå hemåt samtidigt som han ignorerade fågeln. Ngede ropade argt ut: ”SEG-err! SEG-err!” Gingile stannade, stirrade på den lilla fågeln och började skratta högt. ”Vill du kanske ha lite honung, min vän? Ha, men jag gjorde allt arbete och fick ta emot alla sticken. Varför skulle jag dela med mig överhuvudtaget av den här underbara honungen?” Därefter gick han iväg. Ngede var rasande! Detta var inget bra sätt att behandla honom på! Men han skulle nog få sin hämnd.
+	Men Gingile släckte elden och började gå hemåt samtidigt som han ignorerade fågeln. Ngede ropade argt ut: ”SEG-err! SEG-err!” Gingile stannade, stirrade på den lilla fågeln och började skratta högt. ”Vill du kanske ha lite honung, min vän? Ha, men jag gjorde allt arbete och fick ta emot alla sticken. Varför skulle jag dela något av den här underbara honungen med dig?” Därefter gick han sin väg. Ngede var rasande! Detta var inte rätt sätt att behandla honom på! Men han skulle nog få sin hämnd.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -343,9 +342,9 @@
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	En dag, flera veckor senare, hörde Gingile honungsropet från Ngede igen. Han kom ihåg den utsökta honungen och började ännu en gång följa fågeln. Efter att ha lett Gingile till kanten av skogen stannade Ngede för att vila i ett stort acaciaträd. Ah, tänkte Gingile. Bina måste vara i det här trädet. Han tände snabbt en eld och började klättra upp med en rykande pinne mellan tänderna. Ngede satt och tittade.
+	En dag, flera veckor senare, hörde Gingile honungsropet från Ngede igen. Han kom ihåg den utsökta honungen och började ivrigt följa efter fågeln igen. Efter att ha lett Gingile längs kanten av skogen stannade Ngede för att vila i ett stort akacia-träd. Ah, tänkte Gingile. Bina måste vara i det här trädet. Han tände snabbt en eld och började klättra upp med en rykande pinne mellan tänderna. Ngede satt och tittade.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -370,9 +369,9 @@
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/10.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	Gingile klättrade men undrade varför han inte hörde det sedvanliga surrandet. Kanske bina finns djupt inne i trädet, tänkte han för sig själv. Han drog sig upp till en annan gren. Men istället för ett bo med bin stirrade han rakt in i ögonen på en leopard! Leoparden blev så arg över att ha fått sin sömn avbruten på ett så otrevligt sätt. Hennes ögon smalnade och hon öppnade sitt gap för att visa sina stora och mycket skarpa tänder.
+	Gingile klättrade men undrade varför han inte hörde det sedvanliga surrandet. Kanske bina finns djupt inne i trädet, tänkte han för sig själv. Han drog sig upp till en annan gren. Men istället för ett bo med bin stirrade han rakt in i ögonen på en leopard! Leoparden blev mycket arg över att ha fått sin sömn avbruten på ett så oartigt sätt. Hennes ögon smalnade och hon öppnade sitt gap för att visa sina mycket stora och mycket skarpa tänder.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -397,9 +396,9 @@
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/11.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	Innan leoparden kunde svinga sin tass mot Gingile klättrade han snabbt ner från trädet. I brådskan missade han en gren, landade med ett stort brak på marken och stukade sin fot. Han haltade iväg så fort kan kunde. Som tur var för honom var leoparden fortfarande för sömnig för att jaga honom. Honungsguiden hade fått sin hämnd. Och Gingile hade fått sig en läxa.
+	Innan leoparden kunde svinga sina klor mot Gingile klättrade han snabbt ner från trädet. I brådskan missade han en gren, landade med ett stort brak på marken och stukade sin fot. Han haltade iväg så fort han kunde. Som tur var för honom var leoparden fortfarande för sömnig för att jaga honom. Honungsguiden hade fått sin hämnd. Och Gingile hade fått sig en läxa.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
@@ -424,7 +423,7 @@
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/12.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	Och på det sättet kom det sig att Gingiles barn känner stor respekt för den lilla fågeln Ngede när de hör historien om honom. När de skördar honung lämnar de numera alltid den största kakan till honungsguiden!
 	</h3></div>
@@ -439,7 +438,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<button id="playbutton12" class="btn btn-lg disabled" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton12" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('sv,nb','nb,nn,sv')" class="btn btn-lg lang-primary" title="Bytt mellom svensk og bokmål">nb</button>
@@ -450,14 +449,15 @@
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skrevet av: Zulu folktale</h5>
-		<h5>Illustrert av: Wiehan de Jager</h5>
-		<h5>Oversatt av: Lena Normén-Younger</h5>
-		<h5>Språk: <a href="/stories/sv">svensk</a></h5>
-		<h5><a href="/stories/sv/level4">Nivå 4</a></h5>
-		<h5>Kilde: <a href="https://africanstorybook.org/reader.php?id=2099" target="_blank">The Honeyguide's revenge</a> fra <a href="https://africanstorybook.org/" target="_blank">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skrevet av:</span> Zulu folktale</h5>
+		<h5><span class="colophon-heading">Illustrert av:</span> Wiehan de Jager</h5>
+		<h5><span class="colophon-heading">Oversatt av:</span> Lena Normén-Younger</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/sv">svensk</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/sv/level4">Nivå 4</a></h5>
+		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=2099" target="_blank">The Honeyguide's revenge</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank"><img alt="Creative Commons Lisens" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />Dette verket er lisensiert under en <a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank">Creative Commons Navngivelse 3.0 International Lisens</a>.</div>
 
@@ -471,10 +471,9 @@
 </div>
 <div>
 <h5>Valgmuligheter</h5>
-	<a class="btn btn-lg" href="/stories/sv">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/sv/sv-0072_honningguiden.pdf" target="_blank">Last ned PDF</a>
+	<a class="btn btn-lg" href="/stories/sv" class="button">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://bfn.berattelser.se/pdf/sv/sv-0072_honningguiden.pdf" target="_blank">Last ned PDF</a>
 <br><br>
 </div>
-
 
 
     </div>

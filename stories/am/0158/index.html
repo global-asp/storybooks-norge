@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://barneboker.no//stories/am/0158/">
 	<link rel="alternate" type="application/rss+xml" title="Barnebøker for Norge" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -89,7 +87,7 @@
         <a class="btn btn-lg" href="/stories/am">Tilbake til fortellingene</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0158/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">ዶሮና ንስር</span>
 			<span class="l1">Høne og Ørn</span>
@@ -97,7 +95,7 @@
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button id="playbutton01" class="btn btn-lg disabled" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 			<button onclick="switchlang('am,nb','nb,nn,am')" class="btn btn-lg lang-primary" title="Bytt mellom amharisk og bokmål">nb</button>
 			<button onclick="switchlang('am,nn','nb,nn,am')" class="btn btn-lg lang-secondary" title="Bytt mellom amharisk og nynorsk">nn</button>
 		</div>
@@ -106,7 +104,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Oversatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Oversatt av"></span> Dawit Girma</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/am">amharisk</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/am/level3">Nivå 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+
 	</div>
 </div>
 <div class="modal" id="modal-pdf">
@@ -120,28 +119,28 @@
       <div class="content">
         <h4>Vanlige PDF-er (hel side)</h4>
         <ul>
-          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/am/am-0158_høne.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0158_høne-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/am/am-0158_høne-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+          <li><strong><a href="https://bfn.berattelser.se/pdf/am/am-0158_hen.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless/0158_hen-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless/am/am-0158_hen-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
         </ul>
 
         <h4>Tospråklige PDF-er</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/am-nb/0158_høne-bilingual_am-nb.pdf" target="_blank">Tospråklig PDF (amharisk-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/am-nn/0158_høne-bilingual_am-nn.pdf" target="_blank">Tospråklig PDF (amharisk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_am-nb.zip" target="_blank">Tospråklig PDF uten bilder (amharisk-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_am-nn.zip" target="_blank">Tospråklig PDF uten bilder (amharisk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/am-nb/0158_hen-bilingual_am-nb.pdf" target="_blank">Tospråklig PDF (amharisk-bokmål, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/am-nn/0158_hen-bilingual_am-nn.pdf" target="_blank">Tospråklig PDF (amharisk-nynorsk, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/am-nb/0158_hen-imageless-bilingual_am-nb.pdf" target="_blank">Tospråklig PDF uten bilder (amharisk-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/am-nn/0158_hen-imageless-bilingual_am-nn.pdf" target="_blank">Tospråklig PDF uten bilder (amharisk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
 
         <h4>PDF-hefter (for å skrive ut)</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/am/am-0158_høne-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/am-nb/0158_høne-bilingual_am-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (amharisk-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/am-nn/0158_høne-bilingual_am-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (amharisk-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/wordless-booklet.zip" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-booklet_am.zip" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_am-nb.zip" target="_blank">Tospråklig PDF-hefte uten bilder (amharisk-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_am-nn.zip" target="_blank">Tospråklig PDF-hefte uten bilder (amharisk-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/booklet/am/am-0158_hen-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/am-nb/0158_hen-bilingual_am-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (amharisk-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/am-nn/0158_hen-bilingual_am-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (amharisk-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless-booklet/0158_hen-wordless-booklet.pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-booklet/am/am-0158_hen-imageless-booklet.pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/am-nb/0158_hen-imageless-bilingual_am-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (amharisk-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/am-nn/0158_hen-imageless-bilingual_am-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (amharisk-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
       </div>
     </div>
@@ -153,8 +152,8 @@
 
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0158/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
 	በድሮ ጊዜ ዶሮና ንስር ጓደኛሞች ነበሩ። ከሌሎች የወፎች ዘር ጋርም በሰላም ይኖሩ ነበር። አንዳቸውም መብረር አይችሉም ነበር።
 	</h3></div>
@@ -181,7 +180,7 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0158/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
 	አንድ ወቅት፣ በምድር ሁሉ ላይ ረሃብ ተከሰተ። ንስር በጣም ራቅ ያለ ቦታ ሄዳ ምግብ መፈለግ ነበረባት። ከዚያም በጣም ደክሟት ተመለሰች። ‹‹ለመጓዝ በጣም ቀላል ዘዴ መኖር ነበረበት›› አለች ንስር።
 	</h3></div>
@@ -208,7 +207,7 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0158/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
 	ሌሊቱን ጣፋጭ እንቅልፍ ካሳለፈች በኋላ ዶሮ ግሩም ሃሳብ መጣላት። ከሌሎች ወፎች የወዳደቀ ላባ ሁሉ መልቀም ያዘች። ‹‹በሉ ከእኛ ላባ ላይ አነዚህን አብረን እናያይዛቸው›› አለች። ‹‹ምናልባት ይሄ ለመጓዝ ቀላል ያደርግልን ይሆናል››
 	</h3></div>
@@ -235,7 +234,7 @@
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0158/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
 	ንስር በሰፈሩ መርፌ ያላት ብቸኛዋ ነበረች። ስለዚህ መጀመሪያ መስፋት ጀመረች። ለራሷ የሚያምር ጥንድ ክንፍ ሰራችና ከዶሮ በላይ መብረር ጀመረች። ዶሮ መርፌ ተዋሰች። ስትሰፋ ግን ወዲያውኑ ደከማት። መርፌውን መሳቢያ ውስጥ አስቀምጣ ለልጆቿ ምግብ ለማብሰል ወደ ማድቤት ገባች።
 	</h3></div>
@@ -262,7 +261,7 @@
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0158/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
 	ሌሎቹ ወፎች ንስርን ርቃ ስትበር ተመልክተዋታል። ከዚያም ዶሮን ለራሳቸውም ክንፍ ለመስራት እንዲችሉ መርፌውን ታውሳቸው ዘንድ ጠየቋት። ወዲያው ወፎች በሰማዩ ላይ ከፍ ብለው ይበሩ ጀመር።
 	</h3></div>
@@ -289,7 +288,7 @@
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0158/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
 	የመጨረሻዋ ወፍ የተዋሰችውን መርፌ ስትመልስ ዶሮ በቦታው አልነበረችም። በመሆኑም ልጆቿ መርፌውን ይዘው ይጫወቱበት ጀመር። ተጫውተው ሲደክማቸው፣ መርፌውን አሸዋ ውስጥ ተውት።
 	</h3></div>
@@ -316,7 +315,7 @@
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0158/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
 	ወደማታ ግድም ንስር ተመለሰች። በጉዞ ወቅት የላሉ አንዳንድ ላባዎችን ለመጠገን ፈልጋ መርፌውን ጠየቀች። ዶሮ መሳቢያው ስውጥ ተመለከተች፣ ማዕድ ቤት ፈለገች፣ በግቢው ውስጥም አየች። ነገር ግን መርፌው የትም መገኘት አልተቻለም።
 	</h3></div>
@@ -343,7 +342,7 @@
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0158/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
 	‹‹አንድ ቀን ብቻ ስጪኝ›› ብላ ዶሮ ንስርን ተለማመጠቻት። ‹‹ከዚያ ክንፍሽን ጠግነሽ ዳግም ምግብ ፍለጋ መብረር ትችያለሽ።›› ‹‹አንድ ተጨማሪ ቀን ብቻ›› አለች ንስር። ‹‹መርፌውን ማግኘት ባትችዪ ግን ከጫጩቶችሽ አንዷን እንደክፍያ ትሰጭኛለሽ።›› አለቻት።
 	</h3></div>
@@ -370,7 +369,7 @@
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/10.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0158/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
 	ንስር በቀጣይ ቀን ስትመጣ ዶሮ አሸዋውን እየጫረች አገኘቻት፤ ግን መርፌ የሚባል የለም። ከዚያ ንስር ዝቅ ብላ በፍጥነት በመብረር ከዶሮዋ ጫጩቶች አንዷን ቀለበቻት። ይዛትም ርቃ በረረች። ከዚያን ጊዜ ጀምሮ፣ ንስር ብቅ ባለች ቁጥር ዶሮ መርፌውን ፍለጋ አሸዋውን ስትጭር ታገኛታለች።
 	</h3></div>
@@ -397,7 +396,7 @@
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/11.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0158/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
 	የንስር ክንፍ ጥላ መሬቱ ላይ ባረፈ ጊዜ ዶሮ ጫጩቶቿን ታስጠነቅቃለች። ‹‹ግልጽ ቦታ ላይ አትሁኑ፣ ጥፉ አምልጡ!›› ጫጩቶቹም እንዲህ ይላሉ፦ ‹‹ሞኞች አይደለንም፣ እንሮጣለን።››
 	</h3></div>
@@ -412,7 +411,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<button id="playbutton11" class="btn btn-lg disabled" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton11" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('am,nb','nb,nn,am')" class="btn btn-lg lang-primary" title="Bytt mellom amharisk og bokmål">nb</button>
@@ -423,14 +422,15 @@
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skrevet av: Ann Nduku</h5>
-		<h5>Illustrert av: Wiehan de Jager</h5>
-		<h5>Oversatt av: Dawit Girma</h5>
-		<h5>Språk: <a href="/stories/am">amharisk</a></h5>
-		<h5><a href="/stories/am/level3">Nivå 3</a></h5>
-		<h5>Kilde: <a href="https://africanstorybook.org/reader.php?id=2084" target="_blank">Hen and Eagle</a> fra <a href="https://africanstorybook.org/" target="_blank">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skrevet av:</span> Ann Nduku</h5>
+		<h5><span class="colophon-heading">Illustrert av:</span> Wiehan de Jager</h5>
+		<h5><span class="colophon-heading">Oversatt av:</span> Dawit Girma</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/am">amharisk</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/am/level3">Nivå 3</a></h5>
+		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=2084" target="_blank">Hen and Eagle</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank"><img alt="Creative Commons Lisens" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />Dette verket er lisensiert under en <a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank">Creative Commons Navngivelse 3.0 International Lisens</a>.</div>
 
@@ -448,10 +448,9 @@
 </div>
 <div>
 <h5>Valgmuligheter</h5>
-	<a class="btn btn-lg" href="/stories/am">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/am/am-0158_høne.pdf" target="_blank">Last ned PDF</a>
+	<a class="btn btn-lg" href="/stories/am" class="button">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://bfn.berattelser.se/pdf/am/am-0158_høne.pdf" target="_blank">Last ned PDF</a>
 <br><br>
 </div>
-
 
 
     </div>

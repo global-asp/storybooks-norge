@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://barneboker.no//stories/de/0262/">
 	<link rel="alternate" type="application/rss+xml" title="Barnebøker for Norge" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -89,7 +87,7 @@
         <a class="btn btn-lg" href="/stories/de">Tilbake til fortellingene</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Magozwe</span>
 			<span class="l1">Magozwe</span>
@@ -97,8 +95,8 @@
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button id="playbutton01" class="btn btn-lg" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/bfn/mp3/de/0262/mp3/01.mp3"></audio>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://media.berattelser.se/audio/de/0262/mp3/01.mp3"></audio>
 			<button onclick="switchlang('de,nb','nb,nn,de')" class="btn btn-lg lang-primary" title="Bytt mellom tysk og bokmål">nb</button>
 			<button onclick="switchlang('de,nn','nb,nn,de')" class="btn btn-lg lang-secondary" title="Bytt mellom tysk og nynorsk">nn</button>
 		</div>
@@ -108,8 +106,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Lest av"><img class="cover-icon cover-icon-text" src="/css/megaphone.svg" alt="Lest av"></span> Jula Eberth</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/de">tysk</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/de/level5">Nivå 5</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/bfn/mp3/de/0262/de-0262_magozwe.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Vanlig lesehastighet"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Vanlig lesehastighet" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Lesehastighet: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <audio id="audioplayer" controls><source src="https://media.berattelser.se/audio/de/0262/de-0262_magozwe.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Lesehastighet"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Lesehastighet" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Lesehastighet: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/css/play.svg" alt="Automatisk spilling av fortellingen" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
@@ -124,28 +122,28 @@
       <div class="content">
         <h4>Vanlige PDF-er (hel side)</h4>
         <ul>
-          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/de/de-0262_magozwe.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0262_magozwe-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/de/de-0262_magozwe-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+          <li><strong><a href="https://bfn.berattelser.se/pdf/de/de-0262_magozwe.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless/0262_magozwe-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless/de/de-0262_magozwe-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
         </ul>
 
         <h4>Tospråklige PDF-er</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/de-nb/0262_magozwe-bilingual_de-nb.pdf" target="_blank">Tospråklig PDF (tysk-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/de-nn/0262_magozwe-bilingual_de-nn.pdf" target="_blank">Tospråklig PDF (tysk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_de-nb.zip" target="_blank">Tospråklig PDF uten bilder (tysk-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_de-nn.zip" target="_blank">Tospråklig PDF uten bilder (tysk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/de-nb/0262_magozwe-bilingual_de-nb.pdf" target="_blank">Tospråklig PDF (tysk-bokmål, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/de-nn/0262_magozwe-bilingual_de-nn.pdf" target="_blank">Tospråklig PDF (tysk-nynorsk, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/de-nb/0262_magozwe-imageless-bilingual_de-nb.pdf" target="_blank">Tospråklig PDF uten bilder (tysk-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/de-nn/0262_magozwe-imageless-bilingual_de-nn.pdf" target="_blank">Tospråklig PDF uten bilder (tysk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
 
         <h4>PDF-hefter (for å skrive ut)</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/de/de-0262_magozwe-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/de-nb/0262_magozwe-bilingual_de-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (tysk-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/de-nn/0262_magozwe-bilingual_de-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (tysk-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/wordless-booklet.zip" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-booklet_de.zip" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_de-nb.zip" target="_blank">Tospråklig PDF-hefte uten bilder (tysk-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_de-nn.zip" target="_blank">Tospråklig PDF-hefte uten bilder (tysk-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/booklet/de/de-0262_magozwe-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/de-nb/0262_magozwe-bilingual_de-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (tysk-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/de-nn/0262_magozwe-bilingual_de-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (tysk-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless-booklet/0262_magozwe-wordless-booklet.pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-booklet/de/de-0262_magozwe-imageless-booklet.pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/de-nb/0262_magozwe-imageless-bilingual_de-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (tysk-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/de-nn/0262_magozwe-imageless-bilingual_de-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (tysk-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
       </div>
     </div>
@@ -157,8 +155,8 @@
 
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	In der geschäftigen Stadt Nairobi, fern eines liebevollen Zuhauses, lebte eine Gruppe obdachloser Jungen. Sie lebten in den Tag hinein. Eines Morgens packten sie ihre Matten nach einer kalten Nacht auf dem Bürgersteig ein. Sie machten ein Feuer aus Müll gegen die Kälte. Einer der Jungen unter ihnen war Magozwe. Er war der Jüngste.
 	</h3></div>
@@ -173,7 +171,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" onended="resetbutton('02')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/02.mp3"></audio>
+		<audio id="audio02" src="https://media.berattelser.se/audio/de/0262/mp3/02.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -186,7 +184,7 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Als Magozwes Eltern starben war er erst fünf Jahre alt. Er lebte von dort an mit seinem Onkel. Dieser Mann kümmerte sich nicht um den Jungen. Er gab Magozwe nicht genug zu Essen. Er ließ den Jungen sehr hart arbeiten.
 	</h3></div>
@@ -201,7 +199,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" onended="resetbutton('03')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/03.mp3"></audio>
+		<audio id="audio03" src="https://media.berattelser.se/audio/de/0262/mp3/03.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -214,7 +212,7 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Wenn Magozwe sich beschwerte oder nachfragte, schlug ihn der Onkel. Als Magozwe fragte, ob er zur Schule gehen könnte, schlug ihn sein Onkel und sagte: „Du bist zu dumm, um etwas zu lernen.“ Nach drei Jahren unter diesen Bedingungen lief Magozwe seinem Onkel davon. Er lebte fortan auf der Straße.
 	</h3></div>
@@ -229,7 +227,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" onended="resetbutton('04')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/04.mp3"></audio>
+		<audio id="audio04" src="https://media.berattelser.se/audio/de/0262/mp3/04.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -242,7 +240,7 @@
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Das Leben auf der Straße war hart und es war schwer für die meisten Jungen, bloß das tägliche Essen aufzutreiben. Manchmal wurden sie verhaftet, manchmal geschlagen. Wenn sie krank waren, half ihnen niemand. Sie hatten nur wenig Geld, das sie vom Betteln oder durch den Verkauf von gesammeltem Plastik und anderem Recycling hatten. Ihr Leben war weiter erschwert durch Kämpfe mit Gruppen von Rivalen, die Teile der Städte beherrschen wollten.
 	</h3></div>
@@ -257,7 +255,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" onended="resetbutton('05')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/05.mp3"></audio>
+		<audio id="audio05" src="https://media.berattelser.se/audio/de/0262/mp3/05.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -270,7 +268,7 @@
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Eines Tages als Magozwe die Mülltonnen durchforstete, fand er ein altes Bilderbuch. Er wischte den Schmutz ab und packte es in seinen Beutel. Von da an nahm er das Buch jeden Tag heraus und sah sich die Bilder an. Er konnte die Wörter nicht lesen.
 	</h3></div>
@@ -285,7 +283,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" onended="resetbutton('06')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/06.mp3"></audio>
+		<audio id="audio06" src="https://media.berattelser.se/audio/de/0262/mp3/06.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -298,7 +296,7 @@
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Die Bilder erzählten die Geschichte eines Jungen, der Pilot werden wollte. Magozwe träumte auch davon, Pilot zu sein. Manchmal stellte er sich vor, er sei der Junge in der Geschichte.
 	</h3></div>
@@ -313,7 +311,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" onended="resetbutton('07')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/07.mp3"></audio>
+		<audio id="audio07" src="https://media.berattelser.se/audio/de/0262/mp3/07.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -326,7 +324,7 @@
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Es war kalt und Magozwe war auf der Straße und bettelte. Ein Mann trat zu ihm. „Hallo, ich bin Thomas. Ich arbeite an einem Ort in der Nähe, wo du etwas zu essen bekommen kannst“, sagte der Mann. Er zeigte auf ein gelbes Haus mit einem blauen Dach. „Ich hoffe, du wirst dorthin gehen, um etwas zu essen?“, fragte er. Magozwe sah erst zu dem Mann, und dann zum Haus. „Vielleicht“, antwortet er und ging davon.
 	</h3></div>
@@ -341,7 +339,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" onended="resetbutton('08')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/08.mp3"></audio>
+		<audio id="audio08" src="https://media.berattelser.se/audio/de/0262/mp3/08.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -354,7 +352,7 @@
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Über die nächsten Monate trafen die obdachlosen Jungen Thomas oft. Er sprach gern mit Menschen, besonders Menschen, die auf der Straße lebten. Thomas hörte sich ihre Lebensgeschichten an. Er war ernst und geduldig, niemals unhöflich oder respektlos. Einige der Jungen fingen an, sich mittags im blauen und gelben Haus Essen zu holen.
 	</h3></div>
@@ -369,7 +367,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" onended="resetbutton('09')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/09.mp3"></audio>
+		<audio id="audio09" src="https://media.berattelser.se/audio/de/0262/mp3/09.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -382,7 +380,7 @@
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/10.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Magozwe saß auf dem Bürgersteig und las das Bilderbuch als Thomas sich neben ihn setzte. „Wovon handelt die Geschichte?“, fragte er. „Von einem Jungen, der Pilot wird“, antwortet Magozwe. „Wie heißt der Junge?“, wollte Thomas wissen. „Weiß ich nicht, ich kann nicht lesen“, gab Magozwe leise zurück.
 	</h3></div>
@@ -397,7 +395,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio10" onended="resetbutton('10')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/10.mp3"></audio>
+		<audio id="audio10" src="https://media.berattelser.se/audio/de/0262/mp3/10.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -410,7 +408,7 @@
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/11.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Als sie sich trafen, erzählte Magozwe Thomas seine eigene Geschichte. Es war die Geschichte über seinen Onkel und weshalb er weggelaufen war. Thomas erwiderte nicht viel und er sagte Magozwe auch nicht, was er tun sollte, aber er hörte stets aufmerksam zu. Manchmal unterhielten sie sich während sie im Haus mit dem blauen Dach aßen.
 	</h3></div>
@@ -425,7 +423,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio11" onended="resetbutton('11')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/11.mp3"></audio>
+		<audio id="audio11" src="https://media.berattelser.se/audio/de/0262/mp3/11.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -438,7 +436,7 @@
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/12.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Als Magozwe ungefähr zehn Jahre alt war, gab Thomas ihm ein Bilderbuch. Die Geschichte handelte von einem Dorfjungen, der zu einem berühmter Fußballspieler heranwuchs. Thomas las Magozwe die Geschichte oft vor, bis er eines Tages sagte: „Ich denke, es ist an der Zeit, dass du zur Schule gehst und lesen lernst. Was denkst du?“ Thomas erklärte ihm, dass er einen Ort kennt, an dem Kinder wohnen und zur Schule gehen können.
 	</h3></div>
@@ -453,7 +451,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text13" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio12" onended="resetbutton('12')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/12.mp3"></audio>
+		<audio id="audio12" src="https://media.berattelser.se/audio/de/0262/mp3/12.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -466,7 +464,7 @@
 <hr>
 
 <div id="text13" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/13.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Magozwe dachte über diesen neuen Ort nach, und darüber zur Schule zu gehen. Was, wenn sein Onkel recht hatte und er zu dumm war, um zu lernen? Was wenn man ihn an dem neuen Ort schlagen würde? Er hatte Angst. „Vielleicht ist es besser, weiter auf der Straße zu leben“, dachte er.
 	</h3></div>
@@ -481,7 +479,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text14" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio13" onended="resetbutton('13')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/13.mp3"></audio>
+		<audio id="audio13" src="https://media.berattelser.se/audio/de/0262/mp3/13.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -494,7 +492,7 @@
 <hr>
 
 <div id="text14" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/14.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/14.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Er erzählte Thomas von seinen Ängsten. Mit der Zeit überzeugte der Mann den Jungen, dass sein Leben an dem neuen Ort besser sein könnte.
 	</h3></div>
@@ -509,7 +507,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text13" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text15" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio14" onended="resetbutton('14')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/14.mp3"></audio>
+		<audio id="audio14" src="https://media.berattelser.se/audio/de/0262/mp3/14.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -522,7 +520,7 @@
 <hr>
 
 <div id="text15" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/15.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/15.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Und so zog Magozwe in ein Zimmer eines Hauses mit grünem Dach. Er teilte das Zimmer mit zwei anderen Jungen. Insgesamt lebten zehn Kinder in dem Haus. Zusammen mit Tante Cissy und ihrem Mann, drei Hunden, einer Katze und einer alten Ziege.
 	</h3></div>
@@ -537,7 +535,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text14" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text16" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio15" onended="resetbutton('15')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/15.mp3"></audio>
+		<audio id="audio15" src="https://media.berattelser.se/audio/de/0262/mp3/15.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -550,7 +548,7 @@
 <hr>
 
 <div id="text16" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/16.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/16.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Magozwe begann die Schule und es war schwierig. Er hatte viel aufzuholen. Manchmal wollte er aufgeben. Aber er dachte an den Piloten und den Fußballspieler in den Bilderbüchern. So wie sie gab auch er nicht auf.
 	</h3></div>
@@ -565,7 +563,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text15" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text17" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio16" onended="resetbutton('16')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/16.mp3"></audio>
+		<audio id="audio16" src="https://media.berattelser.se/audio/de/0262/mp3/16.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -578,7 +576,7 @@
 <hr>
 
 <div id="text17" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/17.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/17.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Magozwe saß im Garten des Hauses mit dem grünen Dach und las ein Bilderbuch aus der Schule. Thomas kam dazu und setzte sich neben ihn. „Wovon handelt die Geschichte?“, wollte Thomas wissen. „Sie handelt von einem Jungen, der Lehrer wird“, antwortete Magozwe. „Wie heißt der Junge?“, fragte Thomas weiter. „Er heißt Magozwe“, entgegnete Magozwe mit einem Lächeln.
 	</h3></div>
@@ -593,8 +591,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text16" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<audio id="audio17" onended="resetbutton('17')" src="https://globalstorybooks.net/media/audio/de/0262/mp3/17.mp3"></audio>
-		<button id="playbutton17" class="btn btn-lg" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio17" src="https://media.berattelser.se/audio/de/0262/mp3/17.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton17" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('de,nb','nb,nn,de')" class="btn btn-lg lang-primary" title="Bytt mellom tysk og bokmål">nb</button>
@@ -605,15 +603,16 @@
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skrevet av: Lesley Koyi</h5>
-		<h5>Illustrert av: Wiehan de Jager</h5>
-		<h5>Oversatt av: Anna Westpfahl</h5>
-		<h5>Lest av: Jula Eberth</h5>
-		<h5>Språk: <a href="/stories/de">tysk</a></h5>
-		<h5><a href="/stories/de/level5">Nivå 5</a></h5>
-		<h5>Kilde: <a href="https://africanstorybook.org/reader.php?id=13213" target="_blank">Magozwe</a> fra <a href="https://africanstorybook.org/" target="_blank">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skrevet av:</span> Lesley Koyi</h5>
+		<h5><span class="colophon-heading">Illustrert av:</span> Wiehan de Jager</h5>
+		<h5><span class="colophon-heading">Oversatt av:</span> Anna Westpfahl</h5>
+		<h5><span class="colophon-heading">Lest av:</span> Jula Eberth</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/de">tysk</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/de/level5">Nivå 5</a></h5>
+		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=13213" target="_blank">Magozwe</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.no" target="_blank"><img alt="Creative Commons Lisens" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Dette verket er lisensiert under en <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.no" target="_blank">Creative Commons Navngivelse 4.0 International Lisens</a>.</div>
 
@@ -625,10 +624,9 @@
 </div>
 <div>
 <h5>Valgmuligheter</h5>
-	<a class="btn btn-lg" href="/stories/de">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/de/de-0262_magozwe.pdf" target="_blank">Last ned PDF</a>
+	<a class="btn btn-lg" href="/stories/de" class="button">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://bfn.berattelser.se/pdf/de/de-0262_magozwe.pdf" target="_blank">Last ned PDF</a>
 <br><br>
 </div>
-
 
 
     </div>

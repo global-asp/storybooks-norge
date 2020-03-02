@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://barneboker.no//stories/ro/0291/">
 	<link rel="alternate" type="application/rss+xml" title="Barnebøker for Norge" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -89,15 +87,15 @@
         <a class="btn btn-lg" href="/stories/ro">Tilbake til fortellingene</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0291/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Ce a spus sora lui Vusi</span>
-			<span class="l1">Det som søstera til Vusi sa</span>
-			<span class="l2">Det som systera til Vusi sa</span>
+			<span class="l1">Det søstera til Vusi sa</span>
+			<span class="l2">Det systera til Vusi sa</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button id="playbutton01" class="btn btn-lg disabled" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 			<button onclick="switchlang('ro,nb','nb,nn,ro')" class="btn btn-lg lang-primary" title="Bytt mellom rumensk og bokmål">nb</button>
 			<button onclick="switchlang('ro,nn','nb,nn,ro')" class="btn btn-lg lang-secondary" title="Bytt mellom rumensk og nynorsk">nn</button>
 		</div>
@@ -106,7 +104,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Oversatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Oversatt av"></span> Carmen Onuorah</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/ro">rumensk</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/ro/level4">Nivå 4</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+
 	</div>
 </div>
 <div class="modal" id="modal-pdf">
@@ -120,28 +119,28 @@
       <div class="content">
         <h4>Vanlige PDF-er (hel side)</h4>
         <ul>
-          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/ro/ro-0291_vusi.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0291_vusi-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/ro/ro-0291_vusi-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+          <li><strong><a href="https://bfn.berattelser.se/pdf/ro/ro-0291_vusi.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless/0291_vusi-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless/ro/ro-0291_vusi-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
         </ul>
 
         <h4>Tospråklige PDF-er</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/ro-nb/0291_vusi-bilingual_ro-nb.pdf" target="_blank">Tospråklig PDF (rumensk-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/ro-nn/0291_vusi-bilingual_ro-nn.pdf" target="_blank">Tospråklig PDF (rumensk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_ro-nb.zip" target="_blank">Tospråklig PDF uten bilder (rumensk-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_ro-nn.zip" target="_blank">Tospråklig PDF uten bilder (rumensk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/ro-nb/0291_vusi-bilingual_ro-nb.pdf" target="_blank">Tospråklig PDF (rumensk-bokmål, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/ro-nn/0291_vusi-bilingual_ro-nn.pdf" target="_blank">Tospråklig PDF (rumensk-nynorsk, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/ro-nb/0291_vusi-imageless-bilingual_ro-nb.pdf" target="_blank">Tospråklig PDF uten bilder (rumensk-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/ro-nn/0291_vusi-imageless-bilingual_ro-nn.pdf" target="_blank">Tospråklig PDF uten bilder (rumensk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
 
         <h4>PDF-hefter (for å skrive ut)</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/ro/ro-0291_vusi-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/ro-nb/0291_vusi-bilingual_ro-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (rumensk-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/ro-nn/0291_vusi-bilingual_ro-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (rumensk-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/wordless-booklet.zip" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-booklet_ro.zip" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_ro-nb.zip" target="_blank">Tospråklig PDF-hefte uten bilder (rumensk-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_ro-nn.zip" target="_blank">Tospråklig PDF-hefte uten bilder (rumensk-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/booklet/ro/ro-0291_vusi-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/ro-nb/0291_vusi-bilingual_ro-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (rumensk-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/ro-nn/0291_vusi-bilingual_ro-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (rumensk-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless-booklet/0291_vusi-wordless-booklet.pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-booklet/ro/ro-0291_vusi-imageless-booklet.pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/ro-nb/0291_vusi-imageless-bilingual_ro-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (rumensk-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/ro-nn/0291_vusi-imageless-bilingual_ro-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (rumensk-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
       </div>
     </div>
@@ -153,8 +152,8 @@
 
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0291/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	Intr-o dimineață, foarte devreme, bunica lui Vusi l-a chemat, “Vusi, te rog du oul acesta părinților tăi. Vor să facă un tort mare pentru nunta sorei tale”.
 	</h3></div>
@@ -181,7 +180,7 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0291/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	In drum spre părinții lui, Vusi a întâlnit doi băieți culegând fructe. Unul a smuls oul de la Vusi și l-a izbit de un copac. Oul s-a spart.
 	</h3></div>
@@ -208,7 +207,7 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0291/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	“Ce ai făcut?” plângea Vusi. “Oul ăla era pentru un tort. Tortul era pentru nunta sorei mele. Ce va spune sora mea daca nu va fi un tort de nuntă?”
 	</h3></div>
@@ -235,7 +234,7 @@
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0291/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	Băieților le părea rău că-l șicanaseră pe Vusi. “Nu putem ajuta cu nimic pentru tort, dar iată un baston pentru sora ta,” a zis unul. Vusi și-a continuat călătoria.
 	</h3></div>
@@ -262,7 +261,7 @@
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0291/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	In drum a întâlnit doi oameni construind o casă. “Putem să folosim bățul ăla ?” a întrebat unul. Dar bățul nu era destul de tare pentru clădire, și s-a rupt.
 	</h3></div>
@@ -289,7 +288,7 @@
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0291/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	“Ce ai făcut?” plângea Vusi. “Bățul ăla era un dar pentru sora mea. Culegătorii de fructe mi-au dat bățul pentru că au spart oul pentru tort. Tortul era pentru nunta sorei mele. Acum ou nu mai e, nici tort, și nici dar. Ce va spune sora mea?”
 	</h3></div>
@@ -316,7 +315,7 @@
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0291/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	Zidarilor le părea rău că rupseseră bățul. “Nu te putem ajuta cu tortul, dar iată ceva paie pentru sora ta,” a zis unul. Si așa Vusi și-a continuat călătoria.
 	</h3></div>
@@ -343,7 +342,7 @@
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0291/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	În drum, Vusi a întâlnit un fermier și o vacă. “Ce paie delicioase, pot să gust un pic?” a întrebat vaca. Dar paiele erau atât de gustoase încât vaca le-a mâncat pe toate!
 	</h3></div>
@@ -370,7 +369,7 @@
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/10.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0291/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	“Ce ai făcut?” a plâns Vusi. “Paiele alea erau un dar pentru sora mea. Zidarii mi-au dat paiele pentru că au rupt bățul de la culegătorii de fructe. Culegătorii de fructe mi-au dat bățul pentru că au spart oul pentru tortul sorei mele. Tortul era pentru nunta sorei mele. Acum ou nu mai e, nici tort, și nici dar. Ce va spune sora mea?”
 	</h3></div>
@@ -397,7 +396,7 @@
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/11.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0291/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	Vacii îi părea rău că a fost hapsână. Fermierul a fost de acord ca vaca să meargă cu Vusi ca dar pentru sora lui. Si așa Vusi a mers mai departe.
 	</h3></div>
@@ -424,7 +423,7 @@
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/12.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0291/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	Dar vaca a fugit înapoi la fermier la vremea mesei. Si Vusi s-a pierdut pe drum. A ajuns foarte târziu la nunta sorei lui. Oaspeții deja mâncau.
 	</h3></div>
@@ -451,7 +450,7 @@
 <hr>
 
 <div id="text13" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/13.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0291/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	“Ce voi face?” plângea Vusi. “Vaca fugită era un dar în schimbul paielor pe care mi le-au dat zidarii. Zidarii mi-au dat paiele pentru că au rupt bățul de la culegătorii de fructe. Culegătorii de fructe mi-au dat bățul pentru că au spart oul pentru tort. Tortul era pentru nuntă. Acum ou nu e, nici tort, și nici dar.”
 	</h3></div>
@@ -478,7 +477,7 @@
 <hr>
 
 <div id="text14" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/14.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0291/14.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	Sora lui Vusi s-a gândit pentru un timp apoi a spus, “Vusi fratele meu, nu îmi pasă cu adevărat de cadouri. Nici de tort chiar nu îmi pasă. Suntem toți aici împreună, sunt fericită! Acum îmbracă-te cu hainele tale bune și hai să sărbătorim ziua asta!” Si chiar asta Vusi a făcut!
 	</h3></div>
@@ -493,7 +492,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text13" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<button id="playbutton14" class="btn btn-lg disabled" onclick="playpause('14')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton14" onclick="playpause('14')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ro,nb','nb,nn,ro')" class="btn btn-lg lang-primary" title="Bytt mellom rumensk og bokmål">nb</button>
@@ -504,14 +503,15 @@
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skrevet av: Nina Orange</h5>
-		<h5>Illustrert av: Wiehan de Jager</h5>
-		<h5>Oversatt av: Carmen Onuorah</h5>
-		<h5>Språk: <a href="/stories/ro">rumensk</a></h5>
-		<h5><a href="/stories/ro/level4">Nivå 4</a></h5>
-		<h5>Kilde: <a href="https://africanstorybook.org/reader.php?id=6895" target="_blank">What Vusi's sister said</a> fra <a href="https://africanstorybook.org/" target="_blank">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skrevet av:</span> Nina Orange</h5>
+		<h5><span class="colophon-heading">Illustrert av:</span> Wiehan de Jager</h5>
+		<h5><span class="colophon-heading">Oversatt av:</span> Carmen Onuorah</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/ro">rumensk</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/ro/level4">Nivå 4</a></h5>
+		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=6895" target="_blank">What Vusi's sister said</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank"><img alt="Creative Commons Lisens" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />Dette verket er lisensiert under en <a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank">Creative Commons Navngivelse 3.0 International Lisens</a>.</div>
 
@@ -525,10 +525,9 @@
 </div>
 <div>
 <h5>Valgmuligheter</h5>
-	<a class="btn btn-lg" href="/stories/ro">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/ro/ro-0291_vusi.pdf" target="_blank">Last ned PDF</a>
+	<a class="btn btn-lg" href="/stories/ro" class="button">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://bfn.berattelser.se/pdf/ro/ro-0291_vusi.pdf" target="_blank">Last ned PDF</a>
 <br><br>
 </div>
-
 
 
     </div>

@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://barneboker.no//stories/sv/0262/">
 	<link rel="alternate" type="application/rss+xml" title="Barnebøker for Norge" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -89,7 +87,7 @@
         <a class="btn btn-lg" href="/stories/sv">Tilbake til fortellingene</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Magozwe</span>
 			<span class="l1">Magozwe</span>
@@ -97,7 +95,7 @@
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button id="playbutton01" class="btn btn-lg disabled" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 			<button onclick="switchlang('sv,nb','nb,nn,sv')" class="btn btn-lg lang-primary" title="Bytt mellom svensk og bokmål">nb</button>
 			<button onclick="switchlang('sv,nn','nb,nn,sv')" class="btn btn-lg lang-secondary" title="Bytt mellom svensk og nynorsk">nn</button>
 		</div>
@@ -106,7 +104,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Oversatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Oversatt av"></span> Erika Braas</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/sv">svensk</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/sv/level5">Nivå 5</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+
 	</div>
 </div>
 <div class="modal" id="modal-pdf">
@@ -120,28 +119,28 @@
       <div class="content">
         <h4>Vanlige PDF-er (hel side)</h4>
         <ul>
-          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/sv/sv-0262_magozwe.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0262_magozwe-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/sv/sv-0262_magozwe-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+          <li><strong><a href="https://bfn.berattelser.se/pdf/sv/sv-0262_magozwe.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless/0262_magozwe-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless/sv/sv-0262_magozwe-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
         </ul>
 
         <h4>Tospråklige PDF-er</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/sv-nb/0262_magozwe-bilingual_sv-nb.pdf" target="_blank">Tospråklig PDF (svensk-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/sv-nn/0262_magozwe-bilingual_sv-nn.pdf" target="_blank">Tospråklig PDF (svensk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_sv-nb.zip" target="_blank">Tospråklig PDF uten bilder (svensk-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_sv-nn.zip" target="_blank">Tospråklig PDF uten bilder (svensk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/sv-nb/0262_magozwe-bilingual_sv-nb.pdf" target="_blank">Tospråklig PDF (svensk-bokmål, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/sv-nn/0262_magozwe-bilingual_sv-nn.pdf" target="_blank">Tospråklig PDF (svensk-nynorsk, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/sv-nb/0262_magozwe-imageless-bilingual_sv-nb.pdf" target="_blank">Tospråklig PDF uten bilder (svensk-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/sv-nn/0262_magozwe-imageless-bilingual_sv-nn.pdf" target="_blank">Tospråklig PDF uten bilder (svensk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
 
         <h4>PDF-hefter (for å skrive ut)</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/sv/sv-0262_magozwe-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/sv-nb/0262_magozwe-bilingual_sv-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (svensk-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/sv-nn/0262_magozwe-bilingual_sv-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (svensk-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/wordless-booklet.zip" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-booklet_sv.zip" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_sv-nb.zip" target="_blank">Tospråklig PDF-hefte uten bilder (svensk-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_sv-nn.zip" target="_blank">Tospråklig PDF-hefte uten bilder (svensk-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/booklet/sv/sv-0262_magozwe-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/sv-nb/0262_magozwe-bilingual_sv-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (svensk-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/sv-nn/0262_magozwe-bilingual_sv-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (svensk-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless-booklet/0262_magozwe-wordless-booklet.pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-booklet/sv/sv-0262_magozwe-imageless-booklet.pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/sv-nb/0262_magozwe-imageless-bilingual_sv-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (svensk-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/sv-nn/0262_magozwe-imageless-bilingual_sv-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (svensk-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
       </div>
     </div>
@@ -153,8 +152,8 @@
 
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	I den stora staden Nairobi, långt ifrån ett tryggt hem, bodde en grupp hemlösa pojkar. De levde dagen som den kom. En morgon packade pojkarna ihop sina mattor efter att ha sovit på den kalla trottoaren. För att värma upp sig gjorde de upp en eld av skräp. En av pojkarna var Magozwe. Han var yngst.
 	</h3></div>
@@ -181,7 +180,7 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	När Magozwes föräldrar dog var han bara fem år gammal. Han fick bo med sin farbror. Hans farbror brydde sig inte om barnet. Han gav inte Magozwe tillräckligt med mat. Han tvingade pojken att arbeta hårt.
 	</h3></div>
@@ -208,9 +207,9 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
-	Om Magozwe klagade eller ifrågasatte så slog hans farbror honom. När Magozwe frågade om man kunde få gå i skolan slog hans farbror honom och sade: ”Du är för dum för att lära dig någonting.” Efter tre år med denna behandling rymde Magozwe från sin farbror. Han började bo på gatan.
+	Om Magozwe klagade eller ifrågasatte så slog hans farbror honom. När Magozwe frågade om man kunde få gå i skolan slog hans farbror honom och sa: ”Du är för dum för att lära dig någonting.” Efter tre år med denna behandling rymde Magozwe från sin farbror. Han började bo på gatan.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -235,9 +234,9 @@
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
-	Gatulivet var hårt och de flesta av pojkarna kämpade varje dag med att få mat. Ibland blev de anhållna, ibland blev de slagna. När de var sjuka fanns det ingen som hjälpte dem. Gruppen var beroende av den lilla summan pengar de tjänade på att tigga, och från att sälja plast och annan återvinning. Livet var ännu svårare på grund av bråk med rivaliserande grupper som ville ha kontroll över vissa delar av staden.
+	Gatulivet var hårt och de flesta av pojkarna kämpade varje dag med att få mat. Ibland blev de anhållna, ibland blev de slagna. När de var sjuka fanns det ingen som hjälpte dem. Gruppen var beroende av den lilla summa pengar de tjänade på att tigga, och från att sälja plast och annan återvinning. Livet var ännu svårare på grund av bråk med rivaliserande grupper som ville ha kontroll över vissa delar av staden.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -262,7 +261,7 @@
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	En dag medan Magozwe tittade i sopkorgarna hittade han en gammal barnbok. Han gjorde ren den och la den i sin påse. Han tog fram boken varje dag och tittade på bilderna. Han visste inte hur han skulle läsa orden.
 	</h3></div>
@@ -289,7 +288,7 @@
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Bilderna berättade om en pojke som växte upp och blev pilot. Magozwe dagdrömde om att bli en pilot. Ibland fantiserade han om att han var pojken i boken.
 	</h3></div>
@@ -316,9 +315,9 @@
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
-	Det var kallt och Magozwe stod vid sidan av vägen och tiggde. En man kom fram till honom. ”Hej, jag heter Thomas. Jag arbetar i närheten på ett ställe där du kan få något att äta,” sa mannen. Han pekade på ett gult hus med blått tak. ”Jag hoppas att du går dit och får lite mat?” frågade han. Magozwe tittade på mannan, och sedan på huset. ”Kanske”, sa han och gick iväg.
+	Det var kallt och Magozwe stod vid sidan av vägen och tiggde. En man kom fram till honom. ”Hej, jag heter Thomas. Jag arbetar här i närheten på ett ställe där du kan få något att äta,” sa mannen. Han pekade på ett gult hus med blått tak. ”Jag hoppas att du går dit och får lite mat?” frågade han. Magozwe tittade på mannen, och sedan på huset. ”Kanske”, sa han och gick iväg.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -343,9 +342,9 @@
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
-	Under månaderna som följde vande de hemlösa pojkarna sig vid att se Thomas. Han tyckte om att prata med människor, speciellt med de som bodde på gatan. Thomas lyssnade på berättelserna om människors liv. Han var allvarlig och tålmodig, aldrig oartig eller respektlös. Några av pojkarna började gå till det blå-gula huset för att få lunch.
+	Under månaderna som följde vande de hemlösa pojkarna sig vid att se Thomas. Han tyckte om att prata med människor, speciellt med folk som bodde på gatan. Thomas lyssnade på berättelserna om människors liv. Han var allvarlig och tålmodig, aldrig oartig eller respektlös. Några av pojkarna började gå till det blå-gula huset för att få lunch.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -370,9 +369,9 @@
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/10.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
-	Magozwe satt på trottoarkanten och tittade på bilderna i sin bok när Thomas satte sig bredvid honom. ”Vad handlar berättelsen om?” frågade Thomas. ”Den handlar om en pojke som blir pilot,” svarade Magozwe. ”Vad heter pojken?” frågade Thomas. ”Jag vet inte, jag kan inte läsa,” sa Magozwe tystlåtet.
+	Magozwe satt på trottoarkanten och tittade på bilderna i sin bok när Thomas satte sig bredvid honom. ”Vad handlar berättelsen om?” frågade Thomas. ”Den handlar om en pojke som blir pilot,” svarade Magozwe. ”Vad heter pojken?” frågade Thomas. ”Jag vet inte, jag kan inte läsa,” sa Magozwe tyst.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -397,7 +396,7 @@
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/11.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	När de lärde känna varandra började Magozwe berätta sin egen historia för Thomas. Den handlade om hans farbror och varför han rymde. Thomas sa inte så mycket, och han talade inte om för Magozwe vad han borde göra. Istället lyssnade han noga. Ibland pratade de när de åt i huset med det blåa taket.
 	</h3></div>
@@ -424,9 +423,9 @@
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/12.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
-	Ungefär vid Magozwes tionde födelsedag gav Thomas honom en ny bok. Det var en berättelse om en bypojke som växte upp och blev en berömd fotbollsspelare. Thomas läste berättelsen för Magozwe många gånger tills han en dag sade: ”Jag tror det är dags att du går i skolan och lärde dig att läsa. Vad tror du?” Thomas förklarade att han visste ett ställe där barn kunde bo och gå i skolan.
+	Ungefär vid Magozwes tionde födelsedag gav Thomas honom en ny bok. Det var en berättelse om en bypojke som växte upp och blev en berömd fotbollsspelare. Thomas läste berättelsen för Magozwe många gånger tills han en dag sa: ”Jag tror det är dags att du går i skolan och lärde dig att läsa. Vad tror du?” Thomas förklarade att han visste ett ställe där barn kunde bo och gå i skolan.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -451,7 +450,7 @@
 <hr>
 
 <div id="text13" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/13.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Magozwe tänkte på det nya stället och om att gå i skolan. Tänk om hans farbror hade rätt och att han var för dum för att lära sig någonting? Tänk om de slog honom på det nya stället? Han var rädd. ”Kanske är det bättre att bo på gatan?” tänkte han.
 	</h3></div>
@@ -478,7 +477,7 @@
 <hr>
 
 <div id="text14" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/14.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/14.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Han berättade om sin rädsla för Thomas. Med tiden kunde mannen övertyga pojken om att livet skulle bli bättre på det nya stället.
 	</h3></div>
@@ -505,9 +504,9 @@
 <hr>
 
 <div id="text15" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/15.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/15.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
-	Och så blev det så att Magozwe flyttade in i ett rum i ett hus med grönt tak. Han delade rum med två andra pojkar. Allt som allt bodde tio barn i huset, tillsammans med tant Cissy och hennes man, tre hundar, en katt och en gammal get.
+	Och så kom det sig att Magozwe flyttade in i ett rum i ett hus med grönt tak. Han delade rum med två andra pojkar. Allt som allt bodde tio barn i huset, tillsammans med tant Cissy och hennes man, tre hundar, en katt och en gammal get.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -532,7 +531,7 @@
 <hr>
 
 <div id="text16" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/16.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/16.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Magozwe började skolan och det var svårt. Han hade mycket att ta igen. Ibland ville han ge upp. Men han tänkte på piloten och fotbollsspelaren i böckerna. Precis som de tänkte han inte ge upp.
 	</h3></div>
@@ -559,7 +558,7 @@
 <hr>
 
 <div id="text17" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/17.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/17.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Magozwe satt i trädgården till huset med det gröna taket och läste en bok från skolan. Thomas kom och satte sig bredvid honom. ”Vad handlar berättelsen om?” frågade Thomas. ”Den handlar om en pojke som blir lärare,” svarade Magozwe. ”Vad heter pojken?” frågade Thomas. ”Han heter Magozwe”, svarade Magozwe med ett leende.
 	</h3></div>
@@ -574,7 +573,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text16" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<button id="playbutton17" class="btn btn-lg disabled" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton17" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('sv,nb','nb,nn,sv')" class="btn btn-lg lang-primary" title="Bytt mellom svensk og bokmål">nb</button>
@@ -585,14 +584,15 @@
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skrevet av: Lesley Koyi</h5>
-		<h5>Illustrert av: Wiehan de Jager</h5>
-		<h5>Oversatt av: Erika Braas</h5>
-		<h5>Språk: <a href="/stories/sv">svensk</a></h5>
-		<h5><a href="/stories/sv/level5">Nivå 5</a></h5>
-		<h5>Kilde: <a href="https://africanstorybook.org/reader.php?id=13213" target="_blank">Magozwe</a> fra <a href="https://africanstorybook.org/" target="_blank">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skrevet av:</span> Lesley Koyi</h5>
+		<h5><span class="colophon-heading">Illustrert av:</span> Wiehan de Jager</h5>
+		<h5><span class="colophon-heading">Oversatt av:</span> Erika Braas</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/sv">svensk</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/sv/level5">Nivå 5</a></h5>
+		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=13213" target="_blank">Magozwe</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.no" target="_blank"><img alt="Creative Commons Lisens" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Dette verket er lisensiert under en <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.no" target="_blank">Creative Commons Navngivelse 4.0 International Lisens</a>.</div>
 
@@ -604,10 +604,9 @@
 </div>
 <div>
 <h5>Valgmuligheter</h5>
-	<a class="btn btn-lg" href="/stories/sv">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/sv/sv-0262_magozwe.pdf" target="_blank">Last ned PDF</a>
+	<a class="btn btn-lg" href="/stories/sv" class="button">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://bfn.berattelser.se/pdf/sv/sv-0262_magozwe.pdf" target="_blank">Last ned PDF</a>
 <br><br>
 </div>
-
 
 
     </div>

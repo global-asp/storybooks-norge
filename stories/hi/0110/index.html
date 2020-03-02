@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" href="/favicon.ico?v=4">
 	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
-	<title>एक छोटा बीज: वनगारी माथाई की कहानी - Barnebøker for Norge</title>
+	<title>एक छोटा बीज: वंगारी मथाई की कहानी - Barnebøker for Norge</title>
 	<meta name="description" content="Barnebøker for Norge er utviklet for barn, lærere og foreldre og gjør 40 fortellinger fra African Storybook tilgjengelige på bokmål og nynorsk, samt de største innvandrings- og flyktningspråkene i Norge. Noen språk har lydinnspillinger. Denne nettressursen tilbyr gratis barnebøker online (gratis bildebøker online), gratis lydbøker for barn og PDF-filer.
 ">
 	<link rel="stylesheet" href="/css/spectre.min.css">
@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://barneboker.no//stories/hi/0110/">
 	<link rel="alternate" type="application/rss+xml" title="Barnebøker for Norge" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -89,15 +87,15 @@
         <a class="btn btn-lg" href="/stories/hi">Tilbake til fortellingene</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h1><span class="def">एक छोटा बीज: वनगारी माथाई की कहानी</span>
+		<h1><span class="def">एक छोटा बीज: वंगारी मथाई की कहानी</span>
 			<span class="l1">Et lite frø: Historien om Wangari Maathai</span>
 			<span class="l2">Eit lite frø: Historia om Wangari Maathai</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button id="playbutton01" class="btn btn-lg disabled" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 			<button onclick="switchlang('hi,nb','nb,nn,hi')" class="btn btn-lg lang-primary" title="Bytt mellom hindi og bokmål">nb</button>
 			<button onclick="switchlang('hi,nn','nb,nn,hi')" class="btn btn-lg lang-secondary" title="Bytt mellom hindi og nynorsk">nn</button>
 		</div>
@@ -106,7 +104,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Oversatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Oversatt av"></span> Tanvi Sirari</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/hi">hindi</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/hi/level3">Nivå 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+
 	</div>
 </div>
 <div class="modal" id="modal-pdf">
@@ -120,28 +119,28 @@
       <div class="content">
         <h4>Vanlige PDF-er (hel side)</h4>
         <ul>
-          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/hi/hi-0110_wangari.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0110_wangari-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/hi/hi-0110_wangari-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+          <li><strong><a href="https://bfn.berattelser.se/pdf/hi/hi-0110_wangari.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless/0110_wangari-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless/hi/hi-0110_wangari-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
         </ul>
 
         <h4>Tospråklige PDF-er</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/hi-nb/0110_wangari-bilingual_hi-nb.pdf" target="_blank">Tospråklig PDF (hindi-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/hi-nn/0110_wangari-bilingual_hi-nn.pdf" target="_blank">Tospråklig PDF (hindi-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_hi-nb.zip" target="_blank">Tospråklig PDF uten bilder (hindi-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_hi-nn.zip" target="_blank">Tospråklig PDF uten bilder (hindi-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/hi-nb/0110_wangari-bilingual_hi-nb.pdf" target="_blank">Tospråklig PDF (hindi-bokmål, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/hi-nn/0110_wangari-bilingual_hi-nn.pdf" target="_blank">Tospråklig PDF (hindi-nynorsk, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/hi-nb/0110_wangari-imageless-bilingual_hi-nb.pdf" target="_blank">Tospråklig PDF uten bilder (hindi-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/hi-nn/0110_wangari-imageless-bilingual_hi-nn.pdf" target="_blank">Tospråklig PDF uten bilder (hindi-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
 
         <h4>PDF-hefter (for å skrive ut)</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/hi/hi-0110_wangari-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/hi-nb/0110_wangari-bilingual_hi-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (hindi-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/hi-nn/0110_wangari-bilingual_hi-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (hindi-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/wordless-booklet.zip" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-booklet_hi.zip" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_hi-nb.zip" target="_blank">Tospråklig PDF-hefte uten bilder (hindi-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_hi-nn.zip" target="_blank">Tospråklig PDF-hefte uten bilder (hindi-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/booklet/hi/hi-0110_wangari-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/hi-nb/0110_wangari-bilingual_hi-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (hindi-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/hi-nn/0110_wangari-bilingual_hi-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (hindi-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless-booklet/0110_wangari-wordless-booklet.pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-booklet/hi/hi-0110_wangari-imageless-booklet.pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/hi-nb/0110_wangari-imageless-bilingual_hi-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (hindi-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/hi-nn/0110_wangari-imageless-bilingual_hi-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (hindi-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
       </div>
     </div>
@@ -153,10 +152,10 @@
 
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	पूर्वी अफ़्रीका में कीनिया पहाड़ के एक गाँव में एक छोटी लड़की अपनी माँ के साथ खेतों में काम करती थी। उसका नाम वनगारी था।
+	पूर्वी अफ़्रीका में कीनिया पहाड़ के एक गाँव में एक छोटी लड़की अपनी माँ के साथ खेतों में काम करती थी। उसका नाम वंगारी था।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -181,9 +180,9 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	वनगारी को बाहर रहना पसंद था। अपने परिवार के खाने के आँगन में उसने मिट्टी को अपनी छुरी से जोता। उसने छोटे बीजों को गर्म मिट्टी में दबा दिया।
+	वंगारी को बाहर रहना पसंद था। अपने परिवार के खाने के आँगन में उसने मिट्टी को अपनी छुरी से जोता। उसने छोटे बीजों को गर्म मिट्टी में दबा दिया।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -208,9 +207,9 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	उसका दिन का सबसे पसंदिदा समय सूर्यास्त के एकदम बाद था। जब इतना अँधेरा हो जाता कि पौधे नहीं दिखते तब वनगारी जान जाती कि घर जाने का समय हो गया है। वो खेतों के संकरे रास्तों से निकल जाती और रास्ते में नदियों को पार करती।
+	उसके दिन का सबसे पसंदीदा समय सूर्यास्त के एकदम बाद हुई शाम का था। जब इतना अँधेरा हो जाता कि पौधे नहीं दिखते तब वंगारी जान जाती कि घर जाने का समय हो गया है। वो खेतों के संकरे रास्तों से निकल जाती और रास्ते में नदियों को पार करती।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -235,9 +234,9 @@
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	वनगारी एक होशियार बच्ची थी और विद्यालय जाने को तैयार थी। लेकिन उसके माता-पिता चाहते थे कि वो घर में रहे और उनकी मदद करे। जब वो सात वर्ष कि हो गई, तब उसके बड़े भाई ने उनके माता-पिता को उसे विद्यालय जाने के लिये मना लिया।
+	वंगारी एक होशियार बच्ची थी और विद्यालय जाने के लिए तैयार थी। लेकिन उसके माता-पिता चाहते थे कि वो घर में रहे और उनकी मदद करे। जब वो सात वर्ष कि हो गई, तब उसके बड़े भाई ने अपने माता-पिता को उसे विद्यालय भेजने के लिए तैयार कर दिया।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -262,9 +261,9 @@
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	उसे सीखना पसंद था! वनगारी हर किताब पढ़ने से और ज़्यादा सीख जाती। उसने विद्यालय में इतना अच्छा प्रदर्शन किया कि उसे पढ़ने के लिये अमेरिका से निमंत्रण मिला। वनगारी उत्साहित थी! वो दुनिया के बारे में जानना चाहती थी।
+	उसे सीखना पसंद था! वंगारी ने हर किताब से ज़्यादा से ज़्यादा सीखा। विद्यालय में उसका प्रदर्शन इतना अच्छा रहा कि पढ़ने के लिए उसे अमेरिका आमंत्रित किया गया। वंगारी उत्साहित थी! वो दुनिया के बारे में और भी बहुत कुछ जानना चाहती थी।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -289,9 +288,9 @@
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	अमरीकी विश्वविद्यालय में वनगारी ने बहुत सी नयी चीज़ें सीखी। उसने पौधों के बारे में पढ़ाई करी कि वो कैसे बढ़ते है। और उसे याद आया कि वो कैसे बढ़ी: खेल खेलती अपने भाइयों के साथ पेड़ों की छाया में कीनिया के सुन्दर जंगलों में।
+	अमरीकी विश्वविद्यालय में वंगारी ने बहुत सी नयी चीज़ें सीखी। उसने पौधों के बारे में पढ़ाई की और जाना कि वे कैसे बढ़ते हैं। उसे अपना बचपन याद आता था कि वो कैसे-कैसे अपने भाइयों के साथ कीनिया के सुंदर जंगलों में लगे पेड़ों की छाया में खेल खेलती हुई बड़ी हुई है।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -316,9 +315,9 @@
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	जितना ज़्यादा वो सीखती उतना ज़्यादा उसे एहसास होता कि वो कीनिया के लोगों से कितना प्रेम करती है। वो चाहती थी कि वे सुखी और आज़ाद हो। जितना ज़्यादा वो सीखती उतना ज़्यादा उसे अपना अफ़्रीकी घर याद आता।
+	जितना ज़्यादा वो सीखती उतना ज़्यादा उसे एहसास होता कि वो कीनिया के लोगों से कितना प्रेम करती है। वो चाहती थी कि वे सुखी और आज़ाद हो। जितना ज़्यादा वो सीखती उतना ज़्यादा उसे अपना अफ़्रीकी घर याद आता।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -343,9 +342,9 @@
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	जब उसने अपनी पढ़ाई पूरी कर ली, वो कीनिया वापस आ गई। लेकिन उसका देश बदल गया था। ज़मीन पर बड़े-बड़े खेत फैल चुके थे। औरतों के पास चूल्हा जलाने के लिये लकड़ी नहीं थी। लोग गरीब थे और बच्चे भूखे थे।
+	जब उसने अपनी पढ़ाई पूरी कर ली, वो कीनिया वापस आ गई। लेकिन उसका देश बिलकुल बदल गया था। ज़मीन पर बड़े-बड़े खेत फैल चुके थे। औरतों के पास चूल्हा जलाने के लिए लकड़ी नहीं थी। लोग गरीब थे और बच्चे भूखे थे।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -370,9 +369,9 @@
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/10.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	वनगारी जानती थी कि उसे क्या करना है। उसने औरतों को सिखाया कि बीज से पेड़ कैसे उगाते है। औरतों ने पेड़ बेच दिये और उन पैसों से अपने परिवार का ख्याल रखा। औरतें बहुत खुश थी। वनगारी ने उनकी मदद करके उन्हें ताकतवर और शक्तिशाली होने का एहसास कराया।
+	वंगारी जानती थी कि उसे क्या करना है। उसने महिलाओं को बीज से पेड़ उगाना सिखाया। महिलाओं ने पेड़ बेच दिए और उन पैसों से अपने परिवार का भरण पोषण किया। महिलाएँ बहुत खुश थीं। वंगारी ने उनकी मदद करके उन्हें ताकतवर और सशक्त होने का एहसास कराया।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -397,9 +396,9 @@
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/11.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	समय के साथ नये पेड़ बढ़कर जंगल बन गए, और नदियाँ फिर से बहने लगी। वनगारी का संदेश सारे अफ़्रीका में फैल गया। आज करोड़ों पेड़ वनगारी के बीजों से बढ़े हुए है।
+	समय के साथ नये पेड़ बढ़कर जंगल बन गए, और नदियाँ फिर से बहने लगीं। वंगारी का संदेश सारे अफ़्रीका में फैल गया। आज करोड़ों पेड़ वंगारी के बीजों से बढ़े हुए हैं।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -424,9 +423,9 @@
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/12.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	वनगारी ने बहुत मेहनत करी। दुनियाँ भर के लोगों ने ध्यान गया और उसे एक प्रसिद्ध पुरस्कार दिया। उसे नोबेल शांति पुरस्कार कहा जाता है, और वो पहली अफ़्रीकी औरत है जिसने ये पुरस्कार प्राप्त किया है।
+	वंगारी ने बहुत मेहनत की। दुनिया भर के लोगों ने उनके काम पर ध्यान दिया और उन्हें अपने कार्य के लिए नोबेल शांति पुरस्कार नामक एक प्रसिद्ध पुरस्कार दिया गया। वे पहली ऎसी अफ़्रीकी महिला थीं जिन्हें इस पुरस्कार से नवाज़ा गया।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -451,9 +450,9 @@
 <hr>
 
 <div id="text13" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/13.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	२०११ में वनगारी की मृत्यु हो गई, लेकिन जब भी हम एक सुन्दर पेड़ देखते है, हम उसे याद कर सकते है।
+	वर्ष २०११ में वंगारी की मृत्यु हो गई, लेकिन किसी सुंदर पेड़ को देखकर आज भी हम उनकी याद कर सकते हैं।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -466,7 +465,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<button id="playbutton13" class="btn btn-lg disabled" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton13" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('hi,nb','nb,nn,hi')" class="btn btn-lg lang-primary" title="Bytt mellom hindi og bokmål">nb</button>
@@ -477,14 +476,15 @@
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skrevet av: Nicola Rijsdijk</h5>
-		<h5>Illustrert av: Maya Marshak</h5>
-		<h5>Oversatt av: Tanvi Sirari</h5>
-		<h5>Språk: <a href="/stories/hi">hindi</a></h5>
-		<h5><a href="/stories/hi/level3">Nivå 3</a></h5>
-		<h5>Kilde: <a href="https://africanstorybook.org/reader.php?id=9809" target="_blank">A Tiny Seed: The Story of Wangari Maathai</a> fra <a href="https://africanstorybook.org/" target="_blank">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skrevet av:</span> Nicola Rijsdijk</h5>
+		<h5><span class="colophon-heading">Illustrert av:</span> Maya Marshak</h5>
+		<h5><span class="colophon-heading">Oversatt av:</span> Tanvi Sirari</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/hi">hindi</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/hi/level3">Nivå 3</a></h5>
+		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=9809" target="_blank">A Tiny Seed: The Story of Wangari Maathai</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.no" target="_blank"><img alt="Creative Commons Lisens" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Dette verket er lisensiert under en <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.no" target="_blank">Creative Commons Navngivelse 4.0 International Lisens</a>.</div>
 
@@ -502,10 +502,9 @@
 </div>
 <div>
 <h5>Valgmuligheter</h5>
-	<a class="btn btn-lg" href="/stories/hi">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/hi/hi-0110_wangari.pdf" target="_blank">Last ned PDF</a>
+	<a class="btn btn-lg" href="/stories/hi" class="button">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://bfn.berattelser.se/pdf/hi/hi-0110_wangari.pdf" target="_blank">Last ned PDF</a>
 <br><br>
 </div>
-
 
 
     </div>

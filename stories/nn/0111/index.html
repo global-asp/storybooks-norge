@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://barneboker.no//stories/nn/0111/">
 	<link rel="alternate" type="application/rss+xml" title="Barnebøker for Norge" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -89,7 +87,7 @@
         <a class="btn btn-lg" href="/stories/nn">Tilbake til fortellingene</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0111/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Kvifor flodhestar ikkje har hår</span>
 			<span class="l1">Hvorfor flodhester ikke har hår</span>
@@ -97,10 +95,10 @@
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button id="playbutton01" class="btn btn-lg" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/bfn/mp3/nn/0111/mp3/01.mp3"></audio>
-			<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt mellom nynorsk og bokmål">nb</button>
-			<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt mellom nynorsk og nynorsk">nn</button>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://media.berattelser.se/audio/nn/0111/mp3/01.mp3"></audio>
+			<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+			<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 		</div>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Skrevet av"><img class="cover-icon cover-icon-text" src="/css/pencil.svg" alt="Skrevet av"></span> Basilio Gimo, David Ker</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrert av"><img class="cover-icon cover-icon-text" src="/css/art.svg" alt="Illustrert av"></span> Carol Liddiment</h3>
@@ -108,8 +106,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Lest av"><img class="cover-icon cover-icon-text" src="/css/megaphone.svg" alt="Lest av"></span> Kristofer Olai Ravn Stavseng</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/nn">nynorsk</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/nn/level2">Nivå 2</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/bfn/mp3/nn/0111/nn-0111_hippos.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Vanlig lesehastighet"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Vanlig lesehastighet" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Lesehastighet: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <audio id="audioplayer" controls><source src="https://media.berattelser.se/audio/nn/0111/nn-0111_hippos.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Lesehastighet"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Lesehastighet" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Lesehastighet: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/css/play.svg" alt="Automatisk spilling av fortellingen" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
@@ -124,27 +122,27 @@
       <div class="content">
         <h4>Vanlige PDF-er (hel side)</h4>
         <ul>
-          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/nn/nn-0111_flodhester.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0111_flodhester-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/nn/nn-0111_flodhester-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+          <li><strong><a href="https://bfn.berattelser.se/pdf/nn/nn-0111_hippos.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless/0111_hippos-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless/nn/nn-0111_hippos-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
         </ul>
 
         <h4>Tospråklige PDF-er</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/nn-nb/0111_flodhester-bilingual_nn-nb.pdf" target="_blank">Tospråklig PDF (nynorsk-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/nn-nb/0111_hippos-bilingual_nn-nb.pdf" target="_blank">Tospråklig PDF (nynorsk-bokmål, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
           
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_nn-nb.zip" target="_blank">Tospråklig PDF uten bilder (nynorsk-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/nn-nb/0111_hippos-imageless-bilingual_nn-nb.pdf" target="_blank">Tospråklig PDF uten bilder (nynorsk-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
           
         </ul>
 
         <h4>PDF-hefter (for å skrive ut)</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/nn/nn-0111_flodhester-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/nn-nb/0111_flodhester-bilingual_nn-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (nynorsk-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/booklet/nn/nn-0111_hippos-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/nn-nb/0111_hippos-bilingual_nn-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (nynorsk-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
           
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/wordless-booklet.zip" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-booklet_nn.zip" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_nn-nb.zip" target="_blank">Tospråklig PDF-hefte uten bilder (nynorsk-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless-booklet/0111_hippos-wordless-booklet.pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-booklet/nn/nn-0111_hippos-imageless-booklet.pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/nn-nb/0111_hippos-imageless-bilingual_nn-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (nynorsk-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
           
         </ul>
       </div>
@@ -157,8 +155,8 @@
 
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0111/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
 	Ein dag gjekk Kanin langs elvebreidda.
 	</h3></div>
@@ -173,12 +171,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" onended="resetbutton('02')" src="https://globalstorybooks.net/media/audio/nn/0111/mp3/02.mp3"></audio>
+		<audio id="audio02" src="https://media.berattelser.se/audio/nn/0111/mp3/02.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt mellom nynorsk og bokmål">nb</button>
-		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt mellom nynorsk og nynorsk">nn</button>
+		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -186,7 +184,7 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0111/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
 	Flodhest var der òg. Ho gjekk ein tur og åt litt fint grønt gras.
 	</h3></div>
@@ -201,12 +199,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" onended="resetbutton('03')" src="https://globalstorybooks.net/media/audio/nn/0111/mp3/03.mp3"></audio>
+		<audio id="audio03" src="https://media.berattelser.se/audio/nn/0111/mp3/03.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt mellom nynorsk og bokmål">nb</button>
-		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt mellom nynorsk og nynorsk">nn</button>
+		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -214,7 +212,7 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0111/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
 	Flodhest såg seg ikkje for, så ho var uheldig og trakka på foten til Kanin. Kanin skreik og byrja å ropa til Flodhest: «Hei, Flodhest! Ser du ikkje at du trakkar på foten min?»
 	</h3></div>
@@ -229,12 +227,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" onended="resetbutton('04')" src="https://globalstorybooks.net/media/audio/nn/0111/mp3/04.mp3"></audio>
+		<audio id="audio04" src="https://media.berattelser.se/audio/nn/0111/mp3/04.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt mellom nynorsk og bokmål">nb</button>
-		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt mellom nynorsk og nynorsk">nn</button>
+		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -242,7 +240,7 @@
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0111/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
 	Flodhest bad om unnskyldning til Kanin: «Eg er lei meg, venen min, eg såg deg ikkje. Ver så snill å tilgje meg!» Men Kanin ville ikkje høyra, og han ropte til Flodhest: «Du gjorde det med vilje! Ein dag kjem du til å få sjå! Dette kjem til å straffa seg!»
 	</h3></div>
@@ -257,12 +255,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" onended="resetbutton('05')" src="https://globalstorybooks.net/media/audio/nn/0111/mp3/05.mp3"></audio>
+		<audio id="audio05" src="https://media.berattelser.se/audio/nn/0111/mp3/05.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt mellom nynorsk og bokmål">nb</button>
-		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt mellom nynorsk og nynorsk">nn</button>
+		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -270,7 +268,7 @@
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0111/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
 	Då drog Kanin for å finna Eld, og han sa: «Dra og brenn Flodhest når ho kjem ut av vatnet for å eta gras. Ho trakka på meg!» Eld svara: «Ikkje noko problem, Kanin, venen min. Eg skal gjera akkurat det du bad meg om.»
 	</h3></div>
@@ -285,12 +283,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" onended="resetbutton('06')" src="https://globalstorybooks.net/media/audio/nn/0111/mp3/06.mp3"></audio>
+		<audio id="audio06" src="https://media.berattelser.se/audio/nn/0111/mp3/06.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt mellom nynorsk og bokmål">nb</button>
-		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt mellom nynorsk og nynorsk">nn</button>
+		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -298,7 +296,7 @@
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0111/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
 	Seinare åt Flodhest gras langt frå elvebreidda då det plutseleg sa «svisj!» Eld vart til flammar. Flammane byrja å brenna håret til Flodhest.
 	</h3></div>
@@ -313,12 +311,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" onended="resetbutton('07')" src="https://globalstorybooks.net/media/audio/nn/0111/mp3/07.mp3"></audio>
+		<audio id="audio07" src="https://media.berattelser.se/audio/nn/0111/mp3/07.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt mellom nynorsk og bokmål">nb</button>
-		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt mellom nynorsk og nynorsk">nn</button>
+		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -326,7 +324,7 @@
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0111/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
 	Flodhest byrja å gråta og sprang mot vatnet. Alt håret hennar brann opp i elden. Flodhest gret: «Håret mitt har brunne opp i elden! Du brann alt håret mitt! Håret mitt er borte! Det vene, vakre håret mitt!»
 	</h3></div>
@@ -341,12 +339,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" onended="resetbutton('08')" src="https://globalstorybooks.net/media/audio/nn/0111/mp3/08.mp3"></audio>
+		<audio id="audio08" src="https://media.berattelser.se/audio/nn/0111/mp3/08.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt mellom nynorsk og bokmål">nb</button>
-		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt mellom nynorsk og nynorsk">nn</button>
+		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -354,7 +352,7 @@
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0111/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
 	Kanin var glad for at håret til Flodhest brann. Og den dag i dag, av frykt for elden, går ikkje flodhesten langt frå vatnet.
 	</h3></div>
@@ -369,27 +367,28 @@
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" onended="resetbutton('09')" src="https://globalstorybooks.net/media/audio/nn/0111/mp3/09.mp3"></audio>
-		<button id="playbutton09" class="btn btn-lg" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio09" src="https://media.berattelser.se/audio/nn/0111/mp3/09.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt mellom nynorsk og bokmål">nb</button>
-		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt mellom nynorsk og nynorsk">nn</button>
+		<button onclick="switchlang('nn,nb','nb,nn,nn')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nn,nn','nb,nn,nn')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skrevet av: Basilio Gimo, David Ker</h5>
-		<h5>Illustrert av: Carol Liddiment</h5>
-		<h5>Oversatt av: Espen Stranger-Johannessen, Martine Rørstad Sand</h5>
-		<h5>Lest av: Kristofer Olai Ravn Stavseng</h5>
-		<h5>Språk: <a href="/stories/nn">nynorsk</a></h5>
-		<h5><a href="/stories/nn/level2">Nivå 2</a></h5>
-		<h5>Kilde: <a href="https://africanstorybook.org/reader.php?id=6160" target="_blank">Why hippos have no hair</a> fra <a href="https://africanstorybook.org/" target="_blank">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skrevet av:</span> Basilio Gimo, David Ker</h5>
+		<h5><span class="colophon-heading">Illustrert av:</span> Carol Liddiment</h5>
+		<h5><span class="colophon-heading">Oversatt av:</span> Espen Stranger-Johannessen, Martine Rørstad Sand</h5>
+		<h5><span class="colophon-heading">Lest av:</span> Kristofer Olai Ravn Stavseng</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/nn">nynorsk</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/nn/level2">Nivå 2</a></h5>
+		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=6160" target="_blank">Why hippos have no hair</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank"><img alt="Creative Commons Lisens" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />Dette verket er lisensiert under en <a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank">Creative Commons Navngivelse 3.0 International Lisens</a>.</div>
 
@@ -410,10 +409,9 @@
 </div>
 <div>
 <h5>Valgmuligheter</h5>
-	<a class="btn btn-lg" href="/stories/nn">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/nn/nn-0111_flodhester.pdf" target="_blank">Last ned PDF</a>
+	<a class="btn btn-lg" href="/stories/nn" class="button">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://bfn.berattelser.se/pdf/nn/nn-0111_flodhester.pdf" target="_blank">Last ned PDF</a>
 <br><br>
 </div>
-
 
 
     </div>

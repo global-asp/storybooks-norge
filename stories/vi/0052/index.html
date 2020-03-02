@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://barneboker.no//stories/vi/0052/">
 	<link rel="alternate" type="application/rss+xml" title="Barnebøker for Norge" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -89,7 +87,7 @@
         <a class="btn btn-lg" href="/stories/vi">Tilbake til fortellingene</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Simbegwire</span>
 			<span class="l1">Simbegwire</span>
@@ -97,7 +95,7 @@
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button id="playbutton01" class="btn btn-lg disabled" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 			<button onclick="switchlang('vi,nb','nb,nn,vi')" class="btn btn-lg lang-primary" title="Bytt mellom vietnamesisk og bokmål">nb</button>
 			<button onclick="switchlang('vi,nn','nb,nn,vi')" class="btn btn-lg lang-secondary" title="Bytt mellom vietnamesisk og nynorsk">nn</button>
 		</div>
@@ -106,7 +104,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Oversatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Oversatt av"></span> Nana Trang</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/vi">vietnamesisk</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/vi/level5">Nivå 5</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+
 	</div>
 </div>
 <div class="modal" id="modal-pdf">
@@ -120,28 +119,28 @@
       <div class="content">
         <h4>Vanlige PDF-er (hel side)</h4>
         <ul>
-          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/vi/vi-0052_simbegwire.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0052_simbegwire-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/vi/vi-0052_simbegwire-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+          <li><strong><a href="https://bfn.berattelser.se/pdf/vi/vi-0052_simbegwire.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless/0052_simbegwire-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless/vi/vi-0052_simbegwire-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
         </ul>
 
         <h4>Tospråklige PDF-er</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/vi-nb/0052_simbegwire-bilingual_vi-nb.pdf" target="_blank">Tospråklig PDF (vietnamesisk-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/vi-nn/0052_simbegwire-bilingual_vi-nn.pdf" target="_blank">Tospråklig PDF (vietnamesisk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_vi-nb.zip" target="_blank">Tospråklig PDF uten bilder (vietnamesisk-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_vi-nn.zip" target="_blank">Tospråklig PDF uten bilder (vietnamesisk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/vi-nb/0052_simbegwire-bilingual_vi-nb.pdf" target="_blank">Tospråklig PDF (vietnamesisk-bokmål, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/vi-nn/0052_simbegwire-bilingual_vi-nn.pdf" target="_blank">Tospråklig PDF (vietnamesisk-nynorsk, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/vi-nb/0052_simbegwire-imageless-bilingual_vi-nb.pdf" target="_blank">Tospråklig PDF uten bilder (vietnamesisk-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/vi-nn/0052_simbegwire-imageless-bilingual_vi-nn.pdf" target="_blank">Tospråklig PDF uten bilder (vietnamesisk-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
 
         <h4>PDF-hefter (for å skrive ut)</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/vi/vi-0052_simbegwire-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/vi-nb/0052_simbegwire-bilingual_vi-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (vietnamesisk-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/vi-nn/0052_simbegwire-bilingual_vi-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (vietnamesisk-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/wordless-booklet.zip" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-booklet_vi.zip" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_vi-nb.zip" target="_blank">Tospråklig PDF-hefte uten bilder (vietnamesisk-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_vi-nn.zip" target="_blank">Tospråklig PDF-hefte uten bilder (vietnamesisk-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/booklet/vi/vi-0052_simbegwire-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/vi-nb/0052_simbegwire-bilingual_vi-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (vietnamesisk-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/vi-nn/0052_simbegwire-bilingual_vi-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (vietnamesisk-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless-booklet/0052_simbegwire-wordless-booklet.pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-booklet/vi/vi-0052_simbegwire-imageless-booklet.pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/vi-nb/0052_simbegwire-imageless-bilingual_vi-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (vietnamesisk-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/vi-nn/0052_simbegwire-imageless-bilingual_vi-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (vietnamesisk-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
       </div>
     </div>
@@ -153,8 +152,8 @@
 
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Khi mẹ Simbegwire qua đời, cô bé đã rất buồn. Bố cô làm mọi cách để chăm sóc con gái. Dần dần, họ cũng quen với cuộc sống mới. Mỗi sáng, họ cùng bàn về ngày mới. Mỗi tối, họ nấu ăn với nhau. Sau khi rửa chén, bố Simbegwire hướng dẫn cô bé làm bài.
 	</h3></div>
@@ -181,7 +180,7 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Một ngày nọ, bố Simbegwire về trễ hơn mọi lần. “Con đâu rồi?”, bố gọi. Simbegwire chạy lại phía bố. Cô bé chững lại khi thấy bố đang nắm tay một người phụ nữ. “Anh muốn em gặp một người rất đặc biệt đối với anh, con gái anh. Con, đây là Anita.” Bố cười bảo.
 	</h3></div>
@@ -208,7 +207,7 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	“Chào Simbegwire, bố con kể về con rất nhiều.” Anita nói, nhưng không cười hay nắm tay cô bé. Bố Simbegwire trông thật hạnh phúc. Ông nghĩ về một tương lai khi cả ba cùng chung sống hào thuận. “Con à, bố mong con sẽ chấp nhận Anita làm mẹ của con.”
 	</h3></div>
@@ -235,7 +234,7 @@
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Cuộc sống Simbegwire thay đổi từ đó. Cô bé không còn ngồi với bố mỗi sáng. Anita giao cho cô bé rất nhiều việc nhà, tới mức cô bé không con sức học, và thiếp đi sau mỗi bữa ăn. Chiếc chăn nhiều màu của mẹ an ủi cô mỗi đêm. Tuy vậy, bố cô bé không hề hay biết những gì cô trải qua.
 	</h3></div>
@@ -262,7 +261,7 @@
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Vài tháng sau, bố Simbegwire bảo ông sẽ đi vắng vài ngày. “Bố đi công tác. Hai người chăm sóc lẫn nhau nhé.” Simbegwire sững lại, nhưng bố cô không hề để ý. Anita cũng im lặng và không vui với mọi việc.
 	</h3></div>
@@ -289,7 +288,7 @@
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Mọi thứ trở nên tệ hơn với Simbegwire. Cô bé bị đánh nếu không hoàn thành công việc, hay than thở gì. Vào bữa tối, dì ghẻ ăn hết đồ ăn và cô bé chỉ ăn thừa. Simbegwire ôm chiếc chăn của mẹ mà khóc thút thít mỗi đêm.
 	</h3></div>
@@ -316,7 +315,7 @@
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Một sáng, Simbegwire dậy trễ. “Đồ lười nhác!” Anita quát. Bà ta lôi cô bé ra khỏi giường. Chiếc chăn nhiều màu vướng vào một cái đinh và rách toạc.
 	</h3></div>
@@ -343,7 +342,7 @@
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Simbegwire đau khổ vô cùng và bỏ nhà ra đi. Cô mang theo mảnh chăn của mẹ, gói chút đồ ăn và đi theo hướng bố cô rời nhà.
 	</h3></div>
@@ -370,7 +369,7 @@
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/10.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Tới tối, cô trèo lên một cái cây cao gần bờ sông và ngủ trên cành cây. Cô tự ru “Mẹ ơi mẹ ơi, mẹ đã đi rồi. Mẹ đã đi và không trở lại. Bố không còn yêu con nữa. Mẹ ơi bao giờ mẹ quay về? Mẹ đã đi rồi.”
 	</h3></div>
@@ -397,7 +396,7 @@
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/11.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Sáng hôm sau, Simbegwire hát bài hát lần nữa. Khi những phụ nữ trong làng ra suối giặt đồ, họ nghe được bài hát da diết ấy. Họ nghĩ đó chỉ là tiếng gió qua khẽ cây và tiếp tục công việc. Nhưng một người phụ nữ lắng nghe kĩ câu hát ấy.
 	</h3></div>
@@ -424,7 +423,7 @@
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/12.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Bà nhìn lên ngọn cây và thấy một cô bé với chiếc khăn nhiều màu xinh đẹp. Bà la lên “Simbegwire, con của anh trai tôi!” Những người khác dừng làm để chạy lại giúp cô bé leo xuống. Dì cô ôm chặt cô trong lòng.
 	</h3></div>
@@ -451,7 +450,7 @@
 <hr>
 
 <div id="text13" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/13.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Dì cô mang cô bé về nhà. Simbegwire được cho ăn và ru ngủ dưới chiếc chăn của mẹ. Tối đó, cô lại khóc tới khi thiếp đi. Nhưng đó là nước mắt của sự nhẹ nhõm vì cô biết dì cô quan tâm tới cô.
 	</h3></div>
@@ -478,7 +477,7 @@
 <hr>
 
 <div id="text14" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/14.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/14.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Khi bố Simbegwire về nhà, ông thấy phòng cô bé trống trơn. “Chuyện gì xảy ra vậy Anita?” Người đàn bà bảo cô bé đã bỏ nhà ra đi. “Em muốn con bé tôn trọng em. Nhưng có lẽ em đã quá khắt khe.” Bố cô rời nhà và đi theo hướng con suối. Khi tới ngôi làng của em gái ông, ông nghe được họ đã tìm thấy Simbegwire.
 	</h3></div>
@@ -505,7 +504,7 @@
 <hr>
 
 <div id="text15" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/15.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/15.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Simbegwire đang chơi với anh em họ khi cô thấy bố cô từ xa. Sợ bị mắng, cô chạy trốn vào nhà. Nhưng bố đã tới và bảo “Simbegwire, con đã tự tìm được người mẹ hoàn hảo dành cho con, người yêu con và hiểu được con. Bố rất tự hào về con và bố yêu con nhiều.” Họ đồng ý Simbegwire sẽ ở với dì bao lâu cũng được.
 	</h3></div>
@@ -532,7 +531,7 @@
 <hr>
 
 <div id="text16" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/16.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/16.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Bố cô thăm cô mỗi ngày. Một hôm nọ Anita cũng tới thăm. Bà ta nắm tay cô bé “Cô xin lỗi, cô đã sai rồi. Hãy cho cô cơ hội nữa nhé?” Simbegwire nhìn lên khuôn mặt lo lắng của bố. Rồi cô bé chậm chậm tiến lại Anita và vòng tay qua người bà.
 	</h3></div>
@@ -559,7 +558,7 @@
 <hr>
 
 <div id="text17" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/17.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/17.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Tuần sau, Anita mời Simbegwire và dì tới ăn một bữa tối linh đình. Anita chuẩn bị toàn những món cô bé thích. Họ ăn no say và cũng vui vẻ trò chuyện. Simbegwire cảm thấy mạnh mẽ và hạnh phúc vô cùng. Cô quyết định sẽ sớm về ở với bố và mẹ kế.
 	</h3></div>
@@ -574,7 +573,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text16" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<button id="playbutton17" class="btn btn-lg disabled" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton17" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('vi,nb','nb,nn,vi')" class="btn btn-lg lang-primary" title="Bytt mellom vietnamesisk og bokmål">nb</button>
@@ -585,14 +584,15 @@
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skrevet av: Rukia Nantale</h5>
-		<h5>Illustrert av: Benjamin Mitchley</h5>
-		<h5>Oversatt av: Nana Trang</h5>
-		<h5>Språk: <a href="/stories/vi">vietnamesisk</a></h5>
-		<h5><a href="/stories/vi/level5">Nivå 5</a></h5>
-		<h5>Kilde: <a href="https://africanstorybook.org/reader.php?id=7068" target="_blank">Simbegwire</a> fra <a href="https://africanstorybook.org/" target="_blank">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skrevet av:</span> Rukia Nantale</h5>
+		<h5><span class="colophon-heading">Illustrert av:</span> Benjamin Mitchley</h5>
+		<h5><span class="colophon-heading">Oversatt av:</span> Nana Trang</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/vi">vietnamesisk</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/vi/level5">Nivå 5</a></h5>
+		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=7068" target="_blank">Simbegwire</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank"><img alt="Creative Commons Lisens" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />Dette verket er lisensiert under en <a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank">Creative Commons Navngivelse 3.0 International Lisens</a>.</div>
 
@@ -604,10 +604,9 @@
 </div>
 <div>
 <h5>Valgmuligheter</h5>
-	<a class="btn btn-lg" href="/stories/vi">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/vi/vi-0052_simbegwire.pdf" target="_blank">Last ned PDF</a>
+	<a class="btn btn-lg" href="/stories/vi" class="button">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://bfn.berattelser.se/pdf/vi/vi-0052_simbegwire.pdf" target="_blank">Last ned PDF</a>
 <br><br>
 </div>
-
 
 
     </div>

@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://barneboker.no//stories/pa/0052/">
 	<link rel="alternate" type="application/rss+xml" title="Barnebøker for Norge" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -89,7 +87,7 @@
         <a class="btn btn-lg" href="/stories/pa">Tilbake til fortellingene</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">ਸਿਮਬੇਗਵਾਇਰ</span>
 			<span class="l1">Simbegwire</span>
@@ -97,8 +95,8 @@
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button id="playbutton01" class="btn btn-lg" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/bfn/mp3/pa/0052/mp3/01.mp3"></audio>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://media.berattelser.se/audio/pa/0052/mp3/01.mp3"></audio>
 			<button onclick="switchlang('pa,nb','nb,nn,pa')" class="btn btn-lg lang-primary" title="Bytt mellom panjabi og bokmål">nb</button>
 			<button onclick="switchlang('pa,nn','nb,nn,pa')" class="btn btn-lg lang-secondary" title="Bytt mellom panjabi og nynorsk">nn</button>
 		</div>
@@ -108,8 +106,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Lest av"><img class="cover-icon cover-icon-text" src="/css/megaphone.svg" alt="Lest av"></span> Gurleen Parmar</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/pa">panjabi</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/pa/level5">Nivå 5</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/bfn/mp3/pa/0052/pa-0052_simbegwire.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Vanlig lesehastighet"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Vanlig lesehastighet" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Lesehastighet: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <audio id="audioplayer" controls><source src="https://media.berattelser.se/audio/pa/0052/pa-0052_simbegwire.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Lesehastighet"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Lesehastighet" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Lesehastighet: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/css/play.svg" alt="Automatisk spilling av fortellingen" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
@@ -124,28 +122,28 @@
       <div class="content">
         <h4>Vanlige PDF-er (hel side)</h4>
         <ul>
-          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/pa/pa-0052_simbegwire.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0052_simbegwire-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/pa/pa-0052_simbegwire-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+          <li><strong><a href="https://bfn.berattelser.se/pdf/pa/pa-0052_simbegwire.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless/0052_simbegwire-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless/pa/pa-0052_simbegwire-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
         </ul>
 
         <h4>Tospråklige PDF-er</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/pa-nb/0052_simbegwire-bilingual_pa-nb.pdf" target="_blank">Tospråklig PDF (panjabi-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/pa-nn/0052_simbegwire-bilingual_pa-nn.pdf" target="_blank">Tospråklig PDF (panjabi-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_pa-nb.zip" target="_blank">Tospråklig PDF uten bilder (panjabi-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_pa-nn.zip" target="_blank">Tospråklig PDF uten bilder (panjabi-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/pa-nb/0052_simbegwire-bilingual_pa-nb.pdf" target="_blank">Tospråklig PDF (panjabi-bokmål, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/pa-nn/0052_simbegwire-bilingual_pa-nn.pdf" target="_blank">Tospråklig PDF (panjabi-nynorsk, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/pa-nb/0052_simbegwire-imageless-bilingual_pa-nb.pdf" target="_blank">Tospråklig PDF uten bilder (panjabi-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/pa-nn/0052_simbegwire-imageless-bilingual_pa-nn.pdf" target="_blank">Tospråklig PDF uten bilder (panjabi-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
 
         <h4>PDF-hefter (for å skrive ut)</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/pa/pa-0052_simbegwire-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/pa-nb/0052_simbegwire-bilingual_pa-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (panjabi-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/pa-nn/0052_simbegwire-bilingual_pa-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (panjabi-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/wordless-booklet.zip" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-booklet_pa.zip" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_pa-nb.zip" target="_blank">Tospråklig PDF-hefte uten bilder (panjabi-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_pa-nn.zip" target="_blank">Tospråklig PDF-hefte uten bilder (panjabi-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/booklet/pa/pa-0052_simbegwire-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/pa-nb/0052_simbegwire-bilingual_pa-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (panjabi-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/pa-nn/0052_simbegwire-bilingual_pa-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (panjabi-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless-booklet/0052_simbegwire-wordless-booklet.pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-booklet/pa/pa-0052_simbegwire-imageless-booklet.pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/pa-nb/0052_simbegwire-imageless-bilingual_pa-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (panjabi-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/pa-nn/0052_simbegwire-imageless-bilingual_pa-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (panjabi-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
       </div>
     </div>
@@ -157,8 +155,8 @@
 
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	ਜਦ ਸਿਮਬੇਗਵਾਇਰ ਦੀ ਮਾਂ ਦੀ ਮੌਤ ਹੋ ਗਈ, ਉਹ ਬਹੁਤ ਹੀ ਉਦਾਸ ਸੀ। ਸਿਮਬੇਗਵਾਇਰ ਦੇ ਪਿਤਾ ਨੇ ਆਪਣੀ ਧੀ ਦੀ ਵੱਧੀਆ ਸੰਭਾਲ ਕੀਤੀ। ਹੌਲੀ ਹੌਲੀ, ਉਹ ਸਿਮਬੇਗਵਾਇਰ ਦੀ ਮਾਂ ਬਿਨਾ ਮੁੜ ਖੁਸ਼ ਮਹਿਸੂਸ ਹੋਣ ਲੱਗੇ। ਹਰ ਸਵੇਰ ਉਹ ਬੈਠ ਕੇ ਆਉਣ ਵਾਲੇ ਦਿਨ ਬਾਰੇ ਗੱਲ-ਬਾਤ ਕਰਦੇ। ਹਰ ਸ਼ਾਮ ਉਹ ਇਕੱਠੇ ਖਾਣਾ ਬਣਾਉਂਦੇ। ਬਰਤਨ ਧੋਣ ਦੇ ਬਾਅਦ, ਸਿਮਬੇਗਵਾਇਰ ਦੇ ਪਿਤਾ ਜੀ ਉਸ ਦੀ ਸਕੂਲ ਦੇ ਕੰਮ ਵਿੱਚ ਮਦਦ ਕਰਦੇ।
 	</h3></div>
@@ -173,7 +171,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" onended="resetbutton('02')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/02.mp3"></audio>
+		<audio id="audio02" src="https://media.berattelser.se/audio/pa/0052/mp3/02.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -186,7 +184,7 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	ਇੱਕ ਦਿਨ, ਸਿਮਬੇਗਵਾਇਰ ਦੇ ਪਿਤਾ ਆਮ ਨਾਲੋਂ ਬਾਅਦ ਘਰ ਆਏ। “ਤੁਸੀਂ ਕਿੱਥੇ ਹੋ ਮੇਰੇ ਬੱਚੇ?” ਉਹਨਾਂ ਨੇ ਅਵਾਜ਼ ਦਿੱਤੀ। ਸਿਮਬੇਗਵਾਇਰ ਆਪਣੇ ਪਿਤਾ ਵਲ ਭੱਜੀ ਗਈ। ਉਹ ਰੁੱਕ ਗਈ ਜਦ ਉਸ ਨੇ ਉਹਨਾਂ ਨੂੰ ਇੱਕ ਔਰਤ ਦਾ ਹੱਥ ਫੜਿਆ ਹੋਇਆ ਦੇਖਿਆ। “ਮੈਂ ਚਾਹੁੰਦਾ ਹਾਂ ਕਿ ਤੁਸੀਂ ਇੱਕ ਖਾਸ ਇਨਸਾਨ ਨੂੰ ਮਿਲੋ, ਮੇਰੇ ਬੱਚੇ। ਇਹ ਅਨੀਤਾ ਹੈ,” ਉਹਨਾਂ ਨੇ ਮੁਸਕਰਾਉਂਦੇ ਕਿਹਾ।
 	</h3></div>
@@ -201,7 +199,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" onended="resetbutton('03')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/03.mp3"></audio>
+		<audio id="audio03" src="https://media.berattelser.se/audio/pa/0052/mp3/03.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -214,7 +212,7 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	“ਹੈਲੋ ਸਿਮਬੇਗਵਾਇਰ, ਤੁਹਾਡੇ ਪਿਤਾ ਨੇ ਮੈਨੂੰ ਤੁਹਾਡੇ ਬਾਰੇ ਬਹੁਤ ਕੁੱਝ ਦੱਸਿਆ ਹੈ,” ਅਨੀਤਾ ਨੇ ਕਿਹਾ। ਪਰ ਉਸਨੇ ਨਾ ਹੀ ਮੁਸਕਰਾਇਆ ਅਤੇ ਨਾ ਹੀ ਲੜਕੀ ਦਾ ਹੱਥ ਫੜਿਆ। ਸਿਮਬੇਗਵਾਇਰ ਦੇ ਪਿਤਾ ਜੀ ਖੁਸ਼ ਅਤੇ ਉਤਸਾਹਿਤ ਸੀ। ਉਸ ਨੇ ਉਹਨਾਂ ਤਿੰਨਾਂ ਦੇ ਇਕੱਠੇ ਰਹਿਣ ਬਾਰੇ ਗੱਲ ਕੀਤੀ, ਅਤੇ ਕਿਸ ਤਰ੍ਹਾਂ ਉਹਨ੍ਹਾਂ ਦਾ ਜੀਵਨ ਚੰਗਾ ਹੋਵੇਗਾ। “ਮੇਰੇ ਬੱਚੇ, ਮੈਂ ਉਮੀਦ ਕਰਦਾ ਹਾਂ ਕਿ ਤੁਸੀਂ ਅਨੀਤਾ ਨੂੰ ਆਪਣੀ ਮਾਂ ਦੇ ਰੂਪ ਵਿੱਚ ਸਵੀਕਾਰ ਕਰੋਗੇ,” ਉਹਨ੍ਹਾਂ ਨੇ ਕਿਹਾ।
 	</h3></div>
@@ -229,7 +227,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" onended="resetbutton('04')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/04.mp3"></audio>
+		<audio id="audio04" src="https://media.berattelser.se/audio/pa/0052/mp3/04.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -242,7 +240,7 @@
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	ਸਿਮਬੇਗਵਾਇਰ ਦੀ ਜ਼ਿੰਦਗੀ ਬਦਲ ਗਈ। ਉਸ ਕੋਲ ਹੁਣ ਸਵੇਰ ਵੇਲੇ ਆਪਣੇ ਪਿਤਾ ਦੇ ਨਾਲ ਬੈਠਣ ਲਈ ਸਮਾਂ ਨਹੀਂ ਸੀ। ਅਨੀਤਾ ਉਸ ਨੂੰ ਬਹੁਤ ਸਾਰੇ ਘਰ ਦੇ ਕੰਮ ਦਿੰਦੀ ਸੀ ਕਿ ਉਹ ਸ਼ਾਮ ਨੂੰ ਸਕੂਲ ਦਾ ਕੰਮ ਕਰਨ ਲਈ ਥੱਕ ਜਾਂਦੀ ਸੀ। ਉਹ ਰਾਤ ਦੇ ਖਾਣੇ ਬਾਅਦ ਸਿੱਧਾ ਮੰਜੇ ਵਲ ਚਲੀ ਜਾਂਦੀ ਸੀ। ਉਸ ਨੂੰ ਆਰਾਮ ਸਿਰਫ਼ ਰੰਗਲੇ ਕੰਬਲ ਵਿੱਚ ਆਉਂਦਾ ਸੀ ਜੋ ਉਸ ਦੀ ਮਾਂ ਨੇ ਦਿੱਤਾ ਸੀ। ਸਿਮਬੇਗਵਾਇਰ ਦੇ ਪਿਤਾ ਨੂੰ ਉਸ ਦੀ ਧੀ ਦੇ ਨਾਂ ਖੁਸ਼ ਹੋਣ ਬਾਰੇ ਪਤਾ ਨਹੀਂ ਲਗਿਆ।
 	</h3></div>
@@ -257,7 +255,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" onended="resetbutton('05')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/05.mp3"></audio>
+		<audio id="audio05" src="https://media.berattelser.se/audio/pa/0052/mp3/05.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -270,7 +268,7 @@
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	ਕੁਝ ਮਹੀਨੇ ਬਾਅਦ, ਸਿਮਬੇਗਵਾਇਰ ਦੇ ਪਿਤਾ ਨੇ ਉਹਨ੍ਹਾਂ ਨੂੰ ਦੱਸਿਆ ਕਿ ਉਹ ਕੁਝ ਦੇਰ ਲਈ ਘਰ ਤੋਂ ਬਾਹਰ ਰਹੇਗਾ। “ਮੈਨੂੰ ਮੇਰੇ ਕੰਮ ਲਈ ਸਫ਼ਰ ਕਰਨਾ ਪਵੇਗਾ,” ਉਸ ਨੇ ਕਿਹਾ। “ਪਰ ਮੈਨੂੰ ਪਤਾ ਹੈ ਕਿ ਤੁਸੀਂ ਇਕ-ਦੂਜੇ ਦੀ ਦੇਖ-ਭਾਲ ਕਰੋਗੇ।” ਸਿਮਬੇਗਵਾਇਰ ਉਦਾਸ ਹੋਈ ਪਰ ਉਸ ਦੇ ਪਿਤਾ ਨੇ ਨੋਟਿਸ ਨਹੀਂ ਕੀਤਾ। ਅਨੀਤਾ ਨੇ ਕੁਝ ਨਹੀਂ ਕਿਹਾ। ਉਹ ਵੀ ਖੁਸ਼ ਨਹੀ ਸੀ।
 	</h3></div>
@@ -285,7 +283,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" onended="resetbutton('06')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/06.mp3"></audio>
+		<audio id="audio06" src="https://media.berattelser.se/audio/pa/0052/mp3/06.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -298,7 +296,7 @@
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	ਸਿਮਬੇਗਵਾਇਰ ਲਈ ਮਹੌਲ ਹੋਰ ਵੀ ਬਦਤਰ ਹੋ ਗਿਆ। ਜੇ ਉਹ ਕੰਮ ਖਤਮ ਨਾ ਕਰਦੀ ਜਾਂ ਉਹ ਸ਼ਿਕਾਇਤ ਕਰਦੀ ਤਾਂ ਅਨੀਤਾ ਉਸ ਨੂੰ ਮਾਰਦੀ ਸੀ। ਅਤੇ ਰਾਤ ਦੇ ਖਾਣੇ ਸਮੇਂ, ਉਹ ਔਰਤ ਸਾਰਾ ਭੋਜਨ ਖਾ ਲੈਂਦੀ ਸੀ ਅਤੇ ਸਿਮਬੇਗਵਾਇਰ ਨੂੰ ਸਿਰਫ ਕੁੱਝ ਕੁ ਟੁਕੜੇ ਛੱਡਦੀ ਸੀ। ਹਰ ਰਾਤ ਸਿਮਬੇਗਵਾਇਰ ਰੋਂਦੀ ਹੁੰਦੀ ਸੀ ਅਤੇ ਉਸ ਦੀ ਮਾਂ ਦੇ ਕੰਬਲ ਨੂੰ ਜੱਫੀ ਪਾਉਂਦੀ ਸੌਂਦੀ ਸੀ।
 	</h3></div>
@@ -313,7 +311,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" onended="resetbutton('07')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/07.mp3"></audio>
+		<audio id="audio07" src="https://media.berattelser.se/audio/pa/0052/mp3/07.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -326,7 +324,7 @@
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	ਇਕ ਸਵੇਰ, ਸਿਮਬੇਗਵਾਇਰ ਨੂੰ ਉੱਡਣ ਵਿੱਚ ਦੇਰ ਹੋ ਗਈ। “ਇਹ ਆਲਸੀ ਲੜਕੀ!” ਅਨੀਤਾ ਨੇ ਉੱਚੀ ਰੌਲਾ ਪਾਇਆ। ਉਸ ਨੇ ਸਿਮਬੇਗਵਾਇਰ ਨੂੰ ਮੰਜੇ ਵਿੱਚੋਂ ਬਾਹਰ ਖਿੱਚਿਆ। ਉਸ ਦਾ ਕੀਮਤੀ ਕੰਬਲ ਇੱਕ ਮੇਖ ਵਿਚ ਫਸ ਗਿਆ ਅਤੇ ਉਸ ਦੇ ਦੋ ਟੋਟੇ ਹੋ ਗਏ।
 	</h3></div>
@@ -341,7 +339,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" onended="resetbutton('08')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/08.mp3"></audio>
+		<audio id="audio08" src="https://media.berattelser.se/audio/pa/0052/mp3/08.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -354,7 +352,7 @@
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	ਸਿਮਬੇਗਵਾਇਰ ਬਹੁਤ ਹੀ ਪਰੇਸ਼ਾਨ ਸੀ। ਉਸ ਨੇ ਘਰ ਤੋਂ ਭੱਜਣ ਦਾ ਫੈਸਲਾ ਕੀਤਾ। ਉਸ ਨੇ ਆਪਣੀ ਮਾਂ ਦੇ ਕੰਬਲ ਦੇ ਕੁਝ ਟੁਕੜੇ ਲਏ, ਕੁਝ ਭੋਜਨ ਪੈਕ ਕੀਤਾ ਅਤੇ ਘਰ ਨੂੰ ਛੱਡ ਦਿੱਤਾ। ਉਹ ਉਸ ਸੜਕ ਤੇ ਗਈ ਜਿਸ ਉਪਰ ਉਸ ਦੇ ਪਿਤਾ ਜੀ ਗਏ ਸਨ।
 	</h3></div>
@@ -369,7 +367,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" onended="resetbutton('09')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/09.mp3"></audio>
+		<audio id="audio09" src="https://media.berattelser.se/audio/pa/0052/mp3/09.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -382,7 +380,7 @@
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/10.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	ਜਦ ਸ਼ਾਮ ਹੋ ਗਈ, ਉਹ ਇੱਕ ਨਦੀ ਦੇ ਨੇੜੇ ਇਕ ਲੰਬੇ ਰੁੱਖ ਤੇ ਚੜ ਗਈ ਅਤੇ ਟਹਿਣੀਆਂ ਵਿੱਚ ਆਪਣੇ ਆਪ ਲਈ ਬਿਸਤਰਾ ਲਗਾਇਆ। ਉਹ ਸੌਂਦੀ ਸੌਂਦੀ ਗਾਉਂਣ ਲਗੀ: “ਮਾਂ, ਮਾਂ, ਮਾਂ, ਤੂੰ ਮੈਨੂੰ ਛੱਡ ਗਈ। ਤੂੰ ਮੈਨੂੰ ਛੱਡ ਗਈ ਅਤੇ ਵਾਪਸ ਕਦੇ ਵੀ ਨਾ ਆਈ। ਪਾਪਾ ਹੁਣ ਮੈਨੂੰ ਪਿਆਰ ਨਹੀ ਕਰਦੇ। ਮਾਂ, ਤੂੰ ਕਦੋਂ ਵਾਪਸ ਆਵੇਂਗੀ? ਤੂੰ ਮੈਨੂੰ ਛੱਡ ਗਈ।”
 	</h3></div>
@@ -397,7 +395,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio10" onended="resetbutton('10')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/10.mp3"></audio>
+		<audio id="audio10" src="https://media.berattelser.se/audio/pa/0052/mp3/10.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -410,7 +408,7 @@
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/11.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	ਅਗਲੀ ਸਵੇਰ, ਸਿਮਬੇਗਵਾਇਰ ਨੇ ਫਿਰ ਗੀਤ ਗਾਇਆ। ਜਦ ਮਹਿਲਾਵਾਂ ਨਦੀ ਤੇ ਆਪਣੇ ਕੱਪੜੇ ਧੋਣ ਆਈਆਂ, ਉਹਨਾਂ ਨੇ ਦੁੱਖ ਭਰਿਆ ਗੀਤ ਇੱਕ ਲੰਬੇ ਰੁੱਖ ਤੋਂ ਆਉਂਦਾ ਸੁਣਿਆ। ਉਹਨਾਂ ਨੇ ਸੋਚਿਆ ਇਹ ਸਿਰਫ ਹਵਾ ਦੇ ਨਾਲ ਪੱਤਿਆਂ ਦਾ ਖੜਾਕ ਹੈ ਅਤੇ ਆਪਣਾ ਕੰਮ ਜ਼ਾਰੀ ਰੱਖਿਆ। ਪਰ ਇੱਕ ਔਰਤ ਨੇ ਗੀਤ ਨੂੰ ਧਿਆਨ ਨਾਲ ਸੁਣਿਆ।
 	</h3></div>
@@ -425,7 +423,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio11" onended="resetbutton('11')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/11.mp3"></audio>
+		<audio id="audio11" src="https://media.berattelser.se/audio/pa/0052/mp3/11.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -438,7 +436,7 @@
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/12.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	ਇੱਕ ਔਰਤ ਨੇ ਰੁੱਖ ਵੱਲ ਉਤਾਂਹ ਵੇਖਿਆ। ਜਦ ਉਸ ਨੇ ਕੁੜੀ ਅਤੇ ਉਸ ਦੇ ਰੰਗੀਨ ਕੰਬਲ ਦੇ ਟੁਕੜੇ ਨੂੰ ਵੇਖਿਆ, ਉਹ ਚੀਕੀ “ਸਿਮਬੇਗਵਾਇਰ, ਮੇਰੇ ਭਰਾ ਦੀ ਬੱਚੀ!” ਹੋਰ ਔਰਤਾਂ ਨੇ ਧੋਣਾ ਬੰਦ ਕੀਤਾ ਅਤੇ ਸਿਮਬੇਗਵਾਇਰ ਦੀ ਰੁੱਖ ਤੋਂ ਥੱਲੇ ਆਉਣ ਦੀ ਮਦਦ ਕੀਤੀ। ਉਸ ਦੀ ਭੂਆ ਨੇ ਛੋਟੀ ਕੁੜੀ ਨੂੰ ਗਲੇ ਲਾਇਆ ਅਤੇ ਉਸ ਨੂੰ ਦਿਲਾਸਾ ਦੇਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ।
 	</h3></div>
@@ -453,7 +451,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text13" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio12" onended="resetbutton('12')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/12.mp3"></audio>
+		<audio id="audio12" src="https://media.berattelser.se/audio/pa/0052/mp3/12.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -466,7 +464,7 @@
 <hr>
 
 <div id="text13" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/13.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	ਸਿਮਬੇਗਵਾਇਰ ਦੀ ਭੂਆ ਉਸ ਨੂੰ ਆਪਣੇ ਘਰ ਲੈ ਗਈ। ਉਸ ਨੇ ਸਿਮਬੇਗਵਾਇਰ ਨੂੰ ਗਰਮ ਭੋਜਨ ਦਿੱਤਾ ਅਤੇ ਉਸ ਨੂੰ ਉਸ ਦੀ ਮਾਂ ਦੇ ਕੰਬਲ ਨਾਲ ਮੰਜੇ ਵਿੱਚ ਸਜਾਇਆ। ਉਸ ਰਾਤ, ਸਿਮਬੇਗਵਾਇਰ ਰੋਂਦੀ ਰੋਂਦੀ ਸੋਈ। ਪਰ ਇਹ ਰਾਹਤ ਦੇ ਹੰਝੂ ਸਨ। ਉਸ ਨੂੰ ਪਤਾ ਸੀ ਕਿ ਉਸ ਦੀ ਭੂਆ ਉਸ ਦੀ ਦੇਖ-ਭਾਲ ਕਰੇਗੀ।
 	</h3></div>
@@ -481,7 +479,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text14" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio13" onended="resetbutton('13')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/13.mp3"></audio>
+		<audio id="audio13" src="https://media.berattelser.se/audio/pa/0052/mp3/13.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -494,7 +492,7 @@
 <hr>
 
 <div id="text14" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/14.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/14.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	ਜਦ ਸਿਮਬੇਗਵਾਇਰ ਦੇ ਪਿਤਾ ਘਰ ਵਾਪਸ ਆਏ, ਉਹਨਾਂ ਨੇ ਉਸ ਦਾ ਕਮਰਾ ਖਾਲੀ ਦੇਖਿਆ। “ਕੀ ਹੋਇਆ, ਅਨੀਤਾ?” ਉਸ ਨੇ ਭਾਰੀ ਦਿਲ ਨਾਲ ਪੁੱਛਿਆ। ਉਸ ਔਰਤ ਨੇ ਸਮਝਾਇਆ ਕਿ ਸਿਮਬੇਗਵਾਇਰ ਭੱਜ ਗਈ ਹੈ। “ਮੈਂ ਚਾਹੁੰਦੀ ਸੀ ਕਿ ਉਹ ਮੇਰੀ ਇੱਜ਼ਤ ਕਰੇ,” ਉਸ ਨੇ ਕਿਹਾ। “ਪਰ ਸ਼ਾਇਦ ਮੈਂ ਬਹੁਤ ਜਿਆਦਾ ਸਖਤ ਸੀ।” ਸਿਮਬੇਗਵਾਇਰ ਦੇ ਪਿਤਾ ਘਰੋ ਚਲੇ ਗਏ ਅਤੇ ਨਦੀ ਦੀ ਦਿਸ਼ਾ ਵੱਲ ਗਏ। ਉਹ ਆਪਣੀ ਭੈਣ ਦੇ ਪਿੰਡ ਵੱਲ ਪਤਾ ਕਰਨ ਲਈ ਗਏ ਜੇ ਉਸ ਨੇ ਸਿਮਬੇਗਵਾਇਰ ਨੂੰ ਵੇਖਿਆ ਹੈ।
 	</h3></div>
@@ -509,7 +507,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text13" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text15" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio14" onended="resetbutton('14')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/14.mp3"></audio>
+		<audio id="audio14" src="https://media.berattelser.se/audio/pa/0052/mp3/14.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -522,7 +520,7 @@
 <hr>
 
 <div id="text15" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/15.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/15.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	ਸਿਮਬੇਗਵਾਇਰ ਆਪਣੇ ਚਚੇਰੇ ਭੈਣ ਭਰਾਵਾਂ ਨਾਲ ਖੇਡ ਰਹੀ ਸੀ ਜਦ ਉਸ ਨੇ ਦੂਰੋਂ ਆਪਣੇ ਪਿਤਾ ਨੂੰ ਵੇਖਿਆ। ਉਹ ਡਰ ਗਈ ਸੀ ਕਿ ਉਹ ਗੁੱਸੇ ਹੋਵੇਗਾ ਇਸ ਲਈ ਉਹ ਘਰ ਦੇ ਅੰਦਰ ਭੱਜਕੇ ਛੁਪ ਗਈ। ਪਰ ਉਸ ਦੇ ਪਿਤਾ ਨੇ ਉਸ ਕੋਲ ਆ ਕੇ ਆਖਿਆ, “ਸਿਮਬੇਗਵਾਇਰ, ਤੂੰ ਆਪਣੇ ਆਪ ਲਈ ਉੱਤਮ ਮਾਂ ਲੱਭੀ ਹੈ। ਉਹ ਤੈਨੂੰ ਪਿਆਰ ਕਰਦੀ ਹੈ ਅਤੇ ਤੈਨੂੰ ਸਮਝਦੀ ਹੈ। ਮੈਨੂੰ ਤੇਰੇ ਤੇ ਮਾਣ ਹੈ ਅਤੇ ਮੈਂ ਤੈਨੂੰ ਪਿਆਰ ਕਰਦਾ ਹਾਂ।” ਉਹ ਸਹਿਮਤ ਸਨ ਕਿ ਸਿਮਬੇਗਵਾਇਰ ਆਪਣੀ ਭੂਆ ਦੇ ਨਾਲ ਜਿੰਨ੍ਹੀ ਦੇਰ ਚਾਹੁੰਦੀ ਹੈ ਰਹਿ ਸਕਦੀ ਹੈ।
 	</h3></div>
@@ -537,7 +535,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text14" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text16" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio15" onended="resetbutton('15')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/15.mp3"></audio>
+		<audio id="audio15" src="https://media.berattelser.se/audio/pa/0052/mp3/15.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -550,7 +548,7 @@
 <hr>
 
 <div id="text16" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/16.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/16.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	ਉਸ ਦੇ ਪਿਤਾ ਉਸ ਨੂੰ ਰੋਜ਼ ਮਿਲਣ ਆਉਂਦੇ। ਅਖੀਰ ਨੂੰ, ਉਹ ਅਨੀਤਾ ਦੇ ਨਾਲ ਆਏ। ਉਹ ਸਿਮਬੇਗਵਾਇਰ ਦਾ ਹੱਥ ਫੜਨ ਲਈ ਅੱਗੇ ਵਧੀ। “ਮੈਨੂੰ ਬਹੁਤ ਅਫ਼ਸੋਸ ਹੈ ਬੱਚੇ, ਮੈਂ ਗ਼ਲਤ ਸੀ,” ਉਹ ਰੋਈ। “ਕੀ ਤੂੰ ਮੈਨੂੰ ਮੁੜ ਕੋਸ਼ਿਸ ਕਰਨ ਦਾ ਮੌਕਾ ਦੇਵੇਂਗੀ?” ਸਿਮਬੇਗਵਾਇਰ ਨੇ ਉਸ ਦੇ ਪਿਤਾ ਅਤੇ ਉਹਨਾ ਦੇ ਚਿੰਤਤ ਚਿਹਰੇ ਵਲ ਦੇਖਿਆ। ਫਿਰ ਉਸ ਨੇ ਹੌਲੀ ਹੌਲੀ ਅੱਗੇ ਕਦਮ ਰੱਖੇ ਅਤੇ ਅਨੀਤਾ ਨੂੰ ਜੱਫੀ ਪਾਈ।
 	</h3></div>
@@ -565,7 +563,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text15" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text17" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio16" onended="resetbutton('16')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/16.mp3"></audio>
+		<audio id="audio16" src="https://media.berattelser.se/audio/pa/0052/mp3/16.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -578,7 +576,7 @@
 <hr>
 
 <div id="text17" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/17.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0052/17.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	ਅਗਲੇ ਹਫ਼ਤੇ, ਅਨੀਤਾ ਨੇ ਸਿਮਬੇਗਵਾਇਰ, ਉਸਦੇ ਚਚੇਰੇ ਭੈਣ ਭਰਾਵਾਂ ਅਤੇ ਭੂਆ ਨੂੰ ਘਰ ਭੋਜਨ ਲਈ ਆਉਣ ਲਈ ਸੱਦਾ ਦਿੱਤਾ। ਕੀ ਦਾਵਤ ਸੀ! ਅਨੀਤਾ ਨੇ ਸਿਮਬੇਗਵਾਇਰ ਦਾ ਮਨਪਸੰਦ ਭੋਜਨ ਤਿਆਰ ਕੀਤਾ, ਅਤੇ ਹਰ ਕਿਸੇ ਨੇ ਪੇਟ ਭਰਕੇ ਖਾਧਾ। ਫਿਰ ਬੱਚੇ ਖੇਡੇ ਅਤੇ ਸਿਆਣਿਆਂ ਨੇ ਗੱਲਾਂ-ਬਾਤਾਂ ਕੀਤੀਆਂ। ਸਿਮਬੇਗਵਾਇਰ ਖੁਸ਼ ਅਤੇ ਬਹਾਦਰ ਮਹਿਸੂਸ ਕਰ ਰਹੀ ਸੀ। ਉਸ ਨੇ ਫੈਸਲਾ ਕੀਤਾ ਸੀ ਕਿ ਉਹ ਬਹੁਤ ਜਲਦੀ ਉਸ ਦੇ ਪਿਤਾ ਅਤੇ ਮਤਰੇਈ ਮਾਂ ਦੇ ਨਾਲ ਰਹਿਣ ਲਈ ਵਾਪਸ ਘਰ ਆਵੇਗੀ।
 	</h3></div>
@@ -593,8 +591,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text16" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<audio id="audio17" onended="resetbutton('17')" src="https://globalstorybooks.net/media/audio/pa/0052/mp3/17.mp3"></audio>
-		<button id="playbutton17" class="btn btn-lg" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio17" src="https://media.berattelser.se/audio/pa/0052/mp3/17.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton17" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('pa,nb','nb,nn,pa')" class="btn btn-lg lang-primary" title="Bytt mellom panjabi og bokmål">nb</button>
@@ -605,15 +603,16 @@
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skrevet av: Rukia Nantale</h5>
-		<h5>Illustrert av: Benjamin Mitchley</h5>
-		<h5>Oversatt av: Anu Gill</h5>
-		<h5>Lest av: Gurleen Parmar</h5>
-		<h5>Språk: <a href="/stories/pa">panjabi</a></h5>
-		<h5><a href="/stories/pa/level5">Nivå 5</a></h5>
-		<h5>Kilde: <a href="https://africanstorybook.org/reader.php?id=7068" target="_blank">Simbegwire</a> fra <a href="https://africanstorybook.org/" target="_blank">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skrevet av:</span> Rukia Nantale</h5>
+		<h5><span class="colophon-heading">Illustrert av:</span> Benjamin Mitchley</h5>
+		<h5><span class="colophon-heading">Oversatt av:</span> Anu Gill</h5>
+		<h5><span class="colophon-heading">Lest av:</span> Gurleen Parmar</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/pa">panjabi</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/pa/level5">Nivå 5</a></h5>
+		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=7068" target="_blank">Simbegwire</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank"><img alt="Creative Commons Lisens" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />Dette verket er lisensiert under en <a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank">Creative Commons Navngivelse 3.0 International Lisens</a>.</div>
 
@@ -625,10 +624,9 @@
 </div>
 <div>
 <h5>Valgmuligheter</h5>
-	<a class="btn btn-lg" href="/stories/pa">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/pa/pa-0052_simbegwire.pdf" target="_blank">Last ned PDF</a>
+	<a class="btn btn-lg" href="/stories/pa" class="button">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://bfn.berattelser.se/pdf/pa/pa-0052_simbegwire.pdf" target="_blank">Last ned PDF</a>
 <br><br>
 </div>
-
 
 
     </div>

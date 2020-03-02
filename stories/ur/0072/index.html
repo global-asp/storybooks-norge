@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://barneboker.no//stories/ur/0072/">
 	<link rel="alternate" type="application/rss+xml" title="Barnebøker for Norge" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -89,7 +87,7 @@
         <a class="btn btn-lg" href="/stories/ur">Tilbake til fortellingene</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1 dir="rtl"><span class="def">شہد خور چڑیا کا بدلہ</span>
 			<span dir="ltr" class="l1">Honningguidens hevn</span>
@@ -97,8 +95,8 @@
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button id="playbutton01" class="btn btn-lg" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/bfn/mp3/ur/0072/mp3/01.mp3"></audio>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://media.berattelser.se/audio/ur/0072/mp3/01.mp3"></audio>
 			<button onclick="switchlang('ur,nb','nb,nn,ur')" class="btn btn-lg lang-primary" title="Bytt mellom urdu og bokmål">nb</button>
 			<button onclick="switchlang('ur,nn','nb,nn,ur')" class="btn btn-lg lang-secondary" title="Bytt mellom urdu og nynorsk">nn</button>
 		</div>
@@ -108,8 +106,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Lest av"><img class="cover-icon cover-icon-text" src="/css/megaphone.svg" alt="Lest av"></span> Sadia Shad</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/ur">urdu</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/ur/level4">Nivå 4</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/bfn/mp3/ur/0072/ur-0072_honeyguide.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Vanlig lesehastighet"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Vanlig lesehastighet" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Lesehastighet: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <audio id="audioplayer" controls><source src="https://media.berattelser.se/audio/ur/0072/ur-0072_honeyguide.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Lesehastighet"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Lesehastighet" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Lesehastighet: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/css/play.svg" alt="Automatisk spilling av fortellingen" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
@@ -124,28 +122,28 @@
       <div class="content">
         <h4>Vanlige PDF-er (hel side)</h4>
         <ul>
-          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/ur/ur-0072_honningguiden.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0072_honningguiden-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/ur/ur-0072_honningguiden-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+          <li><strong><a href="https://bfn.berattelser.se/pdf/ur/ur-0072_honeyguide.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless/0072_honeyguide-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless/ur/ur-0072_honeyguide-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
         </ul>
 
         <h4>Tospråklige PDF-er</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/ur-nb/0072_honningguiden-bilingual_ur-nb.pdf" target="_blank">Tospråklig PDF (urdu-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/ur-nn/0072_honningguiden-bilingual_ur-nn.pdf" target="_blank">Tospråklig PDF (urdu-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_ur-nb.zip" target="_blank">Tospråklig PDF uten bilder (urdu-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_ur-nn.zip" target="_blank">Tospråklig PDF uten bilder (urdu-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/ur-nb/0072_honeyguide-bilingual_ur-nb.pdf" target="_blank">Tospråklig PDF (urdu-bokmål, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/ur-nn/0072_honeyguide-bilingual_ur-nn.pdf" target="_blank">Tospråklig PDF (urdu-nynorsk, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/ur-nb/0072_honeyguide-imageless-bilingual_ur-nb.pdf" target="_blank">Tospråklig PDF uten bilder (urdu-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/ur-nn/0072_honeyguide-imageless-bilingual_ur-nn.pdf" target="_blank">Tospråklig PDF uten bilder (urdu-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
 
         <h4>PDF-hefter (for å skrive ut)</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/ur/ur-0072_honningguiden-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/ur-nb/0072_honningguiden-bilingual_ur-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (urdu-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/ur-nn/0072_honningguiden-bilingual_ur-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (urdu-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/wordless-booklet.zip" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-booklet_ur.zip" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_ur-nb.zip" target="_blank">Tospråklig PDF-hefte uten bilder (urdu-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_ur-nn.zip" target="_blank">Tospråklig PDF-hefte uten bilder (urdu-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/booklet/ur/ur-0072_honeyguide-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/ur-nb/0072_honeyguide-bilingual_ur-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (urdu-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/ur-nn/0072_honeyguide-bilingual_ur-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (urdu-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless-booklet/0072_honeyguide-wordless-booklet.pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-booklet/ur/ur-0072_honeyguide-imageless-booklet.pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/ur-nb/0072_honeyguide-imageless-bilingual_ur-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (urdu-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/ur-nn/0072_honeyguide-imageless-bilingual_ur-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (urdu-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
       </div>
     </div>
@@ -157,8 +155,8 @@
 
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
 	یہ ایک شہد خور چڑیا نگیدے اور ایک لالچی آدمی گنگیلے کی کہانی ہے۔ ایک دن جب گنگیلے شکار کے لیے باہر تھا اُس نے نگیدے کی پکار سُنی۔ گنگیلے کے منہ میں پانی بھر گیا جب اُس نے شہد کے بارے میں سوچا۔ وہ رُک گیا اور اُس نے غور سے سُنا۔ جب تک کہ اسے اپنے سر کے اوپر موجود ٹہنیوں پہ بیٹھا پرندہ دکھائی نہیں دیا۔ چٹک۔ چٹک۔ چٹک۔ چھوٹا پرندہ چہچہایا جیسا کہ وہ اگلے اور اس سے اگلے درخت پر جا کر بیٹھا۔ چٹک۔ چٹک۔ چٹک۔ اُس نے بلایا۔ وقتاً فوقتآً وہ اس بات کو یقینی بنا رہا تھا کہ گنگیلے اُس کے پیچھے ہے۔
 	</h3></div>
@@ -173,7 +171,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" onended="resetbutton('02')" src="https://globalstorybooks.net/media/audio/ur/0072/mp3/02.mp3"></audio>
+		<audio id="audio02" src="https://media.berattelser.se/audio/ur/0072/mp3/02.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -186,7 +184,7 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
 	آدھے گھنٹے کے بعد، وہ ایک بڑے انجیرکے درخت کے پاس پہنچے۔ اُس نے پاگلوں کی طرح ٹہنیاں چھانی۔ اور پھر وہ ایک ٹہنی پر آ کر رُک گیا جیسا کہ وہ گنگیلے سے کہنا چاہتا ہو اب آو! یہ رہا! تمہیں اتنی دیر کیوں لگ رہی ہے۔ گنگیلے کو درخت کے نیچے کوئی مکھیاں دکھائی نہ دیں، لیکن اُس نے نگیدے پر بھروسہ کیا۔
 	</h3></div>
@@ -201,7 +199,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" onended="resetbutton('03')" src="https://globalstorybooks.net/media/audio/ur/0072/mp3/03.mp3"></audio>
+		<audio id="audio03" src="https://media.berattelser.se/audio/ur/0072/mp3/03.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -214,7 +212,7 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
 	اس لیے گنگیلے نے اپنا ہتھیار درخت کے نیچے رکھ دیا اور کچھ سوکھی لکڑیاں اکھٹی کر کے آگ جلائی۔ جب آگ ٹھیک سے جل رہی تھی اُس نے ایک لمبی سوکھی لکڑی درمیان میں رکھ دی۔ یہ لکڑی جلنے پر بہت سا دھواں دینے کے لیے جانی جاتی ہے۔ دوسری طرف سے لکڑی کا ٹھنڈا حصہ دانتوں میں پکڑے درخت پے چرھنے لگا۔
 	</h3></div>
@@ -229,7 +227,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" onended="resetbutton('04')" src="https://globalstorybooks.net/media/audio/ur/0072/mp3/04.mp3"></audio>
+		<audio id="audio04" src="https://media.berattelser.se/audio/ur/0072/mp3/04.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -242,7 +240,7 @@
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
 	جلد ہی اُسے مصروف مکھیوں کی آواز آنا شروع ہوئی۔ وہ درخت میں ایک سوراخ میں سے آ جا رہیں تھیں جو کہ اُن کا چھتہ تھا۔ جب گنگیلے چھتے کے پاس پہنچا اُس نے لکڑی کا جلتا ہوا حصہ مکھیوں کے چھتے میں ڈال دیا۔ مکھیاں غصے سے بھنھبناتی ہوئیں چھتے سے باہر نکلیں۔ وہ اُڑ گئیں کیونکہ اُنہیں دھواں پسند نہیں۔ لیکن اس سے پہلے نہیں جب تک وہ گنگیلے کو کچھ درد ناک ڈنگ نہ مار لیتیں۔
 	</h3></div>
@@ -257,7 +255,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" onended="resetbutton('05')" src="https://globalstorybooks.net/media/audio/ur/0072/mp3/05.mp3"></audio>
+		<audio id="audio05" src="https://media.berattelser.se/audio/ur/0072/mp3/05.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -270,7 +268,7 @@
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
 	جب مکھیاں باہر نکل گئیں، گنگیلے نے اپنا ہاتھ چھتے میں ڈالا اورچھتے کے حصوں کو باہر نکالا جو کہ شہد سے بھرے ہوئے تھے اور چربی سے بھرے سفید گربوں کو بھی باہر نکالا۔ اس نے شہد سے بھرے چھتے کو اپنے تھیلے میں رکھا اور کندھے پر پہن لیااور درخت سے نیچے اُترنا شروع کر دیا۔
 	</h3></div>
@@ -285,7 +283,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" onended="resetbutton('06')" src="https://globalstorybooks.net/media/audio/ur/0072/mp3/06.mp3"></audio>
+		<audio id="audio06" src="https://media.berattelser.se/audio/ur/0072/mp3/06.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -298,7 +296,7 @@
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
 	نگیدے یہ سب بہت شوق سے دیکھ رہا تھا جو کچھ گنگیلے کر رہا تھا۔ وہ انتظار میں تھا کہ بطور شہد خور چڑیا شکریہ کے طور پر وہ اُس کو شہد دے گا۔ نگیدے ایک شاخ سے دوسری شاخ نزدیک سے نزدیک زمین پر اُس کے پاس جانے کی کو شش میں تھا۔ آخر کار گنگیلے درخت سے نیچے اُتر آیا۔ نگیدے اُس کے پاس پڑے ایک پتھر پر آکر روکا اور اپنے انعام کا انتظار کیا۔
 	</h3></div>
@@ -313,7 +311,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" onended="resetbutton('07')" src="https://globalstorybooks.net/media/audio/ur/0072/mp3/07.mp3"></audio>
+		<audio id="audio07" src="https://media.berattelser.se/audio/ur/0072/mp3/07.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -326,7 +324,7 @@
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
 	لیکن گنگیلے نے آگ بجھائی، اپنا ہتھیار اُٹھایا اور گھر کی طرف چلنا شروع کر دیا۔ پرندے کو نظر انداز کرتے ہوئے۔ نگیدے نے غصے سے پکارا۔ وِک۔ تور! وِک تور! گنگیلے رکا پرندے کو گھورا اور زور سے ہنسا۔ تمہیں شہد چاہیے؟ واقعی میرے دوست؟ آہ لیکن میں نے خود سارا کام کیا اور ڈنگ کا درد سہا۔ تو میں یہ مزیدار شہد تمہارے ساتھ کیوں بانٹوں؟ اور وہ چلا گیا۔ نگیدے شدید غصے میں تھا اُسے اُس کے ساتھ ایسا نہیں کرنا چاہیے تھا۔ لیکن وہ اپنا بدلہ لے گا۔
 	</h3></div>
@@ -341,7 +339,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" onended="resetbutton('08')" src="https://globalstorybooks.net/media/audio/ur/0072/mp3/08.mp3"></audio>
+		<audio id="audio08" src="https://media.berattelser.se/audio/ur/0072/mp3/08.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -354,7 +352,7 @@
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
 	ایک دن کئی ہفتوں کے بعد گنگیلے نے نگیدے کی شہد کے لیے پکار سُنی۔ اُسے مزیدار شہد یاد تھا، اور اُس نے تیزی سے پرندے کا پیچھا کیا۔ نگیدے کو جنگل کے کنارے پر لا کر وہ رک گیا جہاں کانٹوں کا ایک جھاڑ موجود تھا۔ آہ۔ گنگیلے نے سوچا کہ شہد کا چھتا اسی درخت میں ہو گا۔ اُس نے جلدی سے آگ جلائی اوردانتوں میں جلتی ہوئی لکڑی کو دبائے درخت پر چڑھنے لگا۔ نگیدے بیٹھا یہ سب دیکھ رہا تھا۔
 	</h3></div>
@@ -369,7 +367,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" onended="resetbutton('09')" src="https://globalstorybooks.net/media/audio/ur/0072/mp3/09.mp3"></audio>
+		<audio id="audio09" src="https://media.berattelser.se/audio/ur/0072/mp3/09.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -382,7 +380,7 @@
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/10.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
 	درخت چڑھتے ہوئے گنگیلے نے غور کیا کہ اُسے مکھیوں کی بھنھنانے کی آواز کیوں نہیں آ رہی۔ شاید چھتا درخت کی بہت گہرائی میں تھا۔ اُس نے سوچا۔ لیکن چھتے کے بجائے وہ ایک چیتی کے چہرے کو گھور رہا تھا۔ چیتی اپنی نیند کے اتنے خراب ہونے پر بہت غصہ تھی۔ اُس نے اپنی آنکھوں کو چھوٹا کرتے ہوئے منہ کھولا تا کہ وہ اپنے بڑے اور تیز دانت دکھا سکے۔
 	</h3></div>
@@ -397,7 +395,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio10" onended="resetbutton('10')" src="https://globalstorybooks.net/media/audio/ur/0072/mp3/10.mp3"></audio>
+		<audio id="audio10" src="https://media.berattelser.se/audio/ur/0072/mp3/10.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -410,7 +408,7 @@
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/11.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
 	اس سے پہلے کہ چیتی اس پر حملہ کرتی۔ گنگیلے درخت سے نیچے اُتر آیا۔ جلد بازی میں اُس نے ایک ٹہنی چھوڑی جس وجہ سے وہ سیدھا زمین پر آگرا اور اُس کا پاوں مڑ گیا۔ وہ تیزی سے فرار ہوا۔ خوشقسمتی سے چیتی نیند میں ہونے کی وجہ سے اُس کا پیچھا نہ کر پائی۔ نگیدے، شہد خور چڑیا نے اپنا بدلہ لے لیا۔ اور گنگیلے نے سبق سیکھ لیا۔
 	</h3></div>
@@ -425,7 +423,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio11" onended="resetbutton('11')" src="https://globalstorybooks.net/media/audio/ur/0072/mp3/11.mp3"></audio>
+		<audio id="audio11" src="https://media.berattelser.se/audio/ur/0072/mp3/11.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -438,7 +436,7 @@
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/12.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0072/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
 	اور جب گنگیلے کے بچوں نے نگیدے کی کہانی سُنی اُن کے دل میں چھوٹے پرندے کے لیے عزت پیدا ہوئی۔ جب کبھی وہ شہد اُتارتے وہ اس بات کو یقینی بناتے کہ چھتے کا سب سے بڑا حصہ وہ شہد خور چڑیا کے لیے چھوڑ دیں گے۔
 	</h3></div>
@@ -453,8 +451,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<audio id="audio12" onended="resetbutton('12')" src="https://globalstorybooks.net/media/audio/ur/0072/mp3/12.mp3"></audio>
-		<button id="playbutton12" class="btn btn-lg" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio12" src="https://media.berattelser.se/audio/ur/0072/mp3/12.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ur,nb','nb,nn,ur')" class="btn btn-lg lang-primary" title="Bytt mellom urdu og bokmål">nb</button>
@@ -465,15 +463,16 @@
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skrevet av: Zulu folktale</h5>
-		<h5>Illustrert av: Wiehan de Jager</h5>
-		<h5>Oversatt av: Samrina Sana</h5>
-		<h5>Lest av: Sadia Shad</h5>
-		<h5>Språk: <a href="/stories/ur">urdu</a></h5>
-		<h5><a href="/stories/ur/level4">Nivå 4</a></h5>
-		<h5>Kilde: <a href="https://africanstorybook.org/reader.php?id=2099" target="_blank">The Honeyguide's revenge</a> fra <a href="https://africanstorybook.org/" target="_blank">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skrevet av:</span> Zulu folktale</h5>
+		<h5><span class="colophon-heading">Illustrert av:</span> Wiehan de Jager</h5>
+		<h5><span class="colophon-heading">Oversatt av:</span> Samrina Sana</h5>
+		<h5><span class="colophon-heading">Lest av:</span> Sadia Shad</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/ur">urdu</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/ur/level4">Nivå 4</a></h5>
+		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=2099" target="_blank">The Honeyguide's revenge</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank"><img alt="Creative Commons Lisens" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />Dette verket er lisensiert under en <a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank">Creative Commons Navngivelse 3.0 International Lisens</a>.</div>
 
@@ -487,10 +486,9 @@
 </div>
 <div>
 <h5>Valgmuligheter</h5>
-	<a class="btn btn-lg" href="/stories/ur">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/ur/ur-0072_honningguiden.pdf" target="_blank">Last ned PDF</a>
+	<a class="btn btn-lg" href="/stories/ur" class="button">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://bfn.berattelser.se/pdf/ur/ur-0072_honningguiden.pdf" target="_blank">Last ned PDF</a>
 <br><br>
 </div>
-
 
 
     </div>

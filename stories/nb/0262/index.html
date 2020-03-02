@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://barneboker.no//stories/nb/0262/">
 	<link rel="alternate" type="application/rss+xml" title="Barnebøker for Norge" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -89,7 +87,7 @@
         <a class="btn btn-lg" href="/stories/nb">Tilbake til fortellingene</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Magozwe</span>
 			<span class="l1">Magozwe</span>
@@ -97,10 +95,10 @@
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button id="playbutton01" class="btn btn-lg" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/bfn/mp3/nb/0262/mp3/01.mp3"></audio>
-			<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-			<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://media.berattelser.se/audio/nb/0262/mp3/01.mp3"></audio>
+			<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+			<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 		</div>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Skrevet av"><img class="cover-icon cover-icon-text" src="/css/pencil.svg" alt="Skrevet av"></span> Lesley Koyi</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrert av"><img class="cover-icon cover-icon-text" src="/css/art.svg" alt="Illustrert av"></span> Wiehan de Jager</h3>
@@ -108,8 +106,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Lest av"><img class="cover-icon cover-icon-text" src="/css/megaphone.svg" alt="Lest av"></span> Espen Stranger-Johannessen</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/nb">bokmål</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/nb/level5">Nivå 5</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/bfn/mp3/nb/0262/nb-0262_magozwe.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Vanlig lesehastighet"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Vanlig lesehastighet" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Lesehastighet: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <audio id="audioplayer" controls><source src="https://media.berattelser.se/audio/nb/0262/nb-0262_magozwe.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Lesehastighet"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Lesehastighet" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Lesehastighet: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/css/play.svg" alt="Automatisk spilling av fortellingen" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
@@ -124,28 +122,28 @@
       <div class="content">
         <h4>Vanlige PDF-er (hel side)</h4>
         <ul>
-          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/nb/nb-0262_magozwe.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0262_magozwe-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/nb/nb-0262_magozwe-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+          <li><strong><a href="https://bfn.berattelser.se/pdf/nb/nb-0262_magozwe.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless/0262_magozwe-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless/nb/nb-0262_magozwe-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
         </ul>
 
         <h4>Tospråklige PDF-er</h4>
         <ul>
           
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/nb-nn/0262_magozwe-bilingual_nb-nn.pdf" target="_blank">Tospråklig PDF (bokmål-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/nb-nn/0262_magozwe-bilingual_nb-nn.pdf" target="_blank">Tospråklig PDF (bokmål-nynorsk, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
           
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_nb-nn.zip" target="_blank">Tospråklig PDF uten bilder (bokmål-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/nb-nn/0262_magozwe-imageless-bilingual_nb-nn.pdf" target="_blank">Tospråklig PDF uten bilder (bokmål-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
 
         <h4>PDF-hefter (for å skrive ut)</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/nb/nb-0262_magozwe-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/booklet/nb/nb-0262_magozwe-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
           
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/nb-nn/0262_magozwe-bilingual_nb-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (bokmål-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/wordless-booklet.zip" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-booklet_nb.zip" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/nb-nn/0262_magozwe-bilingual_nb-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (bokmål-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless-booklet/0262_magozwe-wordless-booklet.pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-booklet/nb/nb-0262_magozwe-imageless-booklet.pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
           
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_nb-nn.zip" target="_blank">Tospråklig PDF-hefte uten bilder (bokmål-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/nb-nn/0262_magozwe-imageless-bilingual_nb-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (bokmål-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
       </div>
     </div>
@@ -157,8 +155,8 @@
 
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	I den travle byen Nairobi, langt fra det trygge livet hjemme, bodde det en gjeng hjemløse gutter. De tok hver dag akkurat som den kom. En morgen pakket guttene sammen mattene sine etter at de hadde sovet på det kalde fortauet. For å fordrive kulden lagde de et bål av søppel. En av guttene i gjengen var Magozwe. Han var den yngste.
 	</h3></div>
@@ -173,12 +171,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" onended="resetbutton('02')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/02.mp3"></audio>
+		<audio id="audio02" src="https://media.berattelser.se/audio/nb/0262/mp3/02.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -186,7 +184,7 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Da Magozwes foreldre døde, var han bare fem år. Han dro for å bo med onkelen sin. Denne mannen brydde seg ikke om barnet. Han ga ikke Magozwe nok mat. Han tvang gutten til å jobbe hardt.
 	</h3></div>
@@ -201,12 +199,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" onended="resetbutton('03')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/03.mp3"></audio>
+		<audio id="audio03" src="https://media.berattelser.se/audio/nb/0262/mp3/03.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -214,7 +212,7 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Hvis Magozwe klagde eller stilte spørsmål, slo onkelen hans ham. Når Magozwe spurte om han kunne gå på skolen, slo onkelen hans ham og sa: «Du er for dum til å lære noe som helst.» Etter tre år med denne behandlingen rømte Magozwe fra onkelen sin. Han begynte å bo på gata.
 	</h3></div>
@@ -229,12 +227,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" onended="resetbutton('04')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/04.mp3"></audio>
+		<audio id="audio04" src="https://media.berattelser.se/audio/nb/0262/mp3/04.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -242,7 +240,7 @@
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Livet på gata var vanskelig, og de fleste guttene slet hver dag bare for å finne mat. Noen ganger ble de arrestert, andre ganger ble de slått. Når de ble syke, var det ingen som kunne hjelpe dem. Gjengen var avhengig av de få pengene de fikk fra å tigge og fra å selge plast og annet til resirkulering. Livet var enda vanskeligere på grunn av slåsskamper med rivaliserende gjenger som ville ha kontroll over deler av byen.
 	</h3></div>
@@ -257,12 +255,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" onended="resetbutton('05')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/05.mp3"></audio>
+		<audio id="audio05" src="https://media.berattelser.se/audio/nb/0262/mp3/05.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -270,7 +268,7 @@
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	En dag mens Magozwe lette i noen søppelbøtter, fant han en gammel fillete barnebok. Han fjernet møkka fra den og la den i sekken sin. Hver påfølgende dag tok han ut boka og så på bildene. Han visste ikke hvordan han skulle lese ordene.
 	</h3></div>
@@ -285,12 +283,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" onended="resetbutton('06')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/06.mp3"></audio>
+		<audio id="audio06" src="https://media.berattelser.se/audio/nb/0262/mp3/06.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -298,7 +296,7 @@
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Bildene fortalte fortellingen om en gutt som vokste opp til å bli pilot. Magozwe pleide å dagdrømme om å bli pilot. Noen ganger innbilte han seg at han var gutten i fortellingen.
 	</h3></div>
@@ -313,12 +311,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" onended="resetbutton('07')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/07.mp3"></audio>
+		<audio id="audio07" src="https://media.berattelser.se/audio/nb/0262/mp3/07.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -326,7 +324,7 @@
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Det var kaldt og Magozwe stod langs veien og tigget. En mann gikk bort til ham. «Hei, jeg heter Thomas. Jeg bor i nærheten, på et sted der du kan få deg noe å spise», sa han og pekte på et gult hus med blått tak. «Jeg håper du drar dit for å få deg litt mat?» spurte han. Magozwe så på ham, og deretter på huset. «Kanskje», sa han og gikk.
 	</h3></div>
@@ -341,12 +339,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" onended="resetbutton('08')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/08.mp3"></audio>
+		<audio id="audio08" src="https://media.berattelser.se/audio/nb/0262/mp3/08.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -354,7 +352,7 @@
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	I månedene som fulgte ble de hjemløse guttene vant til å se Thomas. Han likte å snakke med folk, spesielt de som bodde på gata. Thomas hørte på fortellinger om livene til folk. Han var seriøs og tålmodig, aldri frekk eller respektløs. Noen av guttene begynte å dra til det gule og blå huset for å få mat midt på dagen.
 	</h3></div>
@@ -369,12 +367,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" onended="resetbutton('09')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/09.mp3"></audio>
+		<audio id="audio09" src="https://media.berattelser.se/audio/nb/0262/mp3/09.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -382,7 +380,7 @@
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/10.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Magozwe satt på fortauet og kikket i bildeboka da Thomas kom og satte seg ved siden av ham. «Hva handler fortellingen om?» spurte Thomas. «Den handler om en gutt som blir pilot», svarte Magozwe. «Hva heter gutten?» spurte Thomas. «Jeg vet ikke, jeg kan ikke lese», svarte Magozwe lavt.
 	</h3></div>
@@ -397,12 +395,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio10" onended="resetbutton('10')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/10.mp3"></audio>
+		<audio id="audio10" src="https://media.berattelser.se/audio/nb/0262/mp3/10.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -410,7 +408,7 @@
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/11.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Da de møttes, begynte Magozwe å fortelle sin egen historie til Thomas. Det var historien om onkelen hans og hvorfor han rømte hjemmefra. Thomas snakket ikke mye, og han sa ikke til Magozwe hva han skulle gjøre, men han lyttet alltid oppmerksomt. Noen ganger snakket de sammen mens de spiste i det gule huset med det blå taket.
 	</h3></div>
@@ -425,12 +423,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio11" onended="resetbutton('11')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/11.mp3"></audio>
+		<audio id="audio11" src="https://media.berattelser.se/audio/nb/0262/mp3/11.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -438,7 +436,7 @@
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/12.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Omkring Magozwes tiende fødselsdag ga Thomas ham en ny barnebok. Det var fortellingen om en landsbygutt som vokste opp til å bli en berømt fotballspiller. Thomas leste den fortellingen for Magozwe mange ganger, helt til han en dag sa: «Jeg synes det er på tide at du går på skolen og lærer å lese. Hva synes du?» Thomas forklarte at han visste om et sted hvor barn kunne bo og gå på skole.
 	</h3></div>
@@ -453,12 +451,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text13" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio12" onended="resetbutton('12')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/12.mp3"></audio>
+		<audio id="audio12" src="https://media.berattelser.se/audio/nb/0262/mp3/12.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -466,7 +464,7 @@
 <hr>
 
 <div id="text13" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/13.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Magozwe tenkte på dette nye stedet og på å gå på skolen. Hva om onkelen hans hadde rett, og han var for dum til å lære noe? Hva om de slo ham på dette nye stedet? Han var redd. «Kanskje det er bedre å bo på gata», tenkte han.
 	</h3></div>
@@ -481,12 +479,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text14" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio13" onended="resetbutton('13')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/13.mp3"></audio>
+		<audio id="audio13" src="https://media.berattelser.se/audio/nb/0262/mp3/13.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -494,7 +492,7 @@
 <hr>
 
 <div id="text14" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/14.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/14.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Han snakket om det han var redd for med Thomas. Med tiden forsikret mannen gutten om at livet kunne bli bedre på det nye stedet.
 	</h3></div>
@@ -509,12 +507,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text13" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text15" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio14" onended="resetbutton('14')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/14.mp3"></audio>
+		<audio id="audio14" src="https://media.berattelser.se/audio/nb/0262/mp3/14.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -522,7 +520,7 @@
 <hr>
 
 <div id="text15" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/15.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/15.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Dermed flyttet Magozwe inn i et rom i et hus med grønt tak. Han delte rommet med to andre gutter. Til sammen var det ti barn som bodde i det huset. Sammen med tante Cissy og mannen hennes, tre hunder, en katt og en gammel geit.
 	</h3></div>
@@ -537,12 +535,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text14" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text16" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio15" onended="resetbutton('15')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/15.mp3"></audio>
+		<audio id="audio15" src="https://media.berattelser.se/audio/nb/0262/mp3/15.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -550,7 +548,7 @@
 <hr>
 
 <div id="text16" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/16.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/16.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Magozwe begynte på skolen, og det var vanskelig. Han hadde mye å ta igjen. Av og til ville han gi opp. Men han tenkte på piloten og fotballspilleren i barnebøkene. Som dem ga han ikke opp.
 	</h3></div>
@@ -565,12 +563,12 @@
 	<div class="btn-group switcher-group">
 		<a href="#text15" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text17" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<audio id="audio16" onended="resetbutton('16')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/16.mp3"></audio>
+		<audio id="audio16" src="https://media.berattelser.se/audio/nb/0262/mp3/16.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
@@ -578,7 +576,7 @@
 <hr>
 
 <div id="text17" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/17.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/17.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
 	Magozwe satt på tunet ved huset med det grønne taket og leste en barnebok fra skolen. Thomas kom og satte seg ved siden av ham. «Hva handler fortellingen om?» spurte Thomas. «Den handler om en gutt som blir lærer», svarte Magozwe. «Hva heter gutten?» spurte Thomas. «Han heter Magozwe», svarte Magozwe med et smil.
 	</h3></div>
@@ -593,27 +591,28 @@
 	<div class="btn-group switcher-group">
 		<a href="#text16" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<audio id="audio17" onended="resetbutton('17')" src="https://globalstorybooks.net/media/audio/nb/0262/mp3/17.mp3"></audio>
-		<button id="playbutton17" class="btn btn-lg" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio17" src="https://media.berattelser.se/audio/nb/0262/mp3/17.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton17" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt mellom bokmål og bokmål">nb</button>
-		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt mellom bokmål og nynorsk">nn</button>
+		<button onclick="switchlang('nb,nb','nb,nn,nb')" class="btn btn-lg lang-primary" title="Bytt til bokmål">nb</button>
+		<button onclick="switchlang('nb,nn','nb,nn,nb')" class="btn btn-lg lang-secondary" title="Bytt til nynorsk">nn</button>
 	</div>
 </div>
 
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skrevet av: Lesley Koyi</h5>
-		<h5>Illustrert av: Wiehan de Jager</h5>
-		<h5>Oversatt av: Espen Stranger-Johannessen</h5>
-		<h5>Lest av: Espen Stranger-Johannessen</h5>
-		<h5>Språk: <a href="/stories/nb">bokmål</a></h5>
-		<h5><a href="/stories/nb/level5">Nivå 5</a></h5>
-		<h5>Kilde: <a href="https://africanstorybook.org/reader.php?id=13213" target="_blank">Magozwe</a> fra <a href="https://africanstorybook.org/" target="_blank">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skrevet av:</span> Lesley Koyi</h5>
+		<h5><span class="colophon-heading">Illustrert av:</span> Wiehan de Jager</h5>
+		<h5><span class="colophon-heading">Oversatt av:</span> Espen Stranger-Johannessen</h5>
+		<h5><span class="colophon-heading">Lest av:</span> Espen Stranger-Johannessen</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/nb">bokmål</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/nb/level5">Nivå 5</a></h5>
+		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=13213" target="_blank">Magozwe</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.no" target="_blank"><img alt="Creative Commons Lisens" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Dette verket er lisensiert under en <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.no" target="_blank">Creative Commons Navngivelse 4.0 International Lisens</a>.</div>
 
@@ -625,10 +624,9 @@
 </div>
 <div>
 <h5>Valgmuligheter</h5>
-	<a class="btn btn-lg" href="/stories/nb">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/nb/nb-0262_magozwe.pdf" target="_blank">Last ned PDF</a>
+	<a class="btn btn-lg" href="/stories/nb" class="button">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://bfn.berattelser.se/pdf/nb/nb-0262_magozwe.pdf" target="_blank">Last ned PDF</a>
 <br><br>
 </div>
-
 
 
     </div>

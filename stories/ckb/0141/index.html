@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://barneboker.no//stories/ckb/0141/">
 	<link rel="alternate" type="application/rss+xml" title="Barnebøker for Norge" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -89,15 +87,15 @@
         <a class="btn btn-lg" href="/stories/ckb">Tilbake til fortellingene</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0141/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0141/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1 dir="rtl"><span class="def">مریشك و هەزارپێ</span>
-			<span dir="ltr" class="l1">Hønemor og Tusenbein</span>
-			<span dir="ltr" class="l2">Hønemor og Tusenbein</span>
+			<span dir="ltr" class="l1">Høne og Tusenbein</span>
+			<span dir="ltr" class="l2">Høne og Tusenbein</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button id="playbutton01" class="btn btn-lg disabled" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 			<button onclick="switchlang('ckb,nb','nb,nn,ckb')" class="btn btn-lg lang-primary" title="Bytt mellom kurdisk (sorani) og bokmål">nb</button>
 			<button onclick="switchlang('ckb,nn','nb,nn,ckb')" class="btn btn-lg lang-secondary" title="Bytt mellom kurdisk (sorani) og nynorsk">nn</button>
 		</div>
@@ -106,7 +104,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Oversatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Oversatt av"></span> Agri Afshin</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/ckb">kurdisk (sorani)</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/ckb/level3">Nivå 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+
 	</div>
 </div>
 <div class="modal" id="modal-pdf">
@@ -120,28 +119,28 @@
       <div class="content">
         <h4>Vanlige PDF-er (hel side)</h4>
         <ul>
-          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/ckb/ckb-0141_hønemor.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0141_hønemor-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/ckb/ckb-0141_hønemor-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+          <li><strong><a href="https://bfn.berattelser.se/pdf/ckb/ckb-0141_chicken.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless/0141_chicken-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless/ckb/ckb-0141_chicken-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
         </ul>
 
         <h4>Tospråklige PDF-er</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/ckb-nb/0141_hønemor-bilingual_ckb-nb.pdf" target="_blank">Tospråklig PDF (kurdisk (sorani)-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/ckb-nn/0141_hønemor-bilingual_ckb-nn.pdf" target="_blank">Tospråklig PDF (kurdisk (sorani)-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_ckb-nb.zip" target="_blank">Tospråklig PDF uten bilder (kurdisk (sorani)-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_ckb-nn.zip" target="_blank">Tospråklig PDF uten bilder (kurdisk (sorani)-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/ckb-nb/0141_chicken-bilingual_ckb-nb.pdf" target="_blank">Tospråklig PDF (kurdisk (sorani)-bokmål, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/ckb-nn/0141_chicken-bilingual_ckb-nn.pdf" target="_blank">Tospråklig PDF (kurdisk (sorani)-nynorsk, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/ckb-nb/0141_chicken-imageless-bilingual_ckb-nb.pdf" target="_blank">Tospråklig PDF uten bilder (kurdisk (sorani)-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/ckb-nn/0141_chicken-imageless-bilingual_ckb-nn.pdf" target="_blank">Tospråklig PDF uten bilder (kurdisk (sorani)-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
 
         <h4>PDF-hefter (for å skrive ut)</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/ckb/ckb-0141_hønemor-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/ckb-nb/0141_hønemor-bilingual_ckb-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (kurdisk (sorani)-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/ckb-nn/0141_hønemor-bilingual_ckb-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (kurdisk (sorani)-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/wordless-booklet.zip" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-booklet_ckb.zip" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_ckb-nb.zip" target="_blank">Tospråklig PDF-hefte uten bilder (kurdisk (sorani)-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_ckb-nn.zip" target="_blank">Tospråklig PDF-hefte uten bilder (kurdisk (sorani)-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/booklet/ckb/ckb-0141_chicken-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/ckb-nb/0141_chicken-bilingual_ckb-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (kurdisk (sorani)-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/ckb-nn/0141_chicken-bilingual_ckb-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (kurdisk (sorani)-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless-booklet/0141_chicken-wordless-booklet.pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-booklet/ckb/ckb-0141_chicken-imageless-booklet.pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/ckb-nb/0141_chicken-imageless-bilingual_ckb-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (kurdisk (sorani)-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/ckb-nn/0141_chicken-imageless-bilingual_ckb-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (kurdisk (sorani)-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
       </div>
     </div>
@@ -153,8 +152,8 @@
 
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0141/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0141/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	مریشك و هەزارپێ هاوڕێ بوون، بەڵام هەمیشە حەزیان لێ بوو پێكەوە پێشبڕكێ بكەن. ڕۆژێكیان پێكەوە تۆپێنیان كرد بۆ ئەوەی بزانن كامیان باشترین یاریزانە.
 	</h3></div>
@@ -181,9 +180,9 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0141/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0141/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	پێكەوە چوونە گۆڕەپانی تۆپی پێ و یارییەكەیان دەست پێ كرد. مریشك خێرا بوو، بەڵام هەزارپێ خێراتر بوو. مریشك تۆپەكەی بۆ دوور هەڵدا کەچی هەزار پێ دوورتری هەڵدا. مریشك تا دەهات زیاتر تووڕە دەبوو.
+	پێكەوە چوونە گۆڕەپانی تۆپی پێ و یارییەكەیان دەست پێ كرد. مریشك خێرا بوو، بەڵام هەزارپێ خێراتر بوو. مریشك تۆپەكەی بۆ دوور هەڵدا کەچی هەزار پێ دوورتری هەڵدا. مریشك تا دەهات زیاتر رەزاگرانتر دەبوو.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -208,9 +207,9 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0141/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0141/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	ئەوان بڕیاریان دا كە پەناڵتی لێ بدەن. یەكەم جار هەزارپێ گۆڵچی بوو. مریشك تەنیا گۆڵێكی كرد. دواتر نۆرەی مریشك بوو كە گۆڵچی بێ.
+	ئەوان بڕیاریان دا كە یارییەكی پەناڵتی لێدان بكەن. یەكەم جار هەزارپێ گۆڵچی بوو. مریشك تەنیا گۆڵێكی كرد. دواتر نۆرەی مریشك بوو كە گۆڵچی بێ.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -235,9 +234,9 @@
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0141/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0141/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	هەزارپێ شووتێكی لێدا و گۆڵی كرد. هەزارپێ دریبلێكی كرد و گۆڵی كرد. هەزارپێ بە كەللە گۆڵێكی كرد. هەزارپێ پێنج گۆڵی كرد.
+	هەزارپێ شووتێكی لێدا و گۆڵی كرد. هەزارپێ دریبلێكی كرد و گۆڵی كرد. هەزارپێ بە سەر گۆڵێكی كرد. هەزارپێ پێنج گۆڵی كرد.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -262,9 +261,9 @@
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0141/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0141/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	مریشكەکە لەبەر ئەوەی دۆڕاندبووی، زۆر تووڕە بوو. ئەو زۆر خراپی دۆڕاندبوو. هەزارپێ دەستی بە پێکەنین کرد، چونکە هاوڕێکە فینکە فینکی دەکرد.
+	مریشكەکە لەبەر ئەوەی دۆڕاندبووی، زۆر تووڕە بوو. ئەو زۆر خراپی دۆڕاندبوو. هەزارپێ دەستی بە پێکەنین کرد، چونکە هاوڕێکەی گوڕە گوڕی دەكرد.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -289,9 +288,9 @@
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0141/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0141/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	مریشك زۆر تووڕە بوو تا ئەو جێگایەی کە تەواو دەنووکی کردەوە و هەزراپێی قووت دا.
+	مریشك زۆر تووڕە بوو تا ئەو جێگایەی کە تەواو دەنووکی کردەوە و هەزراپێیەكەی قووت دا.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -316,9 +315,9 @@
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0141/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0141/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	كاتێك مریشك دەچووەوە ماڵێ چاوی بە دایكی هەزارپێ كەوت. دایكی هەزارپێ لێی پرسی: “مناڵەكەی منت نەدیوە؟” مریشك هیچی نەگوت و دایكی هەزارپێش نیگەران بوو.
+	كاتێك مریشك دەچووەوە ماڵێ چاوی بە دایكی هەزارپێ كەوت. دایكی هەزارپێ لێی پرسی: “منداڵەكەی منت نەدیوە؟” مریشك هیچی نەگوت. دایكی هەزارپێش نیگەران بوو.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -343,9 +342,9 @@
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0141/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0141/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	دواتر دایكی هەزار پێ گوێی لە دەنگێكی لاواز بوو كە دەیگوت: “دایە یارمەتیم بدە!” دایكی هەزار پێ چاوی لە دەوروبەری خۆی كردو باش گوێی بۆ دەنگەكە ڕاگرت. دەنگەكە لە ناو سکی مریشكەكە دەهات.
+	دواتر دایكی هەزارپێ گوێی لە دەنگێكی لاواز بوو كە دەیگوت: “دایە یارمەتیم بدە!” دایكی هەزار پێ  چاوی بە دەوروبەری خۆیدا گێڕا و بە باشی گوێی بۆ دەنگەكە راگرت. دەنگەكە لە ناو زگی مریشكەكە دەهات.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -370,9 +369,9 @@
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0141/10.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0141/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	دایكی هەزارپێ هاواری كرد: “ڕۆڵە فێڵە تایبەتەكەت بەكار بێنە!” هەزارپێ دەتوانێ بۆنێكی ناخۆش لە خۆی دەركات كە زۆر قـێزەونە. مریشك هەستی كرد كە دۆخی تێك دەچێ.
+	دایكی هەزارپێ هاواری كرد: “رۆڵە فێڵە تایبەتەكەت بەكار بێنە!” هەزارپێ دەتوانێ بۆنێكی ناخۆش لە خۆی دەركات كە زۆر قـێزەونە. مریشك هەستی كرد كە دۆخی تێك دەچێ.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -397,9 +396,9 @@
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0141/11.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0141/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	مریشك هێڵنجی دەهات. دواتر پژمی و كۆخی و ڕشایەوە. هەزارپێ زۆر قێزەون بوو.
+	مریشك هێڵنجی دەهات. دواتر قرپی دایەوە و تفی كرد. هەزارپێیەكە زۆر قێزەون بوو.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -424,9 +423,9 @@
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0141/12.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0141/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	مریشك ئەوەندە كۆخی تا ڕشایەوە و هەزارپێی لە ناو سکی فڕێدایە دەرێ. هەزارپێ و دایكی سەركەوتن بۆ سەر درەختـێك بۆ ئەوەی خۆیان بشارنەوە.
+	مریشك ئەوەندە كۆخی تا رشایەوە و هەزارپێی لە ناو زگی فڕێدایە دەرێ. هەزارپێ و دایكی سەركەوتن بۆ سەر درەختـێك بۆ ئەوەی خۆیان بشارنەوە.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -451,7 +450,7 @@
 <hr>
 
 <div id="text13" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0141/13.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0141/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	لەوكاتەوە تا ئێستا مریشك و هەزارپێ بوونەتە دوژمنی یەكتر.
 	</h3></div>
@@ -466,7 +465,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<button id="playbutton13" class="btn btn-lg disabled" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton13" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ckb,nb','nb,nn,ckb')" class="btn btn-lg lang-primary" title="Bytt mellom kurdisk (sorani) og bokmål">nb</button>
@@ -477,14 +476,15 @@
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skrevet av: Winny Asara</h5>
-		<h5>Illustrert av: Magriet Brink</h5>
-		<h5>Oversatt av: Agri Afshin</h5>
-		<h5>Språk: <a href="/stories/ckb">kurdisk (sorani)</a></h5>
-		<h5><a href="/stories/ckb/level3">Nivå 3</a></h5>
-		<h5>Kilde: <a href="https://africanstorybook.org/reader.php?id=9094" target="_blank">Chicken and Millipede</a> fra <a href="https://africanstorybook.org/" target="_blank">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skrevet av:</span> Winny Asara</h5>
+		<h5><span class="colophon-heading">Illustrert av:</span> Magriet Brink</h5>
+		<h5><span class="colophon-heading">Oversatt av:</span> Agri Afshin</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/ckb">kurdisk (sorani)</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/ckb/level3">Nivå 3</a></h5>
+		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=9094" target="_blank">Chicken and Millipede</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank"><img alt="Creative Commons Lisens" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />Dette verket er lisensiert under en <a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.no" target="_blank">Creative Commons Navngivelse 3.0 International Lisens</a>.</div>
 
@@ -494,18 +494,17 @@
 			<label class="chip"><a href="/stories/ckb/0110/">تۆوێكی بچووك، چیرۆكی وانگاری ماتای</a></label>
 			<label class="chip"><a href="/stories/ckb/0066/">نوزیبلە و سێ تاڵە موو</a></label>
 			<label class="chip"><a href="/stories/ckb/0201/">جاشك</a></label>
-			<label class="chip"><a href="/stories/ckb/0315/">گۆرانییەكەی سەكیما</a></label>
+			<label class="chip"><a href="/stories/ckb/0315/">ئاوازەكانی سەكیما</a></label>
 			<label class="chip"><a href="/stories/ckb/0006/">ئانانسی و زانایی</a></label>
-			<label class="chip"><a href="/stories/ckb/0324/">ئەو ڕۆژەی ماڵەوەم بەجێ هێشت بۆ ئەوەی بچم بۆ شار</a></label>
+			<label class="chip"><a href="/stories/ckb/0324/">ئەو رۆژەی ماڵەوەم بۆ مەبەستی چوون بۆ شار بەجێهێشت</a></label>
 			<label class="chip"><a href="/stories/ckb/0158/">مریشك و هەڵۆ</a></label>
 	</div>
 </div>
 <div>
 <h5>Valgmuligheter</h5>
-	<a class="btn btn-lg" href="/stories/ckb">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/ckb/ckb-0141_hønemor.pdf" target="_blank">Last ned PDF</a>
+	<a class="btn btn-lg" href="/stories/ckb" class="button">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://bfn.berattelser.se/pdf/ckb/ckb-0141_hønemor.pdf" target="_blank">Last ned PDF</a>
 <br><br>
 </div>
-
 
 
     </div>

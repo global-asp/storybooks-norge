@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://barneboker.no//stories/ckb/0262/">
 	<link rel="alternate" type="application/rss+xml" title="Barnebøker for Norge" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -89,7 +87,7 @@
         <a class="btn btn-lg" href="/stories/ckb">Tilbake til fortellingene</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1 dir="rtl"><span class="def">ماگۆزڤە</span>
 			<span dir="ltr" class="l1">Magozwe</span>
@@ -97,7 +95,7 @@
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button id="playbutton01" class="btn btn-lg disabled" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 			<button onclick="switchlang('ckb,nb','nb,nn,ckb')" class="btn btn-lg lang-primary" title="Bytt mellom kurdisk (sorani) og bokmål">nb</button>
 			<button onclick="switchlang('ckb,nn','nb,nn,ckb')" class="btn btn-lg lang-secondary" title="Bytt mellom kurdisk (sorani) og nynorsk">nn</button>
 		</div>
@@ -106,7 +104,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Oversatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Oversatt av"></span> Agri Afshin</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/ckb">kurdisk (sorani)</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/ckb/level5">Nivå 5</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+
 	</div>
 </div>
 <div class="modal" id="modal-pdf">
@@ -120,28 +119,28 @@
       <div class="content">
         <h4>Vanlige PDF-er (hel side)</h4>
         <ul>
-          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/ckb/ckb-0262_magozwe.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0262_magozwe-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/ckb/ckb-0262_magozwe-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+          <li><strong><a href="https://bfn.berattelser.se/pdf/ckb/ckb-0262_magozwe.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless/0262_magozwe-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless/ckb/ckb-0262_magozwe-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
         </ul>
 
         <h4>Tospråklige PDF-er</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/ckb-nb/0262_magozwe-bilingual_ckb-nb.pdf" target="_blank">Tospråklig PDF (kurdisk (sorani)-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/ckb-nn/0262_magozwe-bilingual_ckb-nn.pdf" target="_blank">Tospråklig PDF (kurdisk (sorani)-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_ckb-nb.zip" target="_blank">Tospråklig PDF uten bilder (kurdisk (sorani)-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_ckb-nn.zip" target="_blank">Tospråklig PDF uten bilder (kurdisk (sorani)-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/ckb-nb/0262_magozwe-bilingual_ckb-nb.pdf" target="_blank">Tospråklig PDF (kurdisk (sorani)-bokmål, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/ckb-nn/0262_magozwe-bilingual_ckb-nn.pdf" target="_blank">Tospråklig PDF (kurdisk (sorani)-nynorsk, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/ckb-nb/0262_magozwe-imageless-bilingual_ckb-nb.pdf" target="_blank">Tospråklig PDF uten bilder (kurdisk (sorani)-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/ckb-nn/0262_magozwe-imageless-bilingual_ckb-nn.pdf" target="_blank">Tospråklig PDF uten bilder (kurdisk (sorani)-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
 
         <h4>PDF-hefter (for å skrive ut)</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/ckb/ckb-0262_magozwe-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/ckb-nb/0262_magozwe-bilingual_ckb-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (kurdisk (sorani)-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/ckb-nn/0262_magozwe-bilingual_ckb-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (kurdisk (sorani)-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/wordless-booklet.zip" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-booklet_ckb.zip" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_ckb-nb.zip" target="_blank">Tospråklig PDF-hefte uten bilder (kurdisk (sorani)-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_ckb-nn.zip" target="_blank">Tospråklig PDF-hefte uten bilder (kurdisk (sorani)-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/booklet/ckb/ckb-0262_magozwe-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/ckb-nb/0262_magozwe-bilingual_ckb-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (kurdisk (sorani)-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/ckb-nn/0262_magozwe-bilingual_ckb-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (kurdisk (sorani)-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless-booklet/0262_magozwe-wordless-booklet.pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-booklet/ckb/ckb-0262_magozwe-imageless-booklet.pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/ckb-nb/0262_magozwe-imageless-bilingual_ckb-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (kurdisk (sorani)-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/ckb-nn/0262_magozwe-imageless-bilingual_ckb-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (kurdisk (sorani)-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
       </div>
     </div>
@@ -153,10 +152,10 @@
 
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	لە شاری پڕ حەشیمەتی نایروبی، دوور لە باوەشی گەرمی خێزان, دەستەیەك لە كوڕانی بێ ماڵ و حاڵ لەسەر شەقامەکان ڕۆژیان تێپەڕ دەکرد. ئەوان ڕۆژانە بە بێ هیچ ئامانجێك ژیانیان دەگوزەراند. ئەم كوڕانە لەسەر شەقامەکان دەخەوتن. بەیانیان، كاتێك لە خەو هەڵدەستان، ڕاخەرەكانیان كۆ دەكردەوە. بۆ ئەوەی لە سەرمای زستان خۆ بپارێزن، زبڵەكانیان دەسووتاند و ئاگریان دەكردەوە. ماگۆزڤەش یەكێك بوو لەو كوڕانە. ئەو بچووكترین ئەندامی ئەو گرووپە بوو.
+	لە شاری پڕ حەشیمەتی نایروبی، بە دوور لە ژیانی چاوەدێری بنەماڵەیی، دەستەیەك لە كوڕانی بێ ماڵ و حاڵ لەسەر شەقامەکان رۆژیان بەسەر دەبرد. ئەوان هەموو رۆژێكیان بەو جۆرەی كە دەهات پێشوازیان لێ دەكرد. لەبەیانەی رۆژێكدا پاش نوستن لە شەقامە ساردەكان كوڕەكان رایەخەكانیان كۆ دەكردەوە  و بۆ خۆپاراستن لە سەرما ئەوان بە زبڵ و زاڵەكان ئاگریان دەكردەوە. یەكێك لە كوڕەكانی ناو ئەو گروپە، ماگۆزڤە بوو. ئەو تەمەنی لە هەموان كەمتر بوو.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -181,9 +180,9 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	كاتێ دایك و باوكی ماگۆزڤە مردن، ئەو تەمەنی تەنیا پێنج ساڵان بوو. ڕۆیشت بۆ ئەوەی لەگەڵ مامی ژیان بەسەر بەرێت، بەڵام مامی ئاگای لە ماگۆزڤە نەدەبوو، و خواردنی پێویستی پێ نەدەدا. ئەو ماگۆزڤەی ناچار دەكرد كە كاری زۆر سەخت ئەنجام بدات.
+	كاتێ دایك و باوكی ماگۆزڤە مردن، ئەو تەمەنی تەنیا پێنج ساڵان بوو. ئەو رۆیشت بۆ ئەوەی لەگەڵ مامی ژیان بەسەر بەرێت، بەڵام ئەو پیاوە ئاگای لە منداڵەكە  نەدەبوو، ئەو خواردنی تەواوی بە ماگۆزڤە نەدەدا. ئەو ماگۆزڤەی ناچار كرد كە كاری زۆر سەخت ئەنجام بدات.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -208,9 +207,9 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	ئەگەر ماگۆزڤە گلەیی كردبا یان پرسیاری كردبا، ئەوا مامی بە توندی لێی دەدا و پێی دەگوت: “تۆ زۆر لەوە گەمژەتری كە بتوانی شتێك فێر ببیت.” دوای سێ ساڵ مانەوە لەو بارودۆخە سەختەدا، لە كۆتاییدا ماگۆزڤە بڕیاری دا ئەو ماڵە بە جێ بهێڵێت و چوو لە سەر شەقامەکان بژیت.
+	ئەگەر ماگۆزڤە گلەیی یان پرسیارێكی كردبایە، مامی لێی دەدا. ئەگەر ماگۆزڤە پرسیاری كردبا كە ئەو دەتوانێ بچێتە قوتابخانە، مامی لێی دەدا ودەیگوت: “تۆ گـێلـتر لەوەی كە فێری شتێك ببیت.” پاش سێ ساڵ لەو شێوازە هەڵسوكەتە، ماگۆزڤە هەڵات و لە مامی دوور كەوتەوە و ژیانی سەر شەقامی دەستپێكرد.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -235,9 +234,9 @@
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	ژیانی سەر شەقامەکان زۆر ناخۆش بوو، زۆربەی كوڕەكان ڕۆژانە خۆیان ماندوو دەكرد هەر بۆ ئەوەی خواردنیان دەست كەوێت. هەندێ جار دەستبەسەر دەكران یان لێیان دەدرا. كاتێكیش نەخۆش دەكەوتن، كەس نەبوو یارمەتیان بدات. ئەوان تەنیا پارەیەكی كەمیان دەست دەكەوت ئەویش لە رێگای سواڵكردن و فرۆشتی پلاستیك و شتی لەو جۆرە بوو. ژیانیان ئەستەمتر دەبوو كاتێك گرووپی دیكەش دەهاتن و دەبوو بە كێبڕكێ و شەڕ لە نێوانیاندا.
+	ژیانی سەر شەقامەکان زۆر سەخت بوو، زۆربەی كوڕەكان رۆژانە خۆیان ماندوو دەكرد هەر بۆ ئەوەی خواردنیان دەست كەوێت. هەندێك جار دەگیران و هەندێك جارانیش لێیان دەدرا. كاتێكیش نەخۆش دەكەوتن، كەس نەبوو یارمەتیان بدات. گروپەكە پشتیان بەو پارە كەمەوە دەبەست كە لە رێگای سواڵ كردن و لە فرۆشتنی پلاستیكی كۆن و ئەو كەرەستانەی كە سەرلەنوێ بەكاردێنەوە، دەستیان دەكەوت. ژیان بە هۆی پێكدادان لەگەڵ گروپەكانی دیكەی ركابەریان ئەستەمتر دەبوو كە دیانویست بەشەكانی شارەكە كۆنترۆڵ بكەن و بیخەنە ژێردەسەڵاتی خۆیانەوە.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -262,9 +261,9 @@
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	ڕۆژێكیان كاتێ ماگۆزڤە لە ناو تەنەكە خۆڵەكان دەگەڕا، كتێبێكی چیرۆكی شڕ و دڕاوی دۆزییەوە. ئەو كتێبەكەی خاوێن كردەوە و خستییە ناو كیسەیەكەوە. دوای ئەو ڕۆژە ئەو هەموو جارێ كتێبەكەی لە كیسەكە دەردەهێنا و چاوی لە وێنەكانی ناو كتێبەكە دەكرد. ئەو نەیدەتوانی هیچ بخوێنێتەوە.
+	رۆژێكیان كە ماگۆزڤە لە ناو تەنەكە زبڵەكاندا دەگەڕا، كتێبێكی چیرۆكی قەدیمی دڕاوی دیتەوە. ئەو تەپو تۆزەكانی لەسەر تەكاندو لە كیسەكەی خۆی خست. دوای ئەوە هەموو رۆژێك كتێبەكەی دەردێنا و چاوی لە وێنەكانی دەكرد. ئەو نەیدەزانی چۆن وشەكان بخوێنێتەوە.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -289,9 +288,9 @@
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	وێنەكان، باسیان لە كوڕێك دەكرد كە دەیویست گەورە بێت و ببێ بە فڕۆكەوان. ماگۆزڤە هەموو ڕۆژێ ئاواتی دەخواست كە ببێ بە فڕۆكەوان. هەندێ جار خەیاڵی ئەوەی دەكردەوە. كە ئەو مناڵەی ناو چیرۆكەكە خۆیەتی.
+	وێنەكان چیرۆكی كوڕێكیان باس دەكرد كە دەیهەویست ببێتە فرۆكەوان، كاتێك كە گەورە دەبێت. ماگۆزڤە هەموو رۆژێك لە دونیای خەیاڵاتی خۆیدا ئاواتی دەخواست كە فڕۆكەوان بوایە. جاروبارە وای بە خەیاڵدا دەهات كە ئەو كوڕەی ناو چیرۆكەكە بۆخۆیەتی.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -316,9 +315,9 @@
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	هەوا سارد بوو و ماگۆزڤە لە قەراغ شەقامەکە وەستا بوو. پیاوێك بەرەو لای چوو. پیاوەكە گوتی: “سڵاو! من ناوم تۆماسە. من لە شوێنێك لەم نزیكانە كار دەكەم. تۆ دەتوانی لەوێ خۆراكت دەست كەوێت.” ئەو ئاماژەی بە خانوویەكی زەرد كرد كە سەربانەكەی شین بوو. دواتر لە ماگۆزڤەی پرسی: “دڵنیا بم لەوەی كە دەچیتە ئەو شوێنە بۆ ئەوەی هەندێ خۆراكت دەستكەوێ؟” ماگۆزڤە گوتی: “لەوانەیە”، و دواتر ڕۆیشت.
+	هەوا سارد بوو ماگۆزڤە لە كەنار شەقامەكە راوەستا بوو و سواڵی دەكرد. پیاوێك بە پێیان بەرەو لای هات. پیاوەكە گوتی: “سڵاو من ناوم تۆماسە. لە نزیك ئێوە كار دەكەم لە جێگایەك كە دەتوانی شتێكت بۆ خواردن دەستكەوێت.” ئەو ئاماژەی بە خانوویەكی زەرد كرد كە سەربانەكەی شین بوو. ئەو پرسیاری كرد و گوتی: “هیواداربم كە تۆ دەچیتە  ئەوێ كە هەندێ خواردنت دەستبكەوێ؟” ماگۆزڤە تەماشایەكی پیاوەكەی كردو پاشان تەماشایەكی خانوەكەی كرد و گوتی: “لەوانەیە” و رۆیشت.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -343,9 +342,9 @@
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	بە درێژایی ئەو چەند مانگانەی رابردوو، کوڕە بێ ماڵ و حاڵەکان زۆر جار تۆماسیان دەبینی. ئەو هەمیشە پێی خۆش بوو لەگەڵ خەڵك قسە بكات، بە تایبەت ئەو خەڵكانەی كە لەسەر شەقامەکان دەژیان. تۆماس گوێی بۆ سەربوردەی خەڵك ڕادەگرت. ئەو زۆر كەسێكی جیددی و پشوودرێژ بوو. هەرگیز كەسێكی خراپ و بێ ڕێز نەبوو. هەندێك لە كوڕەكان بۆ نانی نیوەڕۆ چوون بۆ خانووە زەردەكە.
+	بە درێژایی مانگەكانی دواتر كوڕە بێ لانەكان بە دیتنی تۆماس لەو دەوروبەرە راهاتبوون. ئەو حەزی لێ بوو كە لەگەڵ خەڵك قسە بكات، بەتایبەت ئەو خەڵكانەی كە لەسەر شەقامەكان دەژیان. تۆماس گوێی لە چیرۆكی ژیانی خەڵكی رادەگرت. ئەو زۆر راست و بێ پێچ وپەناو خۆڕاگر بوو هیچكات زمان پیس و جنیۆفرۆش و بێ ڕێز نەبوو. هەندێك لە كوڕەكان نیوەڕۆ دەستیان بە چونە ناو خانوە زەردو شینەكە كرد تا نانی نیوەڕۆیان دەست بكەوێت.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -370,9 +369,9 @@
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/10.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	ماگۆزڤە لە لێواری پیادەڕۆیەكە دانیشتبوو و چاوی لە وێنەكانی ناو كتێبەكەی دەكرد. كاتێك تۆماس هات و لە لای دانیشت، لێی پرسی: “چیرۆكەكە لە بارەی چییە؟” ماگۆزڤە وەڵامی دایەوە: “چیرۆكەكە لە بارەی كوڕێكە كە دەبێتە فڕۆكەوان.” تۆماس لێی پرسی: “كوڕەكە ناوی چییە؟” ماگۆزڤە وەڵامی دایەوە: “نازانم، من ناتوانم بخوێنمەوە.”
+	ماگۆزڤە لەسەر پیادەڕەوەكە دانیشتبوو و چاوی لە وێنەكانی ناو كتێبەكە دەكرد كاتێك كە تۆماس هات و لە نزیك ئەو دانیشت. تۆماس پرسیاری لێكرد: “چیرۆكەكە باسی چی دەكات؟” ماگۆزڤە وڵامی دایەوە: “كتێبەكە سەبارەت بە كوڕێكە كە دەبێتە فڕۆكەوان.” تۆماس لێی پرسی: “كوڕەكە ناوی چییە؟” ماگۆزڤە زۆر بە هێمنی وەڵامی دایەوە: “نازانم، من ناتوانم بخوێنمەوە.”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -397,9 +396,9 @@
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/11.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	كاتێ چاویان بەیەك كەوت، ماگۆزڤە چیرۆكی ژیانی خۆی بۆ تۆماس گێڕایەوە. باسی لەوە کرد كە مامی چەندە لەگەڵی خراپ بووە و لەبەر چی لە دەستی ئەو ڕای كردووە. تۆماس زۆر قسەی نەكرد و بە ماگۆزڤەشی نەدەگوت كە چی بكات، بەڵام هەمیشە بە وردی گوێی بۆ ڕادەگرت. هەندێك جار ئەو کاتانەی لەناو خانووە سەقف شینەكە بوون، لە كاتی نانخواردن پێكەوە قسەیان دەكرد.
+	كاتێ چاویان بەیەك كەوت، ماگۆزڤە چیرۆكی ژیانی خۆی بۆ تۆماس گێڕایەوە. چیرۆكی مامی و هەروەها بۆچی ئەو هەڵاتووە. تۆماس زۆر قسەی نەدەكرد ئەو بە ماگۆزڤەشی نەدەگوت كە دەبێ چی بكات، بەڵام بەردەوام بە جوانی گوێی رادەگرت. جاروبار ئەوان كاتێك لە خانووە زەرد و شینەكەدا خەریكی نان خواردن بوون، قسەیان دەكرد.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -424,9 +423,9 @@
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/12.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	لە ساڵڕۆژی لەدایكبوونی ماگۆزڤەدا كە تەمەنی دەبووە دە ساڵ، تۆماس كتێبێكی چیرۆكی منداڵانی نوێی پێ دا. چیرۆكەكە لەبارەی كوڕێكی لادێی بوو كە دیویست گەورە بێ بۆ ئەوەی ببێتە یاریزانێكی بەنێوبانگی تۆپی پێ. تۆماس چەندین جار ئەو چیرۆكەی بۆ ماگۆزڤە خوێندەوە، تا ئەوەی كە ڕۆژێك پێی گوت: “پێم وابێ ئێستا ئیدی كاتی ئەوەیە بچیت بۆ قوتابخانە و خوێندن و نووسین فێر بیت. تۆ پێت چۆنە؟” دواتر تۆماس گوتی من شوینێك پێ دەزانم كە مناڵان دەتوانن لەوێدا بژین و بچن بۆ قوتابخانەش.
+	لە سەروبەندی دەیەمین ساڵڕۆژی لە دایكبونی ماگۆزڤەدا، تۆماس كتێبێكی منداڵانی تازەی بە دیاری دایە. كتێبەكە چیرۆكی كوڕێكی خەڵكی گوندی بوو كە گەورە بوو بۆ ئەوەی  یاریزانێكی بە ناوبانگی تۆپی پێی لێ دەربچێت. تۆماس ئەو چیرۆكەی چەندین جار بۆ ماگۆزڤە خوێندەوە تا رۆژێكیان ئەو گوتی: “من پێم وایە كاتی ئەوە هاتووە كە تۆ بچیتە قوتابخانە و فێری خوێندنەوە ببیت. رای تۆ چییە؟” تۆماس بۆی روونكردەوە كە ئەو جێگایەك پێدەزانێ كە منداڵان دەتوانن لەوێ بمێننەوە و بۆ قوتابخانەش بڕۆن.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -451,9 +450,9 @@
 <hr>
 
 <div id="text13" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/13.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	ماگۆزڤە بیری لەو شوینە نوێیە و لە قوتابخانە دەكردەوە. بەڵام ئەگەر مامی ڕاستی گوتبا چی؟ كاتێ ئەو دەیگوت ئەو زۆر لەوە گەمژەترە كە شتێك فێر ببێت! ئەی ئەگەر لەو شوێنە نوێیە لێی بدەن چی؟، ئەو ترسابوو. هەر لەبەر خۆیەوە بیری دەكردەوە و دەیگوت: “لەوانەیە باشتر بێت هەر لە سەر شەقامەكان بژیم.”
+	ماگۆزڤە لە بارەی ئەو شوێنە تازەیە و سەبارەت بۆ چوون بۆ قوتابخانە بیری كردەوە. ئەگەر مامی ئەو راستی بگوتبایە كە ئەو نەفامتر لەوە بوایە كە شتێك فێر ببێت چی؟ ئەگەر ئەوان لەو شوێنە تازەیە لێی بدەن چی؟ ئەو ترسابوو. ئەو بیری كردەوە كە: “رەنگە باشتر وابێ كە لەسەر شەقامەكان ژیان بەسەر ببات.”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -478,9 +477,9 @@
 <hr>
 
 <div id="text14" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/14.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/14.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	ڕۆژێك هەموو ترسەكانی خۆی بۆ تۆماس باس كرد. بە پێی تێپەڕینی كات تۆماس باوەڕی پێ هێنا كە ژیان لە شوینە نوێیەكە زۆر باشترە.
+	ئەو لەبارەی مەترسیەكانی خۆی لەگەڵ تۆماس قسەی كرد. بە تێپەربوونی كات پیاوەكە دڵنیایی بە كوڕەكە دا كە ژیان لە شوێنە تازەكە دەتوانێ باشتر بێت.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -505,9 +504,9 @@
 <hr>
 
 <div id="text15" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/15.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/15.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	لە دوای ئەوە، ماگۆزڤە باری كرد بۆ ناو ژوورێكی نوێ لە خانوویەك كە سەربانەكەی سەوز بوو. ئەو لەگەڵ دوو كوڕی دیكەدا لە ژوورێك دەژیان. بە هەمووی دە مناڵ بوون كە لەگەڵ پوورە سیزی و مێردەكەی، سێ سەگ و پشیلەیەك و بزنێكی پیر لە خانووە سەربان سەوزەكەدا دەژیان.
+	لە دوای ئەوە  ماگۆزڤە باری كرد بۆ ناو ژوورێكی نوێ لە خانوویەك كە سەربانەكەی سەوز بوو. ئەو لەگەڵ دوو كوڕی دیكە پێكەوە لە ژورێكدا هاوبەش بوون. هەموان بەسەریەكەوە دە مناڵ بوون كە لەگەڵ پوورە سیزی و مێردەكەی، سێ سەگ و پشیلەیەك و بزنێكی پیر لە خانووە سەربان سەوزەكەدا دەژیان.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -532,9 +531,9 @@
 <hr>
 
 <div id="text16" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/16.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/16.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	ماگۆزڤە دەستی كرد بە خوێندن. وانە خوێندن زەحمەت بوو. ئەو دەبوایە فێری زۆر شت بووبایە. هەندێك جار دەیهەویست وازی لێ بێنێ. بەڵام ئەو هەمیشە بیری لە فڕۆكەوانەكە و یاریزانەكە دەكردەوە كە لە كتێبی چیرۆكەكەدا خوێندبوونییەوە. ئەوانی خۆش دەویست، بۆیە بەردەوام بوو.
+	ماگۆزڤە لە قوتابخانە دەستی بە خوێندن كرد. خوێندن بە زەحمەت بوو. ئەو زۆر شت هەبوو كە دەبوایە بە دەستی بهێنێت. جاروبارە بیری لێدەكردەوە كە واز بهێنێت، بەڵام ئەو بیری لە فرۆكەوانەكە و یاریزانی تۆپی پێیەكەی ناو كتێبی چیرۆكەكان دەكردەوە.  ئەویش وەك ئەوان كۆڵی نەداو وازی نەهێنا.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -559,9 +558,9 @@
 <hr>
 
 <div id="text17" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/17.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/17.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	ماگۆزڤە لە حەوشەی خانووە سەربان سەوزەكەدا دانیشتبوو و چیرۆكیكی مناڵانی دەخوێندەوە، كە لە قوتابخانە پێیان دابوو. تۆماس هات و لە لای دانیشت. تۆماس لێی پرسی: “بابەتی چیرۆكەكە چییە؟” ماگۆزڤە لە وەڵامدا گوتی: “لەبارەی كوڕێكە كە دەبێتە مامۆستا.” تۆماس لێی پرسی: “ئەو كوڕە ناوی چییە؟ ماگۆزڤە بە زەردەخەنەیەكەوە گوتی: “ئەو كوڕە ناوی ماگۆزڤەیە.”
+	ماگۆزڤە لە حەوشەی خانووە سەربان سەوزەكە دانیشتبوو و چیرۆكیكی منداڵانی دەخوێندەوە، كە لە قوتابخانە پێیان دابوو. تۆماس هات و لە لای دانیشت. تۆماس لێی پرسی: “بابەتی چیرۆكەكە چییە؟” ماگۆزڤە لە وەڵامدا گوتی: “لەبارەی كوڕێكە كە دەبێتە مامۆستا.” تۆماس لێی پرسی: “ئەو كوڕە ناوی چییە؟” ماگۆزڤە بە زەردەخەنەیەكەوە گوتی: “ئەو كوڕە ناوی ماگۆزڤەیە.”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -574,7 +573,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text16" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<button id="playbutton17" class="btn btn-lg disabled" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton17" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ckb,nb','nb,nn,ckb')" class="btn btn-lg lang-primary" title="Bytt mellom kurdisk (sorani) og bokmål">nb</button>
@@ -585,14 +584,15 @@
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skrevet av: Lesley Koyi</h5>
-		<h5>Illustrert av: Wiehan de Jager</h5>
-		<h5>Oversatt av: Agri Afshin</h5>
-		<h5>Språk: <a href="/stories/ckb">kurdisk (sorani)</a></h5>
-		<h5><a href="/stories/ckb/level5">Nivå 5</a></h5>
-		<h5>Kilde: <a href="https://africanstorybook.org/reader.php?id=13213" target="_blank">Magozwe</a> fra <a href="https://africanstorybook.org/" target="_blank">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skrevet av:</span> Lesley Koyi</h5>
+		<h5><span class="colophon-heading">Illustrert av:</span> Wiehan de Jager</h5>
+		<h5><span class="colophon-heading">Oversatt av:</span> Agri Afshin</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/ckb">kurdisk (sorani)</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/ckb/level5">Nivå 5</a></h5>
+		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=13213" target="_blank">Magozwe</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.no" target="_blank"><img alt="Creative Commons Lisens" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Dette verket er lisensiert under en <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.no" target="_blank">Creative Commons Navngivelse 4.0 International Lisens</a>.</div>
 
@@ -604,10 +604,9 @@
 </div>
 <div>
 <h5>Valgmuligheter</h5>
-	<a class="btn btn-lg" href="/stories/ckb">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/ckb/ckb-0262_magozwe.pdf" target="_blank">Last ned PDF</a>
+	<a class="btn btn-lg" href="/stories/ckb" class="button">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://bfn.berattelser.se/pdf/ckb/ckb-0262_magozwe.pdf" target="_blank">Last ned PDF</a>
 <br><br>
 </div>
-
 
 
     </div>

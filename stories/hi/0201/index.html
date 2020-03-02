@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://barneboker.no//stories/hi/0201/">
 	<link rel="alternate" type="application/rss+xml" title="Barnebøker for Norge" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -89,7 +87,7 @@
         <a class="btn btn-lg" href="/stories/hi">Tilbake til fortellingene</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">गधा बच्चा</span>
 			<span class="l1">Eselbarnet</span>
@@ -97,7 +95,7 @@
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button id="playbutton01" class="btn btn-lg disabled" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 			<button onclick="switchlang('hi,nb','nb,nn,hi')" class="btn btn-lg lang-primary" title="Bytt mellom hindi og bokmål">nb</button>
 			<button onclick="switchlang('hi,nn','nb,nn,hi')" class="btn btn-lg lang-secondary" title="Bytt mellom hindi og nynorsk">nn</button>
 		</div>
@@ -106,7 +104,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Oversatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Oversatt av"></span> Nandani</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/hi">hindi</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/hi/level3">Nivå 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
+
 	</div>
 </div>
 <div class="modal" id="modal-pdf">
@@ -120,28 +119,28 @@
       <div class="content">
         <h4>Vanlige PDF-er (hel side)</h4>
         <ul>
-          <li><strong><a href="https://globalstorybooks.net/bfn/pdf/hi/hi-0201_eselbarn.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/wordless/0201_eselbarn-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/imageless/hi/hi-0201_eselbarn-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+          <li><strong><a href="https://bfn.berattelser.se/pdf/hi/hi-0201_donkey.pdf" target="_blank">Vanlig PDF (enspråklig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless/0201_donkey-wordless.pdf" target="_blank">PDF uten ord (landskap)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless/hi/hi-0201_donkey-imageless.pdf" target="_blank">PDF uten bilder (enspråklig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
         </ul>
 
         <h4>Tospråklige PDF-er</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/hi-nb/0201_eselbarn-bilingual_hi-nb.pdf" target="_blank">Tospråklig PDF (hindi-bokmål, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual/hi-nn/0201_eselbarn-bilingual_hi-nn.pdf" target="_blank">Tospråklig PDF (hindi-nynorsk, landskap)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_hi-nb.zip" target="_blank">Tospråklig PDF uten bilder (hindi-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual_hi-nn.zip" target="_blank">Tospråklig PDF uten bilder (hindi-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/hi-nb/0201_donkey-bilingual_hi-nb.pdf" target="_blank">Tospråklig PDF (hindi-bokmål, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual/hi-nn/0201_donkey-bilingual_hi-nn.pdf" target="_blank">Tospråklig PDF (hindi-nynorsk, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/hi-nb/0201_donkey-imageless-bilingual_hi-nb.pdf" target="_blank">Tospråklig PDF uten bilder (hindi-bokmål, landskap)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual/hi-nn/0201_donkey-imageless-bilingual_hi-nn.pdf" target="_blank">Tospråklig PDF uten bilder (hindi-nynorsk, landskap)<br><center><img src="/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
 
         <h4>PDF-hefter (for å skrive ut)</h4>
         <ul>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/booklet/hi/hi-0201_eselbarn-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/hi-nb/0201_eselbarn-bilingual_hi-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (hindi-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://gitlab.com/global-asp/bfn-pdf/raw/master/bilingual-booklet/hi-nn/0201_eselbarn-bilingual_hi-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (hindi-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/wordless-booklet.zip" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-booklet_hi.zip" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_hi-nb.zip" target="_blank">Tospråklig PDF-hefte uten bilder (hindi-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
-          <li><a href="https://github.com/global-asp/sbno-source/releases/download/1.0/imageless-bilingual-booklet_hi-nn.zip" target="_blank">Tospråklig PDF-hefte uten bilder (hindi-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/booklet/hi/hi-0201_donkey-booklet.pdf" target="_blank">PDF-hefte (enspråklig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/hi-nb/0201_donkey-bilingual_hi-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte (hindi-bokmål)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/bilingual-booklet/hi-nn/0201_donkey-bilingual_hi-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte (hindi-nynorsk)<br><center><img src="/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/wordless-booklet/0201_donkey-wordless-booklet.pdf" target="_blank">Hefte uten ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-booklet/hi/hi-0201_donkey-imageless-booklet.pdf" target="_blank">Hefte uten bilder (enspråklig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/hi-nb/0201_donkey-imageless-bilingual_hi-nb-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (hindi-bokmål)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://bfn.berattelser.se/utgave/imageless-bilingual-booklet/hi-nn/0201_donkey-imageless-bilingual_hi-nn-booklet.pdf" target="_blank">Tospråklig PDF-hefte uten bilder (hindi-nynorsk)<br><center><img src="/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
         </ul>
       </div>
     </div>
@@ -153,10 +152,10 @@
 
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	वह छोटी सी लड़की थी जिसने पहले उसे देखा अजीब सा आकार कुछ दूर पर था।
+	वह एक छोटी सी लड़की थी जिसने पहली बार कुछ दूरी पर अजीब से आकार का कुछ देखा।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -181,9 +180,9 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	जैसे ही आकार पास आया, उसने देखा कि यह एक भारीभरकम गर्भवती महिला है।
+	जैसे ही वह आकार पास आया, उसने देखा कि यह एक भारीभरकम गर्भवती महिला है।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -208,9 +207,9 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	शर्मीली पर बहादुर छोटी लड़की उस औरत के पास गई। “हमें इसे अपने साथ रखना चाहिए,” छोटी लड़की के साथ के लोगों ने फैसला किया। “हम इसे और इसके बच्चे को सुरक्षित रखेंगे।”
+	शर्मीली पर बहादुर छोटी लड़की उस महिला के पास गई। “हमें इसे अपने साथ रखना चाहिए,” छोटी लड़की के साथ के लोगों ने फैसला किया। “हम इसे और इसके बच्चे को सुरक्षित रखेंगे।”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -235,9 +234,9 @@
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	बच्चा जल्द ही आने वाला था। “धकेलो!” “कम्बलों को लाओ!” “पानी लाओ!” “जोर से धकेलो!!!”
+	बच्चा जल्द ही आने वाला था। “धकेलो!” “कंबलों को लाओ!” “पानी लाओ!” “ज़ोर से धकेलो!!!”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -262,7 +261,7 @@
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
 	जब उन्होंने बच्चे को देखा, सभी लोग सदमे में चले गए। “गधा?!”
 	</h3></div>
@@ -289,9 +288,9 @@
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	हर कोई बहस करने लगा। “हमने कहा था कि हम माँ और बच्चे को सुरक्षित रखेंगे, और यही हमने किया,” कुछ ने कहा। “पर ये हमारे लिए बुरी किस्मत लेकर आए है!” दूसरे ने कहा।
+	हर कोई बहस करने लगा। “हमने कहा था कि हम माँ और बच्चे को सुरक्षित रखेंगे, और यही हमने किया,” कुछ ने कहा। “पर ये हमारे लिए बुरी किस्मत लेकर आएँगे !” बाकियों ने कहा।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -316,9 +315,9 @@
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	औरत ने फिर से अपने आपको अकेला पाया। वह परेशान थी कि वह अपने अनचाहे बच्चे के साथ क्या करे। वह परेशान थी कि अपने साथ क्या करे।
+	औरत ने फिर से अपने आपको अकेला पाया। वह परेशान थी कि वह अपने अनचाहे बच्चे के साथ क्या करे। वह परेशान थी कि वह अपने साथ क्या करे।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -343,9 +342,9 @@
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	अंत में उसने मान लिया कि वह उसका बच्चा है और वह उसकी माँ।
+	अंत में उसे मानना पड़ा कि वह उसका बच्चा है और वह उसकी माँ।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -370,9 +369,9 @@
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/10.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	यदि बच्चा उसी आकार में रहता, छोटा ही, शायद चीजें अलग होती। पर गधा बच्चा इतना बड़ा हो गया कि माँ की पीठ पर नहीं आ पाता। उसने बहुत कोशिश की लेकिन वह आदमियों की तरह व्यवहार नहीं कर पाया। उसकी माँ ने बहुत कोशिश किया लेकिन निराशा मिली। कुछ समय वह उसे वे काम करने देती जो जानवरों के लिए बने है।
+	यदि बच्चा उसी आकार में रहता, छोटा ही, तो शायद चीज़ें अलग होतीं। पर गधा बच्चा इतना बड़ा हो गया कि माँ की पीठ पर नहीं आ पाता था। उसने बहुत कोशिश की लेकिन वह आदमियों की तरह व्यवहार नहीं कर पाया। उसकी माँ ने बहुत कोशिश की लेकिन उनके हाथ निराशा ही लगी। कभी-कभी वे उसे करने के लिए ऐसे काम देतीं जो जानवरों के लिए बने हैं।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -397,9 +396,9 @@
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/11.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	गधे के अंदर दुविधा और गुस्से का भाव भर गया। वह यह नहीं कर सकता था और वह नहीं कर सकता था। वह इसके तरह नहीं कर सकता था और उसकी तरह भी नहीं। वह बहुत गुस्से वाला बन गया, एक दिन, उसने अपनी माँ को जमीन पर धकेल दिया।
+	गधे के अंदर दुविधा और गुस्से का भाव भर गया। वह यह नहीं कर सकता था और वह नहीं कर सकता था। वह इस तरह नहीं हो सकता था और उस तरह भी नहीं। इस बात से वह इतना नाराज़ हो गया कि एक दिन, उसने अपनी माँ को धक्का मार कर ज़मीन पर गिरा दिया।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -424,9 +423,9 @@
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/12.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	गधा शर्मिंदगी से भर गया। वह दौड़ने लगा वहाँ से दूर जितना तेज दौड़ सकता था।
+	अपने इस व्यवहार से गधा बहुत शर्मिंदा हो गया। वह वहाँ से जितनी दूर और जितनी तेज़ी से दौड़ सकता था दौड़ने लगा।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -451,9 +450,9 @@
 <hr>
 
 <div id="text13" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/13.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	जब उसने दौड़ना बन्द किया रात हो चुकी थी और वह खो गया था। “ढ़ेंचू-ढ़ेंचू?” वह अंधेरे में फुसफुसाया। “ढ़ेंचू-ढ़ेंचू?” उसकी आवाज़ वापस गूँजी। वह अकेला था। उसने अपने आपको सिकोड़ा सख्त गेंद की तरह, उसे दुख भरी गहरी नींद आ गई।
+	जब उसने दौड़ना बंद किया तब रात हो चुकी थी और वह खो गया था। “ढ़ेंचू-ढ़ेंचू?” उसने अंधेरे में आवाज़ की। “ढ़ेंचू-ढ़ेंचू?” उसकी आवाज़ वापस गूँजी। वह अकेला था। उसने अपने आपको सख्त गेंद की तरह सिकोड़ा, और दुखी होकर गहरी नींद में सो गया।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -478,9 +477,9 @@
 <hr>
 
 <div id="text14" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/14.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/14.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	गधा जब उठा उसने पाया कि बूढ़ा आदमी उसे घूर रहा है। उसने बूढ़े आदमी की आँखों में देखा जहाँ उसे उम्मीद की किरण नजर आई।
+	गधा जब उठा तो उसने पाया कि एक अनजान बूढ़ा आदमी उसे घूर रहा है। उसने बूढ़े आदमी की आँखों में देखा जहाँ उसे उम्मीद की किरण नज़र आई।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -505,9 +504,9 @@
 <hr>
 
 <div id="text15" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/15.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/15.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	गधा बूढ़े आदमी के साथ रहने चला गया, उसने उसे जीने के कई तरीके सिखाए। गधे ने बूढ़े आदमी को सुना और उसे सीखा। उन्होंने एक दूसरे को मदद किया, और मज़ाक भी उड़ाया।
+	गधा उस बूढ़े आदमी के साथ रहने चला गया, उसने उसे जीने के कई तरीके सिखाए। गधे ने बूढ़े आदमी की बातें सुनीं और उनसे सीखा। उन्होंने एक दूसरे की मदद की और अपने सुख-दुख मिलकर बाँटे।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -532,9 +531,9 @@
 <hr>
 
 <div id="text16" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/16.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/16.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	एक सुबह, बूढ़े आदमी ने गधे को पहाड़ी की चोटी पर ले जाने को कहा।
+	एक सुबह, बूढ़े आदमी ने गधे से खुद को एक पहाड़ की चोटी पर ले चलने को कहा।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -559,9 +558,9 @@
 <hr>
 
 <div id="text17" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/17.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/17.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	ऊँचाई पर बादलों के बीच में वे सो गए। गधे ने सपना देखा उसकी माँ बीमार है और उसे बुला रही है। और जब वह उठा…
+	ऊँचाई पर जाकर बादलों के बीच में वे सो गए। गधे ने सपना देखा कि उसकी माँ बीमार है और उसे बुला रही है। और जब वह उठा…
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -586,9 +585,9 @@
 <hr>
 
 <div id="text18" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/18.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/18.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	…बादल हट चुके थे और उसका दोस्त बूढ़ा आदमी भी।
+	…बादल हट चुके थे और उसका दोस्त बूढ़ा आदमी भी वहाँ से गायब हो चुका था।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -613,9 +612,9 @@
 <hr>
 
 <div id="text19" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/19.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/19.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	गधे को अब पता था कि उसे अब क्या करना है।
+	गधे को पता था कि उसे अब क्या करना है।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -640,9 +639,9 @@
 <hr>
 
 <div id="text20" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/20.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/20.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	गधे ने अपनी माँ को खोज लिया, वह अकेली और बच्चे के खोने से दुखी थी। उन्होंने एक दूसरे को बहुत देर तक देखा। और फिर जोर से एक दूसरे को गले लगाया।
+	गधे ने अपनी माँ को खोज लिया। वह अकेली थी और बच्चे के खो जाने से दुखी थी। उन्होंने एक दूसरे को बहुत देर तक देखा। और फिर ज़ोर से एक दूसरे को गले लगा लिया।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -667,9 +666,9 @@
 <hr>
 
 <div id="text21" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/21.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/21.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	गधा बच्चा ओर उसकी माँ ने साथ मिलकर रहना शुरू किया और साथ के साथ जीने के कई तरीके ढूँढ़ लिए। धीरे-धीरे, उनके चारों ओर, और परिवारों ने रहना शुरू कर दिया।
+	गधा बच्चा और उसकी माँ साथ मिलकर रहने लगे और साथ ही उन्होंने जीने के कई तरीके ढूँढ़ लिए। धीरे-धीरे, उनके चारों ओर, और भी परिवार रहने लगे।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -682,7 +681,7 @@
 	<div class="btn-group switcher-group">
 		<a href="#text20" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<button id="playbutton21" class="btn btn-lg disabled" onclick="playpause('21')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton21" onclick="playpause('21')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('hi,nb','nb,nn,hi')" class="btn btn-lg lang-primary" title="Bytt mellom hindi og bokmål">nb</button>
@@ -693,21 +692,22 @@
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skrevet av: Lindiwe Matshikiza</h5>
-		<h5>Illustrert av: Meghan Judge</h5>
-		<h5>Oversatt av: Nandani</h5>
-		<h5>Språk: <a href="/stories/hi">hindi</a></h5>
-		<h5><a href="/stories/hi/level3">Nivå 3</a></h5>
-		<h5>Kilde: <a href="https://africanstorybook.org/reader.php?id=15028" target="_blank">Donkey Child</a> fra <a href="https://africanstorybook.org/" target="_blank">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skrevet av:</span> Lindiwe Matshikiza</h5>
+		<h5><span class="colophon-heading">Illustrert av:</span> Meghan Judge</h5>
+		<h5><span class="colophon-heading">Oversatt av:</span> Nandani</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/hi">hindi</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/hi/level3">Nivå 3</a></h5>
+		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=15028" target="_blank">Donkey Child</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.no" target="_blank"><img alt="Creative Commons Lisens" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Dette verket er lisensiert under en <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.no" target="_blank">Creative Commons Navngivelse 4.0 International Lisens</a>.</div>
 
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
 		<h5>Les flere fortellinger på <a href="/stories/hi/level3">nivå 3</a>:</h5>
-			<label class="chip"><a href="/stories/hi/0110/">एक छोटा बीज: वनगारी माथाई की कहानी</a></label>
+			<label class="chip"><a href="/stories/hi/0110/">एक छोटा बीज: वंगारी मथाई की कहानी</a></label>
 			<label class="chip"><a href="/stories/hi/0066/">नोज़िबेले और उसके तीन बाल</a></label>
 			<label class="chip"><a href="/stories/hi/0141/">मुर्गी और कनखजूरा</a></label>
 			<label class="chip"><a href="/stories/hi/0315/">साकीमा का गाना</a></label>
@@ -718,10 +718,9 @@
 </div>
 <div>
 <h5>Valgmuligheter</h5>
-	<a class="btn btn-lg" href="/stories/hi">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://globalstorybooks.net/bfn/pdf/hi/hi-0201_eselbarn.pdf" target="_blank">Last ned PDF</a>
+	<a class="btn btn-lg" href="/stories/hi" class="button">Tilbake til fortellingene</a> <a class="btn btn-lg" href="https://bfn.berattelser.se/pdf/hi/hi-0201_eselbarn.pdf" target="_blank">Last ned PDF</a>
 <br><br>
 </div>
-
 
 
     </div>
