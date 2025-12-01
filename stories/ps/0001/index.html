@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" href="/favicon.ico?v=4">
 	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
-	<title>یو ډیر لوړ سړی - Barnebøker for Norge</title>
+	<title>یوډېر لوړ سړی - Barnebøker for Norge</title>
 	<meta name="description" content="Barnebøker for Norge er utviklet for barn, lærere og foreldre og gjør 40 fortellinger fra African Storybook tilgjengelige på bokmål og nynorsk, samt de største innvandrings- og flyktningspråkene i Norge. Noen språk har lydinnspillinger. Denne nettressursen tilbyr gratis barnebøker online (gratis bildebøker online), gratis lydbøker for barn og PDF-filer.
 ">
 	<link rel="stylesheet" href="/css/spectre.min.css">
@@ -93,23 +93,26 @@
 <div class="columns" id="text01">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0001/01.jpg" alt="En veldig høy mann som holder en for liten hakke."></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h1 dir="rtl"><span class="def">یو ډیر لوړ سړی</span>
+		<h1 dir="rtl"><span class="def">یوډېر لوړ سړی</span>
 			<span dir="ltr" class="l1">En veldig høy mann</span>
 			<span dir="ltr" class="l2">Ein veldig høg mann</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://media.berattelser.se/audio/ps/0001/mp3/01.mp3"></audio>
 			<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
 			<button onclick="switchlang('ps,nn','nb,nn,ps')" class="btn btn-lg lang-secondary" title="Bytt mellom pasjto og nynorsk">nn</button>
 		</div>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Skrevet av"><img class="cover-icon cover-icon-text" src="/css/pencil.svg" alt="Skrevet av"></span> Cornelius Gulere</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrert av"><img class="cover-icon cover-icon-text" src="/css/art.svg" alt="Illustrert av"></span> Catherine Groenewald</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Oversatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Oversatt av"></span> Darakhte Danesh</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Lest av"><img class="cover-icon cover-icon-text" src="/css/megaphone.svg" alt="Lest av"></span> Abdul Rafi Mohammadi</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/ps">pasjto</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/ps/level2">Nivå 2</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
-
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <audio id="audioplayer" controls><source src="https://media.berattelser.se/audio/ps/0001/ps-0001_tall.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Lesehastighet"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Lesehastighet" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Lesehastighet: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/css/play.svg" alt="Automatisk spilling av fortellingen" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <div class="modal" id="modal-pdf">
@@ -159,7 +162,7 @@
         <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0001/02.jpg" alt="En veldig høy mann som holder en for liten hakke."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
-	د هغه يوم ډير لنډ و.
+	د هغه يوم ډېر لنډ و.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -172,7 +175,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton02" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio02" onended="resetbutton('02')" src="https://media.berattelser.se/audio/ps/0001/mp3/02.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -186,7 +190,7 @@
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0001/03.jpg" alt="En veldig høy mann og en gutt som står utenfor et hus; døråpningen er for lav for mannen."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
-	د کور ور يې ډیر ټیټ و.
+	د کور دروازه ېې ټیټه وه.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -199,7 +203,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton03" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio03" onended="resetbutton('03')" src="https://media.berattelser.se/audio/ps/0001/mp3/03.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -213,7 +218,7 @@
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0001/04.jpg" alt="En veldig høy mann i sengen med føttene hengende utenfor sengekanten, og en gutt som står ved siden av ham og ser på føttene hans."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
-	کټ يې ډير لنډ و.
+	کټ يې ډېر لنډ و.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -226,7 +231,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton04" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio04" onended="resetbutton('04')" src="https://media.berattelser.se/audio/ps/0001/mp3/04.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -240,7 +246,7 @@
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0001/05.jpg" alt="En veldig høy mann som sykler på en for liten sykkel."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
-	او بایسیکل يې هم ډیر ټیټ و.
+	او بایسیکل يې هم ډېر ټیټ و.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -253,7 +259,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton05" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio05" onended="resetbutton('05')" src="https://media.berattelser.se/audio/ps/0001/mp3/05.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -267,7 +274,7 @@
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0001/06.jpg" alt="En veldig høy mann som står foran en folkemengde."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
-	خو دا سړى ډير لوړ و.
+	خو دا سړى ډېر لوړ و.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -280,7 +287,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton06" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio06" onended="resetbutton('06')" src="https://media.berattelser.se/audio/ps/0001/mp3/06.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -307,7 +315,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton07" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio07" onended="resetbutton('07')" src="https://media.berattelser.se/audio/ps/0001/mp3/07.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -321,7 +330,7 @@
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0001/08.jpg" alt="En veldig høy mann som står utenfor et hus."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
-	هغه خپله دروازه لوړه کړه.
+	هغه خپله دروازه لوړه جوړه کړه.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -334,7 +343,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton08" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio08" onended="resetbutton('08')" src="https://media.berattelser.se/audio/ps/0001/mp3/08.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -348,7 +358,7 @@
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0001/09.jpg" alt="En mann i en lang seng og en gutt som står ved siden av ham."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
-	او خپل کټ یې اوږد کړ.
+	هغه خپل کټ اوږد کړ.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -361,7 +371,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton09" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio09" onended="resetbutton('09')" src="https://media.berattelser.se/audio/ps/0001/mp3/09.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -375,7 +386,7 @@
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0001/10.jpg" alt="En veldig høy mann som sykler på en høy sykkel og en gutt som sitter i en kurv bakpå."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
-	هغه یو جیګ بایسیکل واخیست.
+	هغه یو جګ بایسیکل واخېست.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -388,7 +399,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton10" onclick="playpause('10')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio10" onended="resetbutton('10')" src="https://media.berattelser.se/audio/ps/0001/mp3/10.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -402,7 +414,7 @@
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0001/11.jpg" alt="En veldig høy mann som sitter på en veldig høy stol og spiser med en lang gaffel, og en gutt som sitter ved siden av ham på toppen av en stige."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
-	هغه په یوې لوړې څوکۍ کښیناسته او له یوې غټې پنجې سره یې ډوډۍ وخوړه.
+	هغه پر یوې لوړې څوکۍ کښیناست او په یوې اوږدې کاچوغې سره ېې ډوډۍ وخوړه.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -415,7 +427,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton11" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio11" onended="resetbutton('11')" src="https://media.berattelser.se/audio/ps/0001/mp3/11.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -429,7 +442,7 @@
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0001/12.jpg" alt="Et hus i en skog."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
-	هغه خپل کور پرېښوده او په یوه لوي ځنګل کې تر ډېرو کلونو پورې اوسېده.
+	هغه خپل کور پرېښود او په یوه لوی ځنګل کې تر ډېرو کلونو پورې اوسېده.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -442,7 +455,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton12" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio12" onended="resetbutton('12')" src="https://media.berattelser.se/audio/ps/0001/mp3/12.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -459,6 +473,7 @@
 		<h5><span class="colophon-heading">Skrevet av:</span> Cornelius Gulere</h5>
 		<h5><span class="colophon-heading">Illustrert av:</span> Catherine Groenewald</h5>
 		<h5><span class="colophon-heading">Oversatt av:</span> Darakhte Danesh</h5>
+		<h5><span class="colophon-heading">Lest av:</span> Abdul Rafi Mohammadi</h5>
 		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/ps">pasjto</a></h5>
 		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/ps/level2">Nivå 2</a></h5>
 		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=918" target="_blank">A very tall man</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
@@ -469,15 +484,15 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
 		<h5>Les flere fortellinger på <a href="/stories/ps/level2">nivå 2</a>:</h5>
 			<label class="chip"><a href="/stories/ps/0337/">د موم ماشومان</a></label>
-			<label class="chip"><a href="/stories/ps/0111/">ولې هېپو ویښتان نه لري</a></label>
-			<label class="chip"><a href="/stories/ps/0095/">زرمينه ښه نجلۍ ده!</a></label>
+			<label class="chip"><a href="/stories/ps/0111/">ولې هېپو یا سمندري اس ویښتان نه لري؟</a></label>
+			<label class="chip"><a href="/stories/ps/0095/">زما ښه نجلۍ ده!</a></label>
 			<label class="chip"><a href="/stories/ps/0089/">خالۍ له بوټو سره خبرې کوي.</a></label>
 			<label class="chip"><a href="/stories/ps/0027/">پرېکړه</a></label>
-			<label class="chip"><a href="/stories/ps/0296/">ټام د کېلو پلورونکی</a></label>
-			<label class="chip"><a href="/stories/ps/0210/">تینګي او غواګانې</a></label>
+			<label class="chip"><a href="/stories/ps/0296/">د کېلو پلورونکی ټام</a></label>
+			<label class="chip"><a href="/stories/ps/0210/">تینګی او غواګانې</a></label>
 			<label class="chip"><a href="/stories/ps/0342/">سزا ورکول</a></label>
 			<label class="chip"><a href="/stories/ps/0004/">وزه، سپی او غوا</a></label>
-			<label class="chip"><a href="/stories/ps/0234/">لیلا، د فوټبال ستوری</a></label>
+			<label class="chip"><a href="/stories/ps/0234/">اندیسوا د فوټبال اتله</a></label>
 	</div>
 </div>
 <div>

@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" href="/favicon.ico?v=4">
 	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
-	<title>یوه کوچنۍ دانه: د ونګري کیسه( ونګري د نجلۍ نوم دی)! - Barnebøker for Norge</title>
+	<title>یوه کوچنۍ دانه: د ونګري کیسه - Barnebøker for Norge</title>
 	<meta name="description" content="Barnebøker for Norge er utviklet for barn, lærere og foreldre og gjør 40 fortellinger fra African Storybook tilgjengelige på bokmål og nynorsk, samt de største innvandrings- og flyktningspråkene i Norge. Noen språk har lydinnspillinger. Denne nettressursen tilbyr gratis barnebøker online (gratis bildebøker online), gratis lydbøker for barn og PDF-filer.
 ">
 	<link rel="stylesheet" href="/css/spectre.min.css">
@@ -93,23 +93,26 @@
 <div class="columns" id="text01">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/01.jpg" alt="En jente og en kvinne på en åker og en sebra og en sjiraff i nærheten."></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h1 dir="rtl"><span class="def">یوه کوچنۍ دانه: د ونګري کیسه( ونګري د نجلۍ نوم دی)!</span>
+		<h1 dir="rtl"><span class="def">یوه کوچنۍ دانه: د ونګري کیسه</span>
 			<span dir="ltr" class="l1">Et lite frø: Historien om Wangari Maathai</span>
 			<span dir="ltr" class="l2">Eit lite frø: Historia om Wangari Maathai</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://media.berattelser.se/audio/ps/0110/mp3/01.mp3"></audio>
 			<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
 			<button onclick="switchlang('ps,nn','nb,nn,ps')" class="btn btn-lg lang-secondary" title="Bytt mellom pasjto og nynorsk">nn</button>
 		</div>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Skrevet av"><img class="cover-icon cover-icon-text" src="/css/pencil.svg" alt="Skrevet av"></span> Nicola Rijsdijk</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrert av"><img class="cover-icon cover-icon-text" src="/css/art.svg" alt="Illustrert av"></span> Maya Marshak</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Oversatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Oversatt av"></span> Darakhte Danesh</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Lest av"><img class="cover-icon cover-icon-text" src="/css/megaphone.svg" alt="Lest av"></span> Abdul Rafi Mohammadi</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/ps">pasjto</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/ps/level3">Nivå 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
-
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <audio id="audioplayer" controls><source src="https://media.berattelser.se/audio/ps/0110/ps-0110_wangari.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Lesehastighet"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Lesehastighet" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Lesehastighet: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/css/play.svg" alt="Automatisk spilling av fortellingen" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <div class="modal" id="modal-pdf">
@@ -172,7 +175,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton02" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio02" onended="resetbutton('02')" src="https://media.berattelser.se/audio/ps/0110/mp3/02.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -186,7 +190,7 @@
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/03.jpg" alt="En jente som sår i en kjøkkenhage."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	د ونګري کليوالي ژوند خوښېده. د خپل میوو په بڼ کې ېې ځمکې ييوې کولې او په منځ کې ېې ورته کوچنۍ دانې کېښودې.
+	د ونګري کليوالي ژوند خوښېده. د خپل میوو په بڼ کې ېې ځمکه څيرې کوله او په منځ کې ېې ورته کوچنۍ دانې کېښودې.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -199,7 +203,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton03" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio03" onended="resetbutton('03')" src="https://media.berattelser.se/audio/ps/0110/mp3/03.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -226,7 +231,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton04" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio04" onended="resetbutton('04')" src="https://media.berattelser.se/audio/ps/0110/mp3/04.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -253,7 +259,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton05" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio05" onended="resetbutton('05')" src="https://media.berattelser.se/audio/ps/0110/mp3/05.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -267,7 +274,7 @@
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/06.jpg" alt="En bok med et kart over verden og en blyant."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	د هغې ډيره مینه له کتاب سره وه، چې ډير څه ترې زده کړي او ډيره خوشاله وه چې د زده کړو لپاره د امریکا متحده ایالاتو ته بلل شوې ده. ونګري ډيره لیواله وه چې د نورې نړۍ په اړه هم معلومات ترلاسه کړي.
+	له کتاب سره ېې ډيره مینه وه، چې ډير څه ترې زده کړي او ډيره خوشاله وه چې د زده کړو لپاره د امریکا متحده ایالاتو ته بلل شوې ده. ونګري ډيره لیواله وه چې د نورې نړۍ په اړه هم معلومات ترلاسه کړي.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -280,7 +287,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton06" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio06" onended="resetbutton('06')" src="https://media.berattelser.se/audio/ps/0110/mp3/06.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -294,7 +302,7 @@
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/07.jpg" alt="Et forstørrelsesglass og en blomst."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	ونګري په امریکا کې ډير څه زده کړه، او د نباتاتو د کښت ټولې لارې چارې ېې زده کړې، دا ېې هم په زړه شول چې د ماشومتوب وخت کې ېې د کینیا په ځنګل کې څه ډول نباتات کښت کړي وو.
+	ونګري په امریکا کې ډير څه زده کړ او د نباتاتو د کښت ټولې لارې چارې ېې زده کړې، دا ېې هم په زړه شول چې د ماشومتوب وخت کې ېې د کینیا په ځنګل کې څه ډول نباتات کښت کړي وو.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -307,7 +315,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton07" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio07" onended="resetbutton('07')" src="https://media.berattelser.se/audio/ps/0110/mp3/07.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -321,7 +330,7 @@
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/08.jpg" alt="En jente som sitter og leser og tenker på hjemmet sitt."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	هغې نورې زده کړې هم وکړې، او له خپلو خلکو سره ېې ډيره مینه درلوده، او د دوی د آزاد ژوند لپاره ېې کوښښ کاوه، چې د افریقا خلک ازاد ژوند ولري او پرمختګ وکړي. ونګري به تل خپل افریقايي کور یادوه، ځکه چې ډيرې خاطرې ېې ورپورې تړلې وې.
+	هغې نورې زده کړې هم وکړې او له خپلو خلکو سره ېې ډيره مینه درلوده او د دوی د آزاد ژوند لپاره ېې کوښښ کاوه، چې د افریقا خلک ازاد ژوند ولري او پرمختګ وکړي. ونګري به تل خپل افریقايي کور یادوه، ځکه چې ډيرې خاطرې ېې ورپورې تړلې وې.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -334,7 +343,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton08" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio08" onended="resetbutton('08')" src="https://media.berattelser.se/audio/ps/0110/mp3/08.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -348,7 +358,7 @@
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/09.jpg" alt="En gaselle."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	کله چې ونګري خپلې زده کړې پای ته ورسولې، بېرته کینیا ته راغله، خو د خلکو ژوند کې ډير بدلون راغلی و، د ځمکې پر سر غټ فارمونه خراب شوي و، میرمنو د خوړو لپاره څه نه لرل، د سون توکي ېې خلاص شوي وو او ماشومان هم وږي وو.
+	کله چې ونګري خپلې زده کړې پای ته ورسولې، بېرته کینیا ته راغله، خو د خلکو ژوند کې ډير بدلون راغلی و، د ځمکې پر سر غټ فارمونه خراب شوي وو، میرمنو د خوړو لپاره څه نه لرل، د سون توکي ېې خلاص شوي وو او ماشومان هم وږي وو.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -361,7 +371,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton09" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio09" onended="resetbutton('09')" src="https://media.berattelser.se/audio/ps/0110/mp3/09.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -375,7 +386,7 @@
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/10.jpg" alt="To kvinner som planter trær."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	ونګري پوهېده چې خلک څنګه له فقر او بې وزلۍ وژغوري، خلکو ته ېې له دانو د ثمر لرونکو ونو د کښت او کینولو لارې چارې هم وروښودلې، د کلي خلکو بې ثمره ونې ووهلې او په پیسو ېې کور ته د اړتیا وړ توکي واخېستل، له دې او میرمنو سره ېې دا مرسته وکړه چې څنګه پر ځان بسیا شي.
+	ونګري پوهېده چې خلک څنګه له فقر او بې وزلۍ وژغوري، خلکو ته ېې له دانو د ثمر لرونکو ونو د کښت او کینولو لارې چارې هم وروښودلې، د کلي خلکو بې ثمره ونې ووهلې او په پیسو ېې کور ته د اړتیا وړ توکي واخېستل، له دې او میرمنو سره ېې دا مرسته وکړه چې څنګه ځانته ډوډۍ پیدا کړي.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -388,7 +399,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton10" onclick="playpause('10')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio10" onended="resetbutton('10')" src="https://media.berattelser.se/audio/ps/0110/mp3/10.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -415,7 +427,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton11" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio11" onended="resetbutton('11')" src="https://media.berattelser.se/audio/ps/0110/mp3/11.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -429,7 +442,7 @@
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/12.jpg" alt="En kvinne omgitt av trær."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	ونګري اړ وه چې د حالت د ښه کیدو لپاره ډيرزيار وباسي، کار وکړي او د خپلو هڅو له امله ډيره مشهوره شوه. د زحمتونو په بدل کې يې خلکو ورته ډالۍ ورکړه، او دا ډالۍ د نوبل په نامه یادیږي. دا د افریقا په تاریخ کې لومړنۍ میرمن ده چې دا ډالۍ یې ترلاسه کړې ده.
+	ونګري اړ وه چې د حالت د ښه کیدو لپاره ډيرزيار وباسي، کار وکړي او د خپلو هڅو له امله ډيره مشهوره شوه. د زحمتونو په بدل کې يې خلکو ورته ډالۍ ورکړه او دا ډالۍ د نوبل په نامه یادیږي. دا د افریقا په تاریخ کې لومړنۍ میرمن ده چې دا ډالۍ یې ترلاسه کړې ده.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -442,7 +455,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text13" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton12" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio12" onended="resetbutton('12')" src="https://media.berattelser.se/audio/ps/0110/mp3/12.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -456,7 +470,7 @@
 <div id="text13" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0110/13.jpg" alt="En sommerfugl som flyr nær et vakkert tre."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	ونګري په ۲۰۱۱کال کې مړه شوه، خو کله چې موږ دا ښکلې ونې او ځنګلونه ګورو، د هغې فردي هڅې او کوښښ مو ذهن ته راشي.
+	ونګري په ۲۰۱۱میلادي کال کې مړه شوه، خو کله چې موږ دا ښکلې ونې او ځنګلونه ګورو، د هغې فردي هڅې او کوښښ مو ذهن ته راشي.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -469,7 +483,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton13" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio13" onended="resetbutton('13')" src="https://media.berattelser.se/audio/ps/0110/mp3/13.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -486,6 +501,7 @@
 		<h5><span class="colophon-heading">Skrevet av:</span> Nicola Rijsdijk</h5>
 		<h5><span class="colophon-heading">Illustrert av:</span> Maya Marshak</h5>
 		<h5><span class="colophon-heading">Oversatt av:</span> Darakhte Danesh</h5>
+		<h5><span class="colophon-heading">Lest av:</span> Abdul Rafi Mohammadi</h5>
 		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/ps">pasjto</a></h5>
 		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/ps/level3">Nivå 3</a></h5>
 		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=9809" target="_blank">A Tiny Seed: The Story of Wangari Maathai</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
@@ -495,13 +511,13 @@
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
 		<h5>Les flere fortellinger på <a href="/stories/ps/level3">nivå 3</a>:</h5>
-			<label class="chip"><a href="/stories/ps/0066/">نوزېبېلې او درې ویښتان</a></label>
-			<label class="chip"><a href="/stories/ps/0141/">چرګه او هزارپا</a></label>
+			<label class="chip"><a href="/stories/ps/0066/">نوزیبېلې او درې ویښتان</a></label>
+			<label class="chip"><a href="/stories/ps/0141/">چرګه او زنزه</a></label>
 			<label class="chip"><a href="/stories/ps/0201/">د خره بچی</a></label>
-			<label class="chip"><a href="/stories/ps/0315/">د ساده ګل سندره</a></label>
+			<label class="chip"><a href="/stories/ps/0315/">د سکیما سندره</a></label>
 			<label class="chip"><a href="/stories/ps/0006/">انانسي او عقل</a></label>
-			<label class="chip"><a href="/stories/ps/0324/">هغه ورځ چې ما کور د ښار لپاره پرېښود!</a></label>
-			<label class="chip"><a href="/stories/ps/0158/">چرګه او عقاب</a></label>
+			<label class="chip"><a href="/stories/ps/0324/">هغه ورځ چې ما د ښار لپاره کور پرېښود</a></label>
+			<label class="chip"><a href="/stories/ps/0158/">چرګه او باز</a></label>
 	</div>
 </div>
 <div>

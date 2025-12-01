@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" href="/favicon.ico?v=4">
 	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
-	<title>هغه ورځ چې ما کور د ښار لپاره پرېښود! - Barnebøker for Norge</title>
+	<title>هغه ورځ چې ما د ښار لپاره کور پرېښود - Barnebøker for Norge</title>
 	<meta name="description" content="Barnebøker for Norge er utviklet for barn, lærere og foreldre og gjør 40 fortellinger fra African Storybook tilgjengelige på bokmål og nynorsk, samt de største innvandrings- og flyktningspråkene i Norge. Noen språk har lydinnspillinger. Denne nettressursen tilbyr gratis barnebøker online (gratis bildebøker online), gratis lydbøker for barn og PDF-filer.
 ">
 	<link rel="stylesheet" href="/css/spectre.min.css">
@@ -93,23 +93,26 @@
 <div class="columns" id="text01">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0324/01.jpg" alt="En gutt som står ved siden av en buss."></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h1 dir="rtl"><span class="def">هغه ورځ چې ما کور د ښار لپاره پرېښود!</span>
+		<h1 dir="rtl"><span class="def">هغه ورځ چې ما د ښار لپاره کور پرېښود</span>
 			<span dir="ltr" class="l1">Den dagen jeg dro hjemmefra for å dra til byen</span>
 			<span dir="ltr" class="l2">Den dagen eg drog heimanfrå for å dra til byen</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://media.berattelser.se/audio/ps/0324/mp3/01.mp3"></audio>
 			<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
 			<button onclick="switchlang('ps,nn','nb,nn,ps')" class="btn btn-lg lang-secondary" title="Bytt mellom pasjto og nynorsk">nn</button>
 		</div>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Skrevet av"><img class="cover-icon cover-icon-text" src="/css/pencil.svg" alt="Skrevet av"></span> Lesley Koyi, Ursula Nafula</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrert av"><img class="cover-icon cover-icon-text" src="/css/art.svg" alt="Illustrert av"></span> Brian Wambi</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Oversatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Oversatt av"></span> Darakhte Danesh</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Lest av"><img class="cover-icon cover-icon-text" src="/css/megaphone.svg" alt="Lest av"></span> Abdul Rafi Mohammadi</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/ps">pasjto</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/ps/level3">Nivå 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
-
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <audio id="audioplayer" controls><source src="https://media.berattelser.se/audio/ps/0324/ps-0324_city.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Lesehastighet"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Lesehastighet" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Lesehastighet: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/css/play.svg" alt="Automatisk spilling av fortellingen" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <div class="modal" id="modal-pdf">
@@ -159,7 +162,7 @@
         <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0324/02.jpg" alt="Et travelt busstopp med folk og mange busser."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	زموږ په کلي يو کوچنى تم ځاى و، چې ګڼو خلکو او بار موټرو سره به تل دا ځای مشغول وو. د ملي بس کلینډر هم د هغو ځایونو نومونه په لوړ غږ اخیستل چیرته چې به یادې موټرې تللې.
+	زموږ په کلي کې یوه کوچنۍ د موټرو اډه وه، چې ګڼ خلک او بار وړونکي موټر به پکې ولاړ و. د ملي بس کلینډر به هم د هغو ځایونو نومونه په لوړ غږ اخېستل، چېرته چې به یادې موټرې تللې.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -172,7 +175,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton02" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio02" onended="resetbutton('02')" src="https://media.berattelser.se/audio/ps/0324/mp3/02.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -199,7 +203,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton03" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio03" onended="resetbutton('03')" src="https://media.berattelser.se/audio/ps/0324/mp3/03.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -213,7 +218,7 @@
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0324/04.jpg" alt="Folk som prøver å komme seg på en fullsatt buss."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	د ښار ملی بس تقریبا ډک وه، مګر نورو خلکو تر اوسه هڅه کوله چې ملی بس ته جګ شي. ځينو خلکو خپله د سفر توکي د ملي بس لاندې ځای پر ځای کړي وو. او ځینو نورو خلکو د قفس دپاسه موټر منځ کې اېښې وو.
+	د ښار ملی بس تقریبا ډک و، خو نورو خلکو تر اوسه هڅه کوله چې ملی بس ته جګ شي. ځينو خلکو خپله د سفر توکي د ملي بس لاندې ځای پر ځای کړي وو او ځینو نورو خلکو د موټر د ننه په قفس کې ايښي وو.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -226,7 +231,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton04" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio04" onended="resetbutton('04')" src="https://media.berattelser.se/audio/ps/0324/mp3/04.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -240,8 +246,7 @@
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0324/05.jpg" alt="Passasjerer som leter etter et sted å sitte i en overfylt buss."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	.
-نویو مسافرو ټکټونه اخیستي و او د کښېناستلو لپاره یې ځايونه لټول، د میرمنو سره ماشومان هم و او د اوږده سفر لپاره یې ځانونه چمتو کړي وو.
+	نویو مسافرو ټکټونه اخیستي وو او د کښېناستلو لپاره یې څوکۍ کتلې، د میرمنو سره ماشومان هم و او د اوږده سفر لپاره یې ځانونه چمتو کړي وو.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -254,7 +259,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton05" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio05" onended="resetbutton('05')" src="https://media.berattelser.se/audio/ps/0324/mp3/05.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -268,7 +274,7 @@
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0324/06.jpg" alt="En gutt som sitter ved siden av en mann og en kvinne på en buss."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	ما د یوې کړکۍ ترڅنګ خپل ځان ځای پر ځای کړ. هغه کس چې زما خواته ناست و، شین رنګه پلاستیکی کڅوړه یې کلکه نیولې وه. هغه زړې څپلۍ په پښو کړې وې، زوړ جاکت یې و او په غوصه یې کتل.
+	ما د یوې کړکۍ ترڅنګ خپل ځان ځای پر ځای کړ. هغه کس چې زما خواته ناست و، شین رنګه پلاستیکي کڅوړه یې کلکه نیولې وه. هغه زړې څپلۍ په پښو کړې وې، زوړ جاکت یې و او په غوسه یې کتل.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -281,7 +287,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton06" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio06" onended="resetbutton('06')" src="https://media.berattelser.se/audio/ps/0324/mp3/06.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -295,8 +302,7 @@
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0324/07.jpg" alt="En gutt som ser ut av et bussvindu."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	.
-ما د ملي بس له کړکۍ بهر کتل او په دې فکر کې وم، چې هغه کلی پرېږدم، چیرته چې ما خاپوړي کړي دي او لوی ښار ته روان یم.
+	ما د ملي بس له کړکۍ بهر کتل او په دې فکر کې وم، چې هغه کلی پرېږدم، چیرته چې ما خاپوړي کړي دي او لوی ښار ته روان یم.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -309,7 +315,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton07" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio07" onended="resetbutton('07')" src="https://media.berattelser.se/audio/ps/0324/mp3/07.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -323,7 +330,7 @@
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0324/08.jpg" alt="En overfylt buss med folk som står i midtgangen og selger varer."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	موتر ډګ شو او لاس پلورونکو لا هم هڅه کوله چې پر مسافرینو ځينې توکي وپلوري، او له دې سره به يې په لوړ غږ چغې وهلې. ماته دا غږونه ډير جالب و.
+	موتر ډګ شو او لاس پلورونکو لا هم هڅه کوله چې پر مسافرینو ځينې توکي وپلوري او له دې سره به يې په لوړ غږ چغې وهلې. ماته دا غږونه ډير جالب و.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -336,7 +343,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton08" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio08" onended="resetbutton('08')" src="https://media.berattelser.se/audio/ps/0324/mp3/08.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -350,8 +358,7 @@
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0324/09.jpg" alt="Passasjerer som sitter på en buss og spiser og drikker."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	
-ځيننو مسافرو د څښاک توکي واخیستل، ځينو بیا نور شیان واخیستل، او زما په څېر چې چا به پیسې نه درلودې غلى ناست وو او یوازې نندارې یې کولې.
+	ځينو مسافرو د څښلو شیان واخېستل، ځينو بیا نور توکي واخیستل او زما په څېر چې چا به پیسې نه درلودې غلى ناست وو او یوازې ننداره به ېې کوله.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -364,7 +371,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton09" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio09" onended="resetbutton('09')" src="https://media.berattelser.se/audio/ps/0324/mp3/09.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -378,7 +386,7 @@
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0324/10.jpg" alt="En bussjåfør som ber noen om å gå av bussen."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	دا کارونه د ملی بس د حرکت د ځانګړي غږ سره پای ته ورسېدل، دا غږ په دی معنی و چې مونږ نور حرکت کوو، او دا ځای خوشې کوو. کلینډر لاس پلورونکو ته زارۍ کولې چې کښته شي.
+	دا کارونه د ملی بس د حرکت د ځانګړي غږ سره پای ته ورسېدل، دا غږ په دی معنی و چې مونږ نور حرکت کوو او دا ځای پرېږدو. کلینډر لاس پلورونکو ته زارۍ کولې چې کښته شئ.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -391,7 +399,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton10" onclick="playpause('10')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio10" onended="resetbutton('10')" src="https://media.berattelser.se/audio/ps/0324/mp3/10.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -418,7 +427,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton11" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio11" onended="resetbutton('11')" src="https://media.berattelser.se/audio/ps/0324/mp3/11.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -445,7 +455,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text13" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton12" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio12" onended="resetbutton('12')" src="https://media.berattelser.se/audio/ps/0324/mp3/12.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -459,7 +470,7 @@
 <div id="text13" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0324/13.jpg" alt="En gutt som sover på en buss ved siden av en mann som tørker seg over pannen med en serviett."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	کله چې مو په سفر کې څه وخت تېر شو، ملی بس دننه ډېر تود شو. ما خپلې سترګې پټې کړې او د خوب په تمه وم.
+	کله چې مو په سفر کې څه وخت تېر شو، ملی بس دننه ډېر ګرم شو. ما خپلې سترګې پټې کړې او د خوب په تمه وم.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -472,7 +483,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text14" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton13" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio13" onended="resetbutton('13')" src="https://media.berattelser.se/audio/ps/0324/mp3/13.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -486,7 +498,7 @@
 <div id="text14" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0324/14.jpg" alt="En gutt som tenker på familien sin."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	مګر زما فکر د کور په لور ولاړه. ایا زما مور به خوندي وي؟ ایا زما سوی به پیسې ګټي؟ ایا زما ورور به په یاد ولري چې ونو ته اوبه ورکړي؟
+	خو ما کور ته فکر کوه. ایا زما مور به ښه وي؟ ایا زما سویه به پیسې ګټي؟ ایا زما ورور به په یاد ولري چې ونو ته اوبه ورکړي؟
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -499,7 +511,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text13" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text15" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton14" onclick="playpause('14')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio14" onended="resetbutton('14')" src="https://media.berattelser.se/audio/ps/0324/mp3/14.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -513,7 +526,7 @@
 <div id="text15" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0324/15.jpg" alt="En gutt, en mann og en kvinne som sover på en buss."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	په لاره کې د هغې سیمې نوم مې په ذهن راوستلو چې زما کاکا په هغه لوی ښار کې ژوند کاوه. ما تر هغه وخته د هغې سیمې نوم له ځان سره تکرارولو چې خوب راغئ.
+	په لاره کې مې د هغې سیمې نوم ذهن ته راوسته، چې زما کاکا په هغه لوی ښار کې ژوند کوه. ما تر هغه وخته د هغې سیمې نوم له ځان سره تکرارولو چې خوب راغی.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -526,7 +539,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text14" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text16" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton15" onclick="playpause('15')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio15" onended="resetbutton('15')" src="https://media.berattelser.se/audio/ps/0324/mp3/15.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -553,7 +567,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text15" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text17" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton16" onclick="playpause('16')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio16" onended="resetbutton('16')" src="https://media.berattelser.se/audio/ps/0324/mp3/16.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -567,8 +582,7 @@
 <div id="text17" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0324/17.jpg" alt="En gutt som står ved siden av en buss."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
-	
-زما لپاره تر ټولو مهمه دا وه، چې د خپل کاکا کور پیدا کړم او ملي بس هم په ډکېدو و چې د ختیځ لور ته حرکت وکړي.
+	زما لپاره تر ټولو مهمه دا وه، چې د خپل کاکا کور پیدا کړم او ملي بس هم په ډکېدو و چې ختیځ لور ته حرکت وکړي.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -581,7 +595,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text16" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton17" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio17" onended="resetbutton('17')" src="https://media.berattelser.se/audio/ps/0324/mp3/17.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton17" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -598,6 +613,7 @@
 		<h5><span class="colophon-heading">Skrevet av:</span> Lesley Koyi, Ursula Nafula</h5>
 		<h5><span class="colophon-heading">Illustrert av:</span> Brian Wambi</h5>
 		<h5><span class="colophon-heading">Oversatt av:</span> Darakhte Danesh</h5>
+		<h5><span class="colophon-heading">Lest av:</span> Abdul Rafi Mohammadi</h5>
 		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/ps">pasjto</a></h5>
 		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/ps/level3">Nivå 3</a></h5>
 		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=15029" target="_blank">The day I left home for the city</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
@@ -607,13 +623,13 @@
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
 		<h5>Les flere fortellinger på <a href="/stories/ps/level3">nivå 3</a>:</h5>
-			<label class="chip"><a href="/stories/ps/0110/">یوه کوچنۍ دانه: د ونګري کیسه( ونګري د نجلۍ نوم دی)!</a></label>
-			<label class="chip"><a href="/stories/ps/0066/">نوزېبېلې او درې ویښتان</a></label>
-			<label class="chip"><a href="/stories/ps/0141/">چرګه او هزارپا</a></label>
+			<label class="chip"><a href="/stories/ps/0110/">یوه کوچنۍ دانه: د ونګري کیسه</a></label>
+			<label class="chip"><a href="/stories/ps/0066/">نوزیبېلې او درې ویښتان</a></label>
+			<label class="chip"><a href="/stories/ps/0141/">چرګه او زنزه</a></label>
 			<label class="chip"><a href="/stories/ps/0201/">د خره بچی</a></label>
-			<label class="chip"><a href="/stories/ps/0315/">د ساده ګل سندره</a></label>
+			<label class="chip"><a href="/stories/ps/0315/">د سکیما سندره</a></label>
 			<label class="chip"><a href="/stories/ps/0006/">انانسي او عقل</a></label>
-			<label class="chip"><a href="/stories/ps/0158/">چرګه او عقاب</a></label>
+			<label class="chip"><a href="/stories/ps/0158/">چرګه او باز</a></label>
 	</div>
 </div>
 <div>

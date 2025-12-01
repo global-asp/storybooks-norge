@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" href="/favicon.ico?v=4">
 	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
-	<title>اينځر ګل - Barnebøker for Norge</title>
+	<title>ماګوزوې - Barnebøker for Norge</title>
 	<meta name="description" content="Barnebøker for Norge er utviklet for barn, lærere og foreldre og gjør 40 fortellinger fra African Storybook tilgjengelige på bokmål og nynorsk, samt de største innvandrings- og flyktningspråkene i Norge. Noen språk har lydinnspillinger. Denne nettressursen tilbyr gratis barnebøker online (gratis bildebøker online), gratis lydbøker for barn og PDF-filer.
 ">
 	<link rel="stylesheet" href="/css/spectre.min.css">
@@ -93,23 +93,26 @@
 <div class="columns" id="text01">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/01.jpg" alt="En gutt som dagdrømmer om å være pilot."></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h1 dir="rtl"><span class="def">اينځر ګل</span>
+		<h1 dir="rtl"><span class="def">ماګوزوې</span>
 			<span dir="ltr" class="l1">Magozwe</span>
 			<span dir="ltr" class="l2">Magozwe</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://media.berattelser.se/audio/ps/0262/mp3/01.mp3"></audio>
 			<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
 			<button onclick="switchlang('ps,nn','nb,nn,ps')" class="btn btn-lg lang-secondary" title="Bytt mellom pasjto og nynorsk">nn</button>
 		</div>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Skrevet av"><img class="cover-icon cover-icon-text" src="/css/pencil.svg" alt="Skrevet av"></span> Lesley Koyi</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrert av"><img class="cover-icon cover-icon-text" src="/css/art.svg" alt="Illustrert av"></span> Wiehan de Jager</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Oversatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Oversatt av"></span> Zahidullah Abid</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Lest av"><img class="cover-icon cover-icon-text" src="/css/megaphone.svg" alt="Lest av"></span> Abdul Rafi Mohammadi</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/ps">pasjto</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/ps/level5">Nivå 5</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <span class="cover_msg">Lydinnspilling for denne fortellingen finnes ikke ennå.</span></h3>
-
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spill av fortellingen"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Spill av fortellingen"></span> <audio id="audioplayer" controls><source src="https://media.berattelser.se/audio/ps/0262/ps-0262_magozwe.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Lesehastighet"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Lesehastighet" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Lesehastighet: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk spilling av fortellingen (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/css/play.svg" alt="Automatisk spilling av fortellingen" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <div class="modal" id="modal-pdf">
@@ -159,8 +162,7 @@
         <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/02.jpg" alt="Fem gutter som står rundt et bål."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	
-د کینیا پلازمینه نیروبي ته اړوند په یوې سیمه کې بې کوره ځوانانو ژوند کاوه. دوى هره ورځ به له بيکارۍ سره پيلوله او دشپې به په سړکونو ویده کیدل، د شپې به یې یخ هم کیده. انځر ګل چې له نورو ځوانانو سره ګډ اوسېده په ګډه به ېې کثافات او له کاره لویدلي توکي د ځان تودولو په خاطر راوړل، چې ځانونه پرې ګرم کړي.
+	د کینیا پلازمینې نیروبي ته اړوند په یوې سیمه کې بې کوره ځوانانو ژوند کاوه. دوى به هره ورځ له بيکارۍ سره پيلوله او دشپې به په سړکونو ویده کیدل، د شپې به یې یخ هم کیده. ماګوزوې چې له نورو ځوانانو سره یو ځای اوسېده په ګډه به ېې کثافات او له کاره لویدلي توکي د ځان تودولو په خاطر راوړل، چې ځانونه پرې ګرم کړي.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -173,7 +175,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton02" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio02" onended="resetbutton('02')" src="https://media.berattelser.se/audio/ps/0262/mp3/02.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -187,7 +190,7 @@
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/03.jpg" alt="En mann ser ned på en ung gutt."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	کله چې د انځرګل مور او پلار مړه شول، هغه مهال دی پنځه کلن واو له خپل تره سره یو ځای اوسېده، خو تره يې سمه پالنه نه کوله، سم خوراک به ېې نه ورکوه، چلند ېې ورسره ښه نه و، ان تر دې چې انځر ګل مجبور شو چې سخت او درانده کارونه وکړي.
+	کله چې د ماګوزوې مور او پلار مړه شول، هغه مهال دی پنځه کلن و او له خپل تره سره یو ځای اوسېده، خو تره يې سمه پالنه نه کوله، سم خوراک به ېې نه ورکوه، چلند ېې ورسره ښه نه و، ان تر دې چې ما ګوزوې مجبور شو چې سخت او درانده کارونه وکړي.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -200,7 +203,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton03" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio03" onended="resetbutton('03')" src="https://media.berattelser.se/audio/ps/0262/mp3/03.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -214,7 +218,7 @@
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/04.jpg" alt="En sint mann hever hånden for å slå en ung gutt."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	کله به چې انځرګل کوم شکایت وکړ، تره به ېې واهه، د ښوونځي څخه يې منع کړی و، تل به ېې تحقیروه، ورته ویل به ېې چې، “ته ساده ېې په هېڅ نه پوهيږې.” بلاخره داسې ورځې ته ېې مجبور کړ، چې له تره وتښتي او په صحرا کې ژوند وکړي.
+	کله به چې ماګوزوې کوم شکایت وکړ، تره به ېې واهه، د ښوونځي څخه يې منع کړی و، تل به ېې تحقیروه، ورته ویل به ېې چې، “ته ساده ېې په هېڅ نه پوهيږې.” بلاخره داسې ورځې ته ېې مجبور کړ، چې له تره وتښتي او د سړک پر غاړه ژوند وکړي.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -227,7 +231,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton04" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio04" onended="resetbutton('04')" src="https://media.berattelser.se/audio/ps/0262/mp3/04.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -241,9 +246,7 @@
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/05.jpg" alt="Gutter som tigger folk i forbipasserende biler."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	.
-د سړکونو پر غاړه به ده ته ژوند ډير ستونزمن و، د ده په څير نورو هلکانو به هم د یو څه خوراک لاسته راوړلو لپاره هڅه کوله، ژوند ېې تریخ و، کله کله به د دې ډلې څخه به چې یو ځوان ناورغ شو او د مرستې لپاره به ېې هېڅوک نه لرل.
-داسې وخت به هم و چې له بل چا به ېې لږې پیسې پور کړې، د سړک پر غاړه به ېې پلاستیکونه را ټولول او بیا به ېې پلورل.
+	د سړکونو پر غاړه به ده ته ژوند ډير ستونزمن و، د ده په څير نورو هلکانو به هم د یو څه خوراک لاسته راوړلو لپاره هڅه کوله، ژوند ېې تریخ و، کله کله به د دې ډلې څخه چې یو ځوان ناورغ شو او د مرستې لپاره به ېې هېڅوک نه لرل. داسې وخت به هم و چې له بل چا به ېې لږې پیسې پور کړې، د سړک پر غاړه به ېې پلاستیکونه را ټولول او بیا به ېې پلورل.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -256,7 +259,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton05" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio05" onended="resetbutton('05')" src="https://media.berattelser.se/audio/ps/0262/mp3/05.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -270,7 +274,7 @@
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/06.jpg" alt="En gutt som leter i en søppelkasse."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	یوه ورځ په داسې حال کې چې انځرګل د کثافاتو یوه کڅوړه پلټله، د کیسو یو زوړ کتاب وموند. او په خپلې بوجۍ کې یې واچولو. له دې وروسته به هغه هره ورځ همدا کتاب را ايستلو او یوازې تصویرونو ته به ېې کتل ځکه ښوونځي ېې لوستی نه و، چې کتاب ولولي.
+	یوه ورځ په داسې حال کې چې ماګوزوي د خځلو یوه کڅوړه پلټله، د کیسو یو زوړ کتاب ېې وموند. او په خپلې بوجۍ کې یې واچوه. له دې وروسته به هغه هره ورځ همدا کتاب را ايستلو او یوازې تصویرونو ته به ېې کتل ځکه ښوونځي ېې لوستی نه و، چې کتاب ولولي.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -283,7 +287,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton06" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio06" onended="resetbutton('06')" src="https://media.berattelser.se/audio/ps/0262/mp3/06.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -297,7 +302,7 @@
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/07.jpg" alt="En gutt som dagdrømmer om å være pilot."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	په تصویرونو کې د یوه ځوان هلک کیسه بیان شوې وه، چې څنګه پیلوټ شو. د انځرګل په ذهن کې به هم دا خبره ګرځېدله چې پیلوټ شي او موخو ته ورسیږي، ان تر دې چې ځينې وخت به ېې فکر کوه چې د کیسې اصلي کرکټر دی خپله دی.
+	په تصویرونو کې د یوه ځوان هلک کیسه بیان شوې وه، چې څنګه پیلوټ شو. د ماګوزوې په ذهن کې به هم دا خبره ګرځېدله چې پیلوټ شي او موخو ته ورسیږي، ان تر دې چې ځينې وخت به ېې فکر کوه چې د کیسې اصلي کرکټر دی خپله دی.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -310,7 +315,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton07" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio07" onended="resetbutton('07')" src="https://media.berattelser.se/audio/ps/0262/mp3/07.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -324,7 +330,7 @@
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/08.jpg" alt="En mann som snakker til en gutt på en gate."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	یوه ورځ چې هوا ډيره سړه وه، انځرګل د سړک پرغاړه ولاړ و، څنګ ته ېې یو ځوان ودرېده. د سلام کلام وروسته ېې وویل “زه صمیم یم او د کار ځای مې همدلته نږدی دی.” پوهیږم چې خوراک ته اړتیا لرئ، د دې خبرې په کولو سره صمیم د لاس په اشاره ژیړ کور ته وکتل، او زیاته ېې کړه، “انځرګله ورشه او همدې ځای کې به تاته د خوراک لپاره یو څه په لاس درشي.” انځرګل اول دې سړي ته وکتل، شیبه وروسته ېې مخامخ ژیړ کور تر سترګو تیر کړ. بیا یې زیاته کړه، “شاید همداسې یو څه وي او حرکت ېې وکړ.”
+	یوه ورځ چې هوا ډيره سړه وه، ماګوزوې د سړک پرغاړه ولاړ و، څنګ ته ېې یو ځوان ودرېده. د سلام کلام وروسته ېې وویل “زه توماس یم او د کار ځای مې همدلته نږدی دی.” پوهیږم چې خوراک ته اړتیا لرئ، د دې خبرې په کولو سره توماس د لاس په اشاره ژیړ کور ته وکتل، او زیاته ېې کړه، ” ماګوزویه ورشه او همدې ځای کې به تاته د خوراک لپاره یو څه په لاس درشي.” ماګوزوې اول دې سړي ته وکتل، شیبه وروسته ېې مخامخ ژیړ کور تر سترګو تیر کړ. بیا یې زیاته کړه، “شاید همداسې یو څه وي او حرکت ېې وکړ.”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -337,7 +343,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton08" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio08" onended="resetbutton('08')" src="https://media.berattelser.se/audio/ps/0262/mp3/08.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -351,8 +358,7 @@
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/09.jpg" alt="En mann som sitter ved et bord og tre gutter som spiser."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	
-کله کله به صميم د انځرګل په ګډون له نورو بې کوره هلکانو سره لیدل. صمیم به د دوی کیسې اورېدې او د هغو خلکو سره به یې زړه سوى درلود چې کور نه لري، او د سړک پر غاړه ژوند کوي، هغه یو ډير مهربانه او با ادبه ځوان و.
+	کله کله به توماس د ماګوزوې په ګډون له نورو بې کوره هلکانو سره لیدل. توماس به د دوی کیسې اورېدې او د هغو خلکو سره به یې همدردي کوله، چې کور نه لري او د سړک پر غاړه ژوند کوي، هغه یو ډير مهربانه او با ادبه ځوان و.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -365,7 +371,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton09" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio09" onended="resetbutton('09')" src="https://media.berattelser.se/audio/ps/0262/mp3/09.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -379,10 +386,7 @@
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/10.jpg" alt="En mann som sitter ved siden av en gutt og leser en bok på et fortau."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	
-انځر ګل د سړک پرغاړه ناست و او د کتاب پاڼې ېې اړولې، صمیم هم د ده تر څنګ کښیناسته او ترې وېې پوښتل، “دا کیسه د څه په اړه ده” انځرګل په ځواب کې ورته وویل:
-“د هغه ځوان په اړه ده چې د ژوند له ناخوالو سره مبارزه کوي او بلاخره پیلوټ کېږي.” صمیم په خبره کې ور ولوید “د هلک نوم څه دی؟”
-انځرګل وویل “زه لیک نه شم لوستلای او نه پوهیږم چې د هلک نوم څه دی.”
+	ماګوزوې د سړک پرغاړه ناست و او د کتاب پاڼې ېې اړولې، توماس هم د ده تر څنګ کښیناسته او ترې وېې پوښتل، “دا کیسه د څه په اړه ده” ماګوزوي په ځواب کې ورته وویل: “د هغه ځوان په اړه ده چې د ژوند له ناخوالو سره مبارزه کوي او بلاخره پیلوټ کېږي.” توماس په خبره کې ور ولوید “د هلک نوم څه دی؟” ماګوزوي وویل “زه لیک نه شم لوستلای او نه پوهیږم چې د هلک نوم څه دی.”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -395,7 +399,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton10" onclick="playpause('10')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio10" onended="resetbutton('10')" src="https://media.berattelser.se/audio/ps/0262/mp3/10.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -409,7 +414,7 @@
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/11.jpg" alt="En mann som sitter ved siden av en gutt og tenker på en sint mann."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	د دوی په دې لیدنه کې، انځرګل د خپل ژوند کیسه صمیم ته پیل کړه. هغه د خپل تره کیسه ورته وکړه، او داچې دی ولې له کوره وتښتېده. صمیم ډیرې خبرې نه کولې، او نه به یې انځرګل ده ته څه ویل چې څه وکړي، مګر هغه به تل د انځرګل خبرې په غور سره اورېدلې. ځینې وختونه به دوی په آبي چت لرونکي کور کې د ډوډۍ خوړلو پر مهال هم کیسې کولې او د زړونو بړاس به ېې ویستلو.
+	د دوی په دې لیدنه کې، ماګوزوي د خپل ژوند کیسه توماس ته پیل کړه. هغه د خپل تره کیسه ورته وکړه او داچې دی ولې له کوره وتښتېده. توماس ډیرې خبرې نه کولې، او نه به یې ماګوزوي ته څه ویل چې څه وکړي، مګر هغه به تل د ماګوزوي خبرې په غور سره اورېدلې. ځینې وختونه به دوی په آبي چت لرونکي کور کې د ډوډۍ خوړلو پر مهال هم کیسې کولې او د زړونو بړاس به ېې ویستلو.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -422,7 +427,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton11" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio11" onended="resetbutton('11')" src="https://media.berattelser.se/audio/ps/0262/mp3/11.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -436,7 +442,7 @@
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/12.jpg" alt="En mann som sitter ved siden av en gutt og leser en bok."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	د انځرګل په لسمه کلیزه کې، صمیم هغه ته د کیسې یو نوی کتاب ورکړ. دا د یوه کلي د هلک کیسه وه چې څنګه ترې د فوټبال مشهور لوبغاړی جوړ شوی و. صمیم دا کیسه څو ځله انځرګل ته ولوستله، تر دې چې یوه ورځ یې ورته وویل: “زه فکر کوم دا هغه وخت دی چې ته باید ښوونځي ته ولاړ شې او لوستل زده کړې، ته څه فکر کوې؟” صمیم دا هم ورته وویل، “چې هغه ته یو داسې ځای معلوم دی، چې ماشومان پکې پاتې کیدی شي او هم ښوونځي لوستلی شي.”
+	د ماګوزوي د ژوند په لسمه کلیزه کې، توماس هغه ته د کیسې یو نوی کتاب ورکړ. دا د یوه کلي د هلک کیسه وه چې څنګه ترې د فوټبال مشهور لوبغاړی جوړ شوی و. توماس دا کیسه څو ځله ماګوزوي ته ولوستله، تر دې چې یوه ورځ یې ورته وویل: “زه فکر کوم دا هغه وخت دی چې ته باید ښوونځي ته ولاړ شې او لوستل زده کړې، ته څه فکر کوې؟” توماس دا هم ورته وویل، “چې هغه ته یو داسې ځای معلوم دی، چې ماشومان پکې پاتې کیدای شي او هم ښوونځي لوستلی شي.”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -449,7 +455,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text13" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton12" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio12" onended="resetbutton('12')" src="https://media.berattelser.se/audio/ps/0262/mp3/12.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -463,8 +470,7 @@
 <div id="text13" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/13.jpg" alt="En bekymret gutt som tenker på å gå på skolen, bli påkjørt og bo på gata."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	
-انځرګل نوي ځای او ښوونځي ته د تللو فکر وکړ، خو د تره خبرې ېې په زړه کې ګرځيدې، چې تل به ېې ورته ویل “ته تنبل ېې، په څه نه پوهېږي.” د انځر ګل ذهنیت ښوونځي ویلو ته اماده نه و او د سړک د غاړې ژوند ېې غوره ګاڼه.
+	ماګوزوي نوي ځای او ښوونځي ته د تللو فکر وکړ، خو د تره خبرې ېې په زړه کې ګرځيدې، چې تل به ېې ورته ویل “ته تنبل ېې، په څه نه پوهېږي.” د ماګوزوي ذهنیت ښوونځي ویلو ته اماده نه و او د سړک د غاړې ژوند ېې غوره ګاڼه.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -477,7 +483,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text14" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton13" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio13" onended="resetbutton('13')" src="https://media.berattelser.se/audio/ps/0262/mp3/13.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -491,7 +498,7 @@
 <div id="text14" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/14.jpg" alt="En mann og en gutt som går i en park."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	هغه خپله ویره د صمیم سره شریکه کړه. د وخت په تېرېدو سره دې سړي هلک ته ډاډ ورکړ چې په نوي ځای کې ېې ژوند کیدای شي ډېر ښه شي.
+	هغه خپله ویره د توماس سره شریکه کړه. د وخت په تېرېدو سره دې سړي هلک ته ډاډ ورکړ چې په نوي ځای کې ېې ژوند کیدای شي ډېر ښه شي.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -504,7 +511,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text13" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text15" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton14" onclick="playpause('14')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio14" onended="resetbutton('14')" src="https://media.berattelser.se/audio/ps/0262/mp3/14.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -518,7 +526,7 @@
 <div id="text15" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/15.jpg" alt="Ti barn som sitter rundt et middagsbord og en mann og en kvinne serverer dem mat og drikke."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	او بالاخره، انځرګل په آبي چت لرونکي کور کې یوې کوټې ته وکوچېده. په دې کوټه کې دوه نور هلکان له ده سره یو ځای اوسېدل. په دې کور کې ټول لس ماشومان اوسېدل. زرینه ترور، د هغې میړه، درې سپي، یوه پیشو، او یوه وزه هم اوسېدله.
+	او بالاخره، ماګوزوي په آبي چت لرونکي کور کې یوې کوټې ته وکوچېده. په دې کوټه کې دوه نور هلکان له ده سره یو ځای وو. په دې کور کې د سیسي او خاوند سربېره ېې د لسو ماشومانو په ګډون درې سپي، یوه پیشو، او یوه وزه هم اوسېدله.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -531,7 +539,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text14" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text16" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton15" onclick="playpause('15')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio15" onended="resetbutton('15')" src="https://media.berattelser.se/audio/ps/0262/mp3/15.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -545,7 +554,7 @@
 <div id="text16" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/16.jpg" alt="En gutt som sitter ved et skrivebord og leser."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	انځرګل ښوونځی پیل کړ، هغه ته دا ډېره ستونزمنه وه. هغه ډېرو شیانو زده کولو ته اړتیا درلوده. ځینې وختونه هغه غوښتل چې تسلیم شي. مګر هغه د کیسو په کتابونو کې د پیلوټ او د فوټبال د لوبغاړي په اړه ډېر څه زده کړي و. د دوی په څیر، انځرګل هم تسلیم نه شو او د ژوند ښه کېدو لپاره ېې هلې ځلې پیل کړې.
+	ماګوزوي ښوونځی پیل کړ، هغه ته دا ډېره ستونزمنه وه. هغه ډېرو شیانو زده کولو ته اړتیا درلوده. ځینې وختونه ېې غوښتل چې تسلیم شي. مګر هغه د کیسو په کتابونو کې د پیلوټ او د فوټبال د لوبغاړي په اړه ډېر څه زده کړي و. د دوی په څیر، ماګوزوي هم تسلیم نه شو او د ژوند ښه کېدو لپاره ېې هلې ځلې پیل کړې.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -558,7 +567,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text15" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#text17" class="btn btn-lg" title="Gå til neste side"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton16" onclick="playpause('16')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio16" onended="resetbutton('16')" src="https://media.berattelser.se/audio/ps/0262/mp3/16.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -572,7 +582,7 @@
 <div id="text17" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0262/17.jpg" alt="En mann som sitter ved siden av en gutt og leser en bok."></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3 dir="rtl">
-	انځرګل د آبي چت لرونکي کور په انګړ کې ناست و، د ښوونځي د کیسې کتاب یې لوستلو. په دې وخت کې صمیم راغئ، او د هغه څنګ ته کښېناست. صمیم ترې وپوښتل”د څه په اړه کیسه ده؟” انځرګل ځواب ورکړ: “دا د یوه هلک په اړه ده چې څنګه ترې یو ښوونکی جوړېږي.” صمیم ترې وپوښتل “د هلک نوم څه دی؟”. انځرګل په خندا سره ځواب ورکړ”د هغه نوم انځرګل دی”.
+	ماګوزوې د آبي چت لرونکي کور په انګړ کې ناست و، د ښوونځي د کیسې کتاب یې لوستلو. په دې وخت کې توماس راغی او د هغه څنګ ته کښېناست. توماس ترې وپوښتل “دا کیسه د څه په اړه ده؟” ماګوزوي ځواب ورکړ: “دا د یوه هلک په اړه ده چې څنګه ترې یو ښوونکی جوړېږي.” توماس ترې وپوښتل “د هلک نوم څه دی؟” زلمي په خندا سره ځواب ورکړ “د هغه نوم ماګوزوي دی.”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
@@ -585,7 +595,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text16" class="btn btn-lg" title="Gå til forrige side"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Bidragsytere"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton17" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
+		<audio id="audio17" onended="resetbutton('17')" src="https://media.berattelser.se/audio/ps/0262/mp3/17.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton17" onclick="playpause('17')" title="Spill lydopptak / sett på pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ps,nb','nb,nn,ps')" class="btn btn-lg lang-primary" title="Bytt mellom pasjto og bokmål">nb</button>
@@ -602,6 +613,7 @@
 		<h5><span class="colophon-heading">Skrevet av:</span> Lesley Koyi</h5>
 		<h5><span class="colophon-heading">Illustrert av:</span> Wiehan de Jager</h5>
 		<h5><span class="colophon-heading">Oversatt av:</span> Zahidullah Abid</h5>
+		<h5><span class="colophon-heading">Lest av:</span> Abdul Rafi Mohammadi</h5>
 		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/ps">pasjto</a></h5>
 		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/ps/level5">Nivå 5</a></h5>
 		<h5><span class="colophon-heading">Kilde:</span> <a href="https://africanstorybook.org/reader.php?id=13213" target="_blank">Magozwe</a> fra <a href="https://africanstorybook.org/">African Storybook</a></h5>
@@ -611,7 +623,7 @@
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
 		<h5>Les flere fortellinger på <a href="/stories/ps/level5">nivå 5</a>:</h5>
-			<label class="chip"><a href="/stories/ps/0052/">زرلښته</a></label>
+			<label class="chip"><a href="/stories/ps/0052/">سیمبېګوېره</a></label>
 	</div>
 </div>
 <div>
